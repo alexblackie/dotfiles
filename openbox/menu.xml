@@ -28,6 +28,14 @@
 	  </action>
 	</item>
 
+
+	<item label="File Manager">
+	  <action name="Execute">
+	    <command>pcmanfm</command>
+	  </action>
+	</item>
+
+
 	<item label="XChat">
 	  <action name="Execute">
 	    <command>xchat</command>
