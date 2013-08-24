@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/alex/Dropbox/dev/examinator'
-let g:netrw_dirhist_2='/home/alex/Dropbox/dev/alexblackie'
-let g:netrw_dirhist_3='/Users/alex/Dropbox/dev/School/dreamjournal'
-let g:netrw_dirhist_4='/Users/alex/Dropbox/dev/pleasecodeme'

@@ -3,3 +3,5 @@
 .SyncIgnore
 .SyncArchive
 
+# Ignore Vim's netrwhist
+.vim/.netrwhist
