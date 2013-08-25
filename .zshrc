@@ -46,3 +46,48 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/Users/alex/.rbenv/shims:/Users/alex/.rbenv/bin:/Users/alex/.nvm/v0.10.12/bin:/usr/local/bin:/usr/local/sbin:/Users/alex/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
+
+# Aliases
+# ----------------------------------------
+
+alias ls="ls -Gp"
+alias la="ls -a"
+alias ll="ls -lh"
+
+alias be="bundle exec"
+alias g="git"
+alias rake="bundle exec rake"
+
+alias ann='bundle exec annotate --position='\''before'\'' --exclude tests,fixtures --show-indexes'
+alias prepare='bundle exec rake db:test:prepare'
+alias migrate='rake db:migrate && ann && prepare'
+alias bems='bundle exec middleman server'
+alias fr='foreman run'
+
+alias fucking='sudo'
+alias :wq='exit'
+alias :q='exit'
+alias s.='subl .'
+
+# Libraries/Imports
+# ----------------------------------------
+[[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
+
+export RBENV_ROOT="${HOME}/.rbenv"
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
+
+if [ -f ~/.env ]; then
+  source ~/.env
+fi
+
+PATH="/usr/local/heroku/bin:~/bin/:$PATH"
+
+export EDITOR="vim"
+
+# ZSH Customizations
+# ----------------------------------------
+
+setopt nocorrectall; setopt correct # Don't offer corrections for arguments, just commands
