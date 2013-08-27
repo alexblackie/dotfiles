@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-stylus"]
 	path = .vim/bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus.git
+[submodule ".vim/bundle/ack.vim"]
+	path = .vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
