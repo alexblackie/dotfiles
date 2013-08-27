@@ -36,7 +36,7 @@ nnoremap Y y$
 "highlight ExtraWhitespace ctermbg=red guibg=red
 "match ExtraWhitespace /\s\+$/
 
-set ruler " Show the cursor position  
+set ruler " Show the cursor position
 
 autocmd InsertLeave * redraw!
 
