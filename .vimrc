@@ -30,6 +30,11 @@ set nostartofline " Don't reset cursor to start of line when moving around.
 set magic " Enable extended regexes.
 set mouse=a " Enable moouse in all in all modes.
 
+" Close Quickfix window (,qq)
+map <leader>qq :cclose<CR>
+
+set relativenumber
+
 command W w
 nnoremap Y y$
 
