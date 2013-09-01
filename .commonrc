@@ -18,7 +18,7 @@ alias fr='foreman run'
 alias fucking='sudo'
 alias :wq='exit'
 alias :q='exit'
-alias s.='subl .'
+alias s.='mvim' # Muscle-memory from my Sublime days...
 
 # Libraries/Imports
 # ----------------------------------------
