@@ -52,6 +52,6 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-  set guifont=Menlo:h9 " Fuck you, OSX Vim.
+  set guifont=Menlo:h13 " Fuck you, OSX Vim.
 endif
 
