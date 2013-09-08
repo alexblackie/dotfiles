@@ -48,10 +48,10 @@ autocmd InsertLeave * redraw!
 if has("gui_running")
 	colorscheme solarized
   set guioptions=-t
-  set guifont=Ubuntu\ Mono\ 11
+  set guifont=PT\ Mono\ 13
 endif
 
 if has("gui_macvim")
-  set guifont=Menlo:h13 " Fuck you, OSX Vim.
+  set guifont=Menlo:h14 " Fuck you, OSX Vim.
 endif
 
