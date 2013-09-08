@@ -1,0 +1,28 @@
+[global_config]
+  window_state = maximise
+  title_hide_sizetext = True
+  dbus = True
+  title_inactive_fg_color = "#bdbdbd"
+  borderless = True
+  title_transmit_bg_color = "#1d3954"
+  inactive_color_offset = 0.74
+  title_inactive_bg_color = "#014a6a"
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    login_shell = True
+    background_image = None
+    foreground_color = "#839496"
+    font = PT Mono 13
+    background_color = "#002b36"
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
