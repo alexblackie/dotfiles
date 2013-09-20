@@ -45,7 +45,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/alex/.rbenv/shims:/Users/alex/.rbenv/bin:/Users/alex/.nvm/v0.10.12/bin:/usr/local/bin:/usr/local/sbin:/Users/alex/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
+export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$HOME/bin:$PATH
 
 # My custom things
 setopt nocorrectall; setopt correct # Don't offer corrections for arguments, just commands
