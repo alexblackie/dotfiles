@@ -14,6 +14,7 @@ set nu
 syntax on
 set background=dark
 set t_Co=256
+colorscheme solarized
 
 set expandtab
 set tabstop=2
@@ -46,7 +47,6 @@ set ruler " Show the cursor position
 autocmd InsertLeave * redraw!
 
 if has("gui_running")
-	colorscheme solarized
   set guioptions=-t
   set guifont=PT\ Mono\ 13
 endif
