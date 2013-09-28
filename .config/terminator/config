@@ -5,7 +5,6 @@
   title_inactive_fg_color = "#bdbdbd"
   borderless = True
   title_transmit_bg_color = "#1d3954"
-  inactive_color_offset = 0.74
   title_inactive_bg_color = "#014a6a"
 [keybindings]
 [profiles]
@@ -13,10 +12,12 @@
     use_system_font = False
     login_shell = True
     background_image = None
-    foreground_color = "#839496"
     font = PT Mono 13
-    background_color = "#002b36"
     scrollback_infinite = True
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    foreground_color = "#eee8d5"
+    background_color = "#002b36"
+    cursor_color = "#eee8d5"
 [layouts]
   [[default]]
     [[[child1]]]
