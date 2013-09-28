@@ -1,6 +1,6 @@
 call pathogen#infect()
 
-filetype plugin indent on
+set autoindent
 
 set nocompatible
 
