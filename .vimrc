@@ -48,7 +48,7 @@ autocmd InsertLeave * redraw!
 
 if has("gui_running")
   set guioptions=-t
-  set guifont=PT\ Mono\ 13
+  set guifont=PT\ Mono\ 11
 endif
 
 if has("gui_macvim")
