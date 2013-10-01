@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-indent-guides"]
 	path = .vim/bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
