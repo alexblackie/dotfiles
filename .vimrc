@@ -31,6 +31,16 @@ set nostartofline " Don't reset cursor to start of line when moving around.
 set magic " Enable extended regexes.
 set mouse=a " Enable moouse in all in all modes.
 
+" Tabular.vim
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a=> :Tabularize /=><CR>
+vmap <Leader>a=> :Tabularize /=><CR>
+nmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
+vmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
+nmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
+vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
+
 " Close Quickfix window (,qq)
 map <leader>qq :cclose<CR>
 
