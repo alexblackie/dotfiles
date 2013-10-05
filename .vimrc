@@ -1,35 +1,51 @@
+" Pathogen FTW
 call pathogen#infect()
 
-set autoindent
+set colorcolumn=80 " Show a marker at 80 chars
 
-set nocompatible
+" Indenting and shit
+set autoindent   " Hit enter, re-indents according to last line
+set expandtab    " Space-indent masterrace
+set tabstop=2    " 2-spaces
+set shiftwidth=2 " Instruct `<< >>` to use 2 spaces
 
+set nowrap " Line wrapping is a sin
+
+" FUCK them bells
 set noerrorbells
 set novisualbell
 
-set nowrap
+" UI
+set nu             " Line numbers
+set relativenumber " Line numbers relative from current cursor position
 
-set nu
+set ruler " Show the cursor position
 
-syntax on
-set background=dark
-set t_Co=256
-colorscheme solarized
-
-set expandtab
-set tabstop=2
-set shiftwidth=2
-
-set noswapfile
-set nobackup
-
-set title " Show the filename in the window titlebar.
-set ttyfast " Send more characters at a given time.
+set title          " Show the filename in the window titlebar.
+set ttyfast        " Send more characters at a given time.
 set ttymouse=xterm " Set mouse type to xterm.
 
+syntax on             " COLOURS!!!11!1
+set background=dark   " The only way to code is in darkness
+set t_Co=256          " LOTS OF COLOURS
+colorscheme solarized " (Loaded via Pathogen)
+
+if has("gui_running")      " If in GVim
+  set guioptions=-t        " No goddamned toolbars
+  set guifont=PT\ Mono\ 11 " A decent-sized beauty
+endif
+
+if has("gui_macvim")    " If on a Mac
+  set guifont=Menlo:h14 " Fuck you, OSX Vim and your different syntax and font sizes
+endif
+
+" System
+set noswapfile " Don't fucking care
+set nobackup   " YOLO
+
 set nostartofline " Don't reset cursor to start of line when moving around.
-set magic " Enable extended regexes.
-set mouse=a " Enable moouse in all in all modes.
+set magic         " Enable extended regexes.
+set mouse=a       " Enable moouse in all in all modes.
 
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
@@ -41,27 +57,5 @@ vmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
 nmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 
-" Close Quickfix window (,qq)
+" Close Quickfix window (\qq)
 map <leader>qq :cclose<CR>
-
-set relativenumber
-
-command W w
-nnoremap Y y$
-
-"highlight ExtraWhitespace ctermbg=red guibg=red
-"match ExtraWhitespace /\s\+$/
-
-set ruler " Show the cursor position
-
-autocmd InsertLeave * redraw!
-
-if has("gui_running")
-  set guioptions=-t
-  set guifont=PT\ Mono\ 11
-endif
-
-if has("gui_macvim")
-  set guifont=Menlo:h14 " Fuck you, OSX Vim and your different syntax
-endif
-
