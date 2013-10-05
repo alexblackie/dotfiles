@@ -5,20 +5,16 @@ alias ls="ls -Gp"
 alias la="ls -a"
 alias ll="ls -lh"
 
-alias be="bundle exec"
 alias g="git"
-alias rake="bundle exec rake"
 
-alias ann='bundle exec annotate --position='\''before'\'' --exclude tests,fixtures --show-indexes'
-alias prepare='bundle exec rake db:test:prepare'
-alias migrate='rake db:migrate && ann && prepare'
+alias be="bundle exec"
+alias rake="bundle exec rake"
 alias bems='bundle exec middleman server'
 alias fr='foreman run'
 
 alias fucking='sudo'
 alias :wq='exit'
 alias :q='exit'
-alias s.='mvim' # Muscle-memory from my Sublime days...
 
 # Libraries/Imports
 # ----------------------------------------
@@ -33,7 +29,5 @@ fi
 if [ -f ~/.env ]; then
   source ~/.env
 fi
-
-PATH="/usr/local/heroku/bin:~/bin/:$PATH"
 
 export EDITOR="vim"
