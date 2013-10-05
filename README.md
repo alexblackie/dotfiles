@@ -1,19 +1,11 @@
-# erhmahgerd dertferls
+# ~/.dotfiles/
 
-This is how I live every day. These exact scripts and config files are
-synced (sunc?) between all of my computers, and run basically everything I do
-on a daily basis.
+This small collection of messy configuration is my life. Like, actually.
 
-## Fork me
+Now I'm sad.
 
-Go nuts.
-
-Cherry pick what you like, bitch at me when you find something wrong.
-
-Pull requests welcome, if you're into that kinda thing.
-
-## I suck at dotfiles
-
-Pardon the mess, I just started trying to organize all this. I'm hoping
-that publicizing my organizational sins will motivate me to clean up the
-ongoing shit-smear of my dotfiles.
+## General (read: lazy) setup
+1. Clone into `~/.dotfiles/`
+2. Symlink what you want into `~`
+3. ???
+4. Profit.
