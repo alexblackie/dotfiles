@@ -59,3 +59,8 @@ vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 
 " Close Quickfix window (\qq)
 map <leader>qq :cclose<CR>
+
+" Filetype-specific overrides
+augroup filetypedetect
+  autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown :set textwidth=80
+augroup END
