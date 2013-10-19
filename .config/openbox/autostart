@@ -17,3 +17,4 @@
 #xfce-mcs-manager &
 #
 tint2 &
+setxkbmap -option caps:escape &
