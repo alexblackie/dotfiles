@@ -25,14 +25,14 @@ set title          " Show the filename in the window titlebar.
 set ttyfast        " Send more characters at a given time.
 set ttymouse=xterm " Set mouse type to xterm.
 
-syntax on             " COLOURS!!!11!1
-set background=dark   " The only way to code is in darkness
-set t_Co=256          " LOTS OF COLOURS
-colorscheme solarized " (Loaded via Pathogen)
+syntax on           " COLOURS!!!11!1
+set background=dark " The only way to code is in darkness
+set t_Co=256        " LOTS OF COLOURS
 
-if has("gui_running")      " If in GVim
-  set guioptions=-t        " No goddamned toolbars
-  set guifont=PT\ Mono\ 11 " A decent-sized beauty
+if has("gui_running")        " If in GVim
+  colorscheme base16-default " (Loaded via Pathogen)
+  set guioptions=-t          " No goddamned toolbars
+  set guifont=PT\ Mono\ 11   " A decent-sized beauty
 endif
 
 if has("gui_macvim")    " If on a Mac
