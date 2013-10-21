@@ -31,3 +31,5 @@ if [ -f ~/.env ]; then
 fi
 
 export EDITOR="vim"
+
+setxkbmap -option caps:escape # Fucking capslock is bullshit
