@@ -20,16 +20,16 @@ alias :q='exit'
 # ----------------------------------------
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
-export RBENV_ROOT="${HOME}/.rbenv"
-if [ -d "${RBENV_ROOT}" ]; then
-  export PATH="${RBENV_ROOT}/bin:${PATH}"
-  eval "$(rbenv init -)"
-fi
-
 if [ -f ~/.env ]; then
   source ~/.env
 fi
 
 export EDITOR="vim"
+
+export CHRUBY_ROOT="/usr/local/share/chruby"
+if [ -d "${CHRUBY_ROOT}" ]; then
+  source "$CHRUBY_ROOT/chruby.sh"
+  source "$CHRUBY_ROOT/auto.sh"
+fi
 
 setxkbmap -option caps:escape # Fucking capslock is bullshit
