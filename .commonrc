@@ -15,6 +15,7 @@ alias fr='foreman run'
 alias fucking='sudo'
 alias :wq='exit'
 alias :q='exit'
+alias yolo='git push -f origin'
 
 # Libraries/Imports
 # ----------------------------------------
