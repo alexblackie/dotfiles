@@ -30,7 +30,7 @@ set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
 
 if has("gui_running")        " If in GVim
-  colorscheme base16-default " (Loaded via Pathogen)
+  colorscheme base16-ocean   " (Loaded via Pathogen)
   set guioptions=-t          " No goddamned toolbars
   set guifont=PT\ Mono\ 11   " A decent-sized beauty
 endif
