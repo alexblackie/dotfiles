@@ -6,6 +6,8 @@ alias la="ls -a"
 alias ll="ls -lh"
 
 alias g="git"
+alias e='vim'
+alias gv='gvim'
 
 alias be="bundle exec"
 alias rake="bundle exec rake"
@@ -16,6 +18,7 @@ alias fucking='sudo'
 alias :wq='exit'
 alias :q='exit'
 alias yolo='git push -f origin'
+
 
 # Libraries/Imports
 # ----------------------------------------
