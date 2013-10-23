@@ -32,12 +32,14 @@ set t_Co=256        " LOTS OF COLOURS
 if has("gui_running")        " If in GVim
   colorscheme base16-ocean   " (Loaded via Pathogen)
   set guioptions=-t          " No goddamned toolbars
-  set guifont=PT\ Mono\ 11   " A decent-sized beauty
+  set guifont=Source\ Code\ Pro\ for\ Powerline\ 11
 endif
 
 if has("gui_macvim")    " If on a Mac
-  set guifont=Menlo:h14 " Fuck you, OSX Vim and your different syntax and font sizes
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h14 " Fuck you, OSX Vim and your different syntax and font sizes
 endif
+
+let g:airline_powerline_fonts = 1 " Dem Symbols
 
 " System
 set noswapfile " Don't fucking care
