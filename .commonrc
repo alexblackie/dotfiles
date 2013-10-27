@@ -36,4 +36,4 @@ if [ -d "${CHRUBY_ROOT}" ]; then
   source "$CHRUBY_ROOT/auto.sh"
 fi
 
-setxkbmap -option caps:escape # Fucking capslock is bullshit
+# setxkbmap -option caps:escape # Fucking capslock is bullshit
