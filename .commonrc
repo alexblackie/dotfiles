@@ -18,6 +18,7 @@ alias fucking='sudo'
 alias :wq='exit'
 alias :q='exit'
 alias yolo='git push -f origin'
+alias vag='vagrant'
 
 
 # Libraries/Imports
