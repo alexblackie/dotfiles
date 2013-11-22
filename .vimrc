@@ -30,7 +30,7 @@ set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
 
 if has("gui_running")        " If in GVim
-  colorscheme badwolf        " (Loaded via Pathogen)
+  colorscheme base16-ocean
   set guioptions=-t          " No goddamned toolbars
   set guifont=Source\ Code\ Pro\ for\ Powerline\ 11
 endif
