@@ -49,6 +49,9 @@ set nostartofline " Don't reset cursor to start of line when moving around.
 set magic         " Enable extended regexes.
 set mouse=a       " Enable moouse in all in all modes.
 
+" CtrlP.vim
+let g:ctrlp_working_path_mode = 0
+
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
