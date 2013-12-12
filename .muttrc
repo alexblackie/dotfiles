@@ -1,0 +1,50 @@
+# Paths
+# --------------------------------
+set alias_file       = ~/.mutt/alias         # where to store aliases
+set header_cache     = ~/.mutt/cache/headers # where to store headers
+set message_cachedir = ~/.mutt/cache/bodies  # where to store bodies
+set certificate_file = ~/.mutt/certificates  # where to store certs
+set mailcap_path     = ~/.mutt/mailcap       # entries for filetypes
+set tmpdir           = ~/.mutt/temp          # where to keep temp files
+set signature        = ~/.mutt/sig           # my signature file
+
+
+# General Settings
+# --------------------------------
+set mbox_type = Maildir  # mailbox type
+set folder = ~/Mail      # mailbox location
+
+set sort_aux = reverse-last-date-received  # like gmail
+
+
+# Composition Settings
+# --------------------------------
+set realname = "Alex Blackie"         # who am i?
+set from     = "alex@alexblackie.com" # where am i?
+set envelope_from                     # which from?
+set edit_headers                      # show headers when composing
+set fast_reply                        # skip to compose when replying
+set askcc                             # ask for CC:
+set fcc_attach                        # save attachments with the body
+unset mime_forward                    # forward attachments as part of body
+set forward_format = "Fwd: %s"        # format of subject when forwarding
+set forward_decode                    # decode when forwarding
+set attribution = "On %d, %n wrote:"  # format of quoting header
+set reply_to                          # reply to Reply to: field
+set reverse_name                      # reply as whomever it was to
+set include                           # include message in replies
+set forward_quote                     # include message in forwards
+
+# Connection Settings
+# --------------------------------
+set spoolfile="imaps://alex@hermes.alexblackie.com/" # Server to connect to
+set folder="imaps://alex@hermes.alexblackie.com/"    # Default folder
+set record="=Sent"                                   # Copy sent to Sent
+set postponed="=Drafts"                              # Keeps drafts in Drafts
+
+# Keybindings
+# --------------------------------
+bind index G imap-fetch-mail  # On-demand refresh
+macro index \' "<tag-pattern>~R !~D !~F<enter>\
+<tag-prefix><save-message>+/Archive <enter>" \
+"Archive"
