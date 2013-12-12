@@ -97,10 +97,11 @@ playback.order 0
 playback.volume 0.0000000
 playlist.column.00 "Album Art" "" 8 85 0
 playlist.column.01 "Playing" "" 1 26 0
-playlist.column.02 "Title" "%t" -1 636 0
-playlist.column.03 "Artist - Album" "%a - %b" -1 555 0
+playlist.column.02 "Track Number" "%n" -1 38 0
+playlist.column.03 "Title" "%t" -1 635 0
+playlist.column.04 "Artist - Album" "%a - %b" -1 554 0
 playlist.current 0
-playlist.cursor.0 7
+playlist.cursor.0 17
 playlist.cursor.1 5
 playlist.cursor.3 0
 playlist.group_by %B
