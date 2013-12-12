@@ -51,6 +51,8 @@ set mouse=a       " Enable moouse in all in all modes.
 
 " CtrlP.vim
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore     = 'tmp'
+
 
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
