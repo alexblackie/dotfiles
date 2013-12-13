@@ -9,7 +9,7 @@
 [profiles]
   [[default]]
     palette = "#202020:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#303030:#d28445:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#e0e0e0"
-    font = Source Code Pro for Powerline 12
+    font = Source Code Pro for Powerline 9
     background_image = None
     use_system_font = False
     cursor_color = "#eee8d5"
@@ -17,6 +17,7 @@
     login_shell = True
     copy_on_selection = True
     background_color = "#151515"
+    allow_bold = False
     scrollback_infinite = True
 [layouts]
   [[default]]

@@ -32,7 +32,7 @@ set t_Co=256        " LOTS OF COLOURS
 if has("gui_running")        " If in GVim
   colorscheme base16-default
   set guioptions=-t          " No goddamned toolbars
-  set guifont=Source\ Code\ Pro\ for\ Powerline\ 11
+  set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
 endif
 
 if has("gui_macvim")    " If on a Mac
