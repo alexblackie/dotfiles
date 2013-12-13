@@ -11,6 +11,7 @@ alias gv='gvim'
 
 alias be="bundle exec"
 alias rake="bundle exec rake"
+alias ann="bundle exec annotate"
 alias bems='bundle exec middleman server'
 alias fr='foreman run'
 
