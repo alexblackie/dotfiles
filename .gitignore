@@ -5,3 +5,6 @@
 
 # Ignore Vim's netrwhist
 .vim/.netrwhist
+
+# Ignore playlists in deadbeef
+.config/deadbeef/playlists
