@@ -1,8 +1,6 @@
 " Pathogen FTW
 call pathogen#infect()
 
-set colorcolumn=80 " Show a marker at 80 chars
-
 " Indenting and shit
 set autoindent   " Hit enter, re-indents according to last line
 set expandtab    " Space-indent masterrace
@@ -40,6 +38,9 @@ if has("gui_macvim")    " If on a Mac
 endif
 
 let g:airline_powerline_fonts = 1 " Dem Symbols
+
+let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
+highlight ColorColumn ctermbg=234 guibg=#1c1c1c
 
 " System
 set noswapfile " Don't fucking care
