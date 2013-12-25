@@ -7,6 +7,8 @@ set expandtab    " Space-indent masterrace
 set tabstop=2    " 2-spaces
 set shiftwidth=2 " Instruct `<< >>` to use 2 spaces
 
+set pastetoggle=<F2> " Stop the insane cascading-indents when pasting
+
 set nowrap " Line wrapping is a sin
 
 " FUCK them bells
