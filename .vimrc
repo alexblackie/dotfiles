@@ -36,7 +36,7 @@ if has("gui_running")        " If in GVim
 endif
 
 if has("gui_macvim")    " If on a Mac
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h10 " Fuck you, OSX Vim and your different syntax and font sizes
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h12 " Fuck you, OSX Vim and your different syntax and font sizes
 endif
 
 let g:airline_powerline_fonts = 1 " Dem Symbols
