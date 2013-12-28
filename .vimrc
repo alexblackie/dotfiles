@@ -44,6 +44,11 @@ let g:airline_powerline_fonts = 1 " Dem Symbols
 let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
 highlight ColorColumn ctermbg=234 guibg=#1c1c1c
 
+set list listchars=tab:»·,trail:· " show extra space characters
+
+" Indentation Guides
+let g:indent_guides_guide_size  = 1
+
 " System
 set noswapfile " Don't fucking care
 set nobackup   " YOLO
@@ -51,11 +56,11 @@ set nobackup   " YOLO
 set nostartofline " Don't reset cursor to start of line when moving around.
 set magic         " Enable extended regexes.
 set mouse=a       " Enable moouse in all in all modes.
+set incsearch     " show search results in 'real-time'
 
 " CtrlP.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore     = 'tmp'
-
 
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
