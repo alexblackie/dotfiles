@@ -28,9 +28,9 @@ set ttymouse=xterm " Set mouse type to xterm.
 syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
+colorscheme jellybeans
 
 if has("gui_running")        " If in GVim
-  colorscheme jellybeans
   set guioptions=-t          " No goddamned toolbars
   set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
 endif
