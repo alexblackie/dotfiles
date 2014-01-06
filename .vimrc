@@ -25,6 +25,8 @@ set title          " Show the filename in the window titlebar.
 set ttyfast        " Send more characters at a given time.
 set ttymouse=xterm " Set mouse type to xterm.
 
+set backspace=2 " make backspace work like most other apps
+
 syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
