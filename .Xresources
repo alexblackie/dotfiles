@@ -32,3 +32,7 @@ URxvt*.scrollBar:   false
 URxvt*.cursorBlink: 1
 URxvt*.foreground:  #e8e8d3
 URxvt.font:         xft:Source\ Code\ Pro\ for\ Powerline:size=10
+
+! Home/End keys
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
