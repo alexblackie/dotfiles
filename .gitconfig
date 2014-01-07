@@ -5,6 +5,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes_global
+  filemode = false
 
 [alias]
   br = branch
@@ -57,7 +58,7 @@
 
 [url "git@heroku.com:"]
   insteadOf = "heroku:"
-  
+
 [diff "exif"]
   textconv = exiftool
 [push]
