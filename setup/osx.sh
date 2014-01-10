@@ -1,7 +1,11 @@
-# ==============================
-# Make OSX slightly more tolerable
-# ==============================
+#!/bin/bash
 
+# ------------------------------------------------------------------------------
+# Fresh computer setup: OSX
+# ------------------------------------------------------------------------------
+
+echo
+echo "    * Setting up sane default preferences..."
 # No long-ass window-opening animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
@@ -77,3 +81,20 @@ defaults write com.apple.dock "dashboard-in-overlay" -bool true
 # Map top-left screen corner to Mission Control
 defaults write com.apple.dock wvous-tl-corner -int 2
 defaults write com.apple.dock wvous-tl-modifier -int 0
+
+
+# Dotfiles
+bash common.sh
+
+echo "    * Installing Homebrew"
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+echo "    * Installing some things from Homebrew"
+brew install tmux cmus wget git ruby-install chruby
+
+echo "    * Setting up Ruby"
+source ~/.zshrc
+ruby-install ruby stable
+
+echo "Everything should be good-to-go!"
+echo
