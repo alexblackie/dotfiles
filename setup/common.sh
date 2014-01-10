@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "    * Change to ZSH"
+chsh -s /bin/zsh
+
 echo "    * Symlinking everything..."
 
 cd ~/.dotfiles/
