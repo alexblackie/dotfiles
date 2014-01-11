@@ -5,7 +5,7 @@
 [core]
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes_global
-  filemode = false
+	fileMode = false
 
 [alias]
   br = branch
