@@ -5,7 +5,7 @@
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
-	<false/>
+	<true/>
 	<key>AnimateDimming</key>
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -1300,8 +1300,6 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/.dotfiles</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -1327,24 +1325,12 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>995 294 445 270 0 0 1440 878 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>512 278 924 485 0 0 1440 878 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>118 110 384 129 0 0 1440 878 </string>
+	<string>281 217 924 485 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 878 </string>
+	<string>0 8 1851 1050 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>72 41 570 474 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 512 490 362 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>24 342 490 362 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>267 376 650 502 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>288 376 650 502 0 0 1440 878 </string>
+	<string>534 277 906 474 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_F746B90E-A62B-4B39-BF7B-91BC40D0712F</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2862,7 +2848,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/alex/.dotfiles</string>
+	<string>/Users/ablacki/.dotfiles</string>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2880,7 +2866,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-01-02T20:52:50Z</date>
+	<date>2014-01-13T21:23:09Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2924,6 +2910,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>1.0.0.20131228</string>
+	<string>1.0.0.20140112</string>
 </dict>
 </plist>
