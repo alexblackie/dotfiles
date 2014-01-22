@@ -63,6 +63,7 @@ set incsearch     " show search results in 'real-time'
 " CtrlP.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore     = 'tmp'
+let g:ctrlp_custom_ignore     = 'git\|node_modules\|bower_components\|sass-cache\|js-dist'
 
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
