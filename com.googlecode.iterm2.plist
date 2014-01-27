@@ -1328,9 +1328,9 @@
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame Preferences</key>
-	<string>542 168 924 485 0 0 1920 1058 </string>
+	<string>542 159 924 485 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 572 570 474 0 0 1920 1058 </string>
+	<string>0 0 1920 1080 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>534 277 906 474 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_F746B90E-A62B-4B39-BF7B-91BC40D0712F</key>
@@ -2868,7 +2868,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-01-20T23:16:28Z</date>
+	<date>2014-01-26T23:16:34Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2900,7 +2900,7 @@
 	<key>UseCompactLabel</key>
 	<true/>
 	<key>UseLionStyleFullscreen</key>
-	<false/>
+	<true/>
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
