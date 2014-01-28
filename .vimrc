@@ -30,9 +30,15 @@ set backspace=2 " make backspace work like most other apps
 syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
-colorscheme jellybeans
+
+set colorcolumn=80 " For terminal vim; Gvim gets its own below
+highlight ColorColumn ctermbg=234 guibg=#22252f
 
 if has("gui_running")        " If in GVim
+  colorscheme base16-ocean
+  highlight ColorColumn ctermbg=234 guibg=#22252f
+  let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
+
   set guioptions=-t          " No goddamned toolbars
   set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
 endif
@@ -42,9 +48,6 @@ if has("gui_macvim")    " If on a Mac
 endif
 
 let g:airline_powerline_fonts = 1 " Dem Symbols
-
-let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
-highlight ColorColumn ctermbg=234 guibg=#1c1c1c
 
 set list listchars=tab:»·,trail:· " show extra space characters
 
