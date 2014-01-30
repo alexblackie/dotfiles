@@ -31,14 +31,12 @@ syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
 
-set colorcolumn=80 " For terminal vim; Gvim gets its own below
+colorscheme jellybeans
+
+let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
 highlight ColorColumn ctermbg=234 guibg=#22252f
 
 if has("gui_running")        " If in GVim
-  colorscheme base16-ocean
-  highlight ColorColumn ctermbg=234 guibg=#22252f
-  let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
-
   set guioptions=-t          " No goddamned toolbars
   set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
 endif
