@@ -61,6 +61,13 @@ set magic         " Enable extended regexes.
 set mouse=a       " Enable moouse in all in all modes.
 set incsearch     " show search results in 'real-time'
 
+" Kick the arrow key habit
+for prefix in ['i', 'n', 'v']
+  for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+    exe prefix . "noremap " . key . " <Nop>"
+  endfor
+endfor
+
 " CtrlP.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore     = 'tmp'
