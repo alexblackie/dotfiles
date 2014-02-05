@@ -21,3 +21,4 @@ ln -s ~/.dotfiles/.gemrc ~/.gemrc
 ln -s ~/.dotfiles/.ruby-version ~/.ruby-version
 ln -s ~/.dotfiles/.gitignore_global ~/.gitignore_global
 ln -s ~/.dotfiles/.Xresources ~/.Xresources
+ln -s ~/.dotfiles/.irssi ~/.irssi
