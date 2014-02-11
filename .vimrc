@@ -31,10 +31,10 @@ syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
 
-colorscheme jellybeans
+colorscheme badwolf
 
 let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
-highlight ColorColumn ctermbg=234 guibg=#22252f
+highlight ColorColumn ctermbg=234 guibg=#222222
 
 if has("gui_running")        " If in GVim
   set guioptions=-t          " No goddamned toolbars
