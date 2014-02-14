@@ -86,6 +86,8 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 # Dotfiles
 bash common.sh
 
+ln -s ~/.dotfiles/.tmux-osx.conf ~/.tmux-osx.conf
+
 echo "    * Installing Homebrew"
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
