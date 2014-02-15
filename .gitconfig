@@ -13,6 +13,7 @@
   ci = commit
   co = checkout
   df = diff
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   st = status
   topic-log = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
   topic-rebase = "!sh -c 'git rebase -i HEAD~`git topic-log | wc -l | tr -d \" \"`' -"
