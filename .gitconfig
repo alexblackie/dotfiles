@@ -8,6 +8,7 @@
   fileMode = false
 
 [alias]
+  aa = add --all
   br = branch
   ci = commit
   co = checkout
