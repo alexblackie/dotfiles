@@ -82,6 +82,8 @@ defaults write com.apple.dock "dashboard-in-overlay" -bool true
 defaults write com.apple.dock wvous-tl-corner -int 2
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
+# Fuck the "elastic scrolling" garbage this isn't mobile
+defaults write -g NSScrollViewRubberbanding -int 0
 
 # Dotfiles
 bash common.sh
