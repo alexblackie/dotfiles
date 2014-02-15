@@ -19,7 +19,6 @@ install:
 
 linuxinstall:
 	mkdir -p ~/.config
-	cp -r ./.config/terminator ~/.config/terminator
 	cp -r ./.config/openbox    ~/.config/openbox
 	cp -r ./.config/tint2      ~/.config/tint2
 	cp -r ./.themes            ~/.themes
