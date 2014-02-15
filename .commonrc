@@ -2,11 +2,13 @@
 # ----------------------------------------
 
 alias ls="ls -Gp"
+alias l="ls"
 alias la="ls -a"
 alias ll="ls -lh"
+alias lal="ls -al"
 
 alias g="git"
-alias e='vim'
+alias v='vim'
 alias gv='gvim'
 
 alias be="bundle exec"
@@ -37,5 +39,3 @@ if [ -d "${CHRUBY_ROOT}" ]; then
   source "$CHRUBY_ROOT/chruby.sh"
   source "$CHRUBY_ROOT/auto.sh"
 fi
-
-# setxkbmap -option caps:escape # Fucking capslock is bullshit
