@@ -15,6 +15,9 @@
   df = diff
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   st = status
+  sta = stash
+  sl = stash list
+  sa = stash apply
   tlog = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
   trebase = "!sh -c 'git rebase -i HEAD~`git tlog | wc -l | tr -d \" \"`' -"
 
