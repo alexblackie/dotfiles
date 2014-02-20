@@ -33,8 +33,8 @@ set t_Co=256        " LOTS OF COLOURS
 
 colorscheme grb256
 
-let &colorcolumn=join(range(81,999),",") " Change BG for > 80 chars
-highlight ColorColumn ctermbg=234 guibg=#222222
+let &colorcolumn=81 " Change show 80-char line
+highlight ColorColumn ctermbg=233 guibg=#151515
 
 if has("gui_running")        " If in GVim
   set guioptions=-t          " No goddamned toolbars
