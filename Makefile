@@ -7,22 +7,18 @@ install:
 	cp -r ./.oh-my-zsh        ~/.oh-my-zsh
 	cp    ./.commonrc         ~/.commonrc
 	cp    ./.gitconfig        ~/.gitconfig
-	cp    ./.fonts.conf       ~/.fonts.conf
 	cp    ./.tmux.conf        ~/.tmux.conf
 	cp -r ./.vim              ~/.vim
 	cp    ./.vimrc            ~/.vimrc
 	cp    ./.gemrc            ~/.gemrc
 	cp    ./.ruby-version     ~/.ruby-version
 	cp    ./.gitignore_global ~/.gitignore_global
-	cp    ./.Xresources       ~/.Xresources
 	cp -r ./.irssi            ~/.irssi
 
 linuxinstall:
-	mkdir -p ~/.config
-	cp -r ./.config/openbox    ~/.config/openbox
-	cp -r ./.config/tint2      ~/.config/tint2
+	cp    ./.fonts.conf       ~/.fonts.conf
 	cp -r ./.themes            ~/.themes
-	cp -r ./.config/awesome    ~/.config/awesome
+	cp    ./.Xresources       ~/.Xresources
 
 osxinstall:
 	chflags nohidden ~/Library
