@@ -20,6 +20,7 @@
   sa = stash apply
   tlog = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
   trebase = "!sh -c 'git rebase -i HEAD~`git tlog | wc -l | tr -d \" \"`' -"
+  tdf = diff master...HEAD
 
 [color]
   ui = auto
