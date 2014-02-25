@@ -27,6 +27,12 @@ set ttymouse=xterm " Set mouse type to xterm.
 
 set backspace=2 " make backspace work like most other apps
 
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
 syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
@@ -74,7 +80,7 @@ let g:ctrlp_custom_ignore     = 'tmp'
 let g:ctrlp_custom_ignore     = 'git\|node_modules\|bower_components\|sass-cache\|js-dist'
 
 " Autoresize.vim
-let g:AUTORESIZE_ANOTHER_WINDOW_WIDTH = 60
+let &winwidth = &columns * 7 / 10
 
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
