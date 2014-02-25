@@ -73,6 +73,9 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore     = 'tmp'
 let g:ctrlp_custom_ignore     = 'git\|node_modules\|bower_components\|sass-cache\|js-dist'
 
+" Autoresize.vim
+let g:AUTORESIZE_ANOTHER_WINDOW_WIDTH = 60
+
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
