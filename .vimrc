@@ -80,7 +80,7 @@ let g:ctrlp_custom_ignore     = 'tmp'
 let g:ctrlp_custom_ignore     = 'git\|node_modules\|bower_components\|sass-cache\|js-dist'
 
 " Autoresize.vim
-let &winwidth = &columns * 7 / 10
+let &winwidth = 90
 
 " Tabular.vim
 nmap <Leader>a= :Tabularize /=<CR>
