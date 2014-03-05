@@ -2,6 +2,27 @@ setup:
 	git submodule init
 	git submodule update
 
+clean:
+	rm -rf ~/.zshrc
+	rm -rf ~/.oh-my-zsh
+	rm -rf ~/.commonrc
+	rm -rf ~/.gitconfig
+	rm -rf ~/.tmux.conf
+	rm -rf ~/.vim
+	rm -rf ~/.vimrc
+	rm -rf ~/.gemrc
+	rm -rf ~/.ruby-version
+	rm -rf ~/.gitignore_global
+	rm -rf ~/.irssi
+
+linuxclean:
+	rm -rf ~/.fonts.conf
+	rm -rf ~/.themes
+	rm -rf ~/.Xresources
+
+osxclean:
+	rm -rf ~/.tmux-osx.conf
+
 install:
 	cp    ./.zshrc            ~/.zshrc
 	cp -r ./.oh-my-zsh        ~/.oh-my-zsh
