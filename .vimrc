@@ -11,6 +11,8 @@ set pastetoggle=<F2> " Stop the insane cascading-indents when pasting
 
 set nowrap " Line wrapping is a sin
 
+set nocompatible
+
 " FUCK them bells
 set noerrorbells
 set novisualbell
