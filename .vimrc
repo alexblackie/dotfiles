@@ -56,10 +56,6 @@ let g:airline_powerline_fonts = 1 " Dem Symbols
 
 set list listchars=tab:»·,trail:· " show extra space characters
 
-" Show leading whitespace
-syn match LeadingWS /\(^\s*\)\@<=\s/ conceal cchar=·
-setlocal conceallevel=2 concealcursor=nv
-
 " System
 set noswapfile " Don't fucking care
 set nobackup   " YOLO
