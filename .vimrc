@@ -101,3 +101,5 @@ map <leader>qq :cclose<CR>
 augroup filetypedetect
   autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown :set textwidth=80
 augroup END
+
+autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
