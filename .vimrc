@@ -1,3 +1,6 @@
+" Fix the shit
+set enc=utf-8
+
 " Pathogen FTW
 call pathogen#infect()
 
