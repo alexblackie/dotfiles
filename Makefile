@@ -71,4 +71,5 @@ osxinstall:
 	defaults write com.apple.dock wvous-tl-corner -int 2
 	defaults write com.apple.dock wvous-tl-modifier -int 0
 	defaults write -g NSScrollViewRubberbanding -int 0
+	defaults write com.apple.finder CreateDesktop -bool false
 	cp ./.tmux-osx.conf ~/.tmux-osx.conf

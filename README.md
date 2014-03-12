@@ -49,6 +49,7 @@ below.
 * Don't ask about emptying the trash
 * Show all filename extensions
 * Always show expanded save dialogue
+* Disable the desktop (completely; no files, no drives--NOTHING!)
 
 ### Safari
 * Show develop menu
