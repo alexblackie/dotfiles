@@ -42,7 +42,7 @@ syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
 
-colorscheme grb256 " Terminal colourscheme; fits well with mostly everything
+colorscheme base16-tomorrow
 
 let &colorcolumn=81 " Change show 80-char line
 highlight ColorColumn ctermbg=233 guibg=#151515
