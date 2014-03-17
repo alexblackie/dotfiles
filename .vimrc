@@ -42,12 +42,13 @@ syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
 
-colorscheme base16-tomorrow
+colorscheme grb256 " Fits with terminal colours better
 
 let &colorcolumn=81 " Change show 80-char line
 highlight ColorColumn ctermbg=233 guibg=#151515
 
 if has("gui_running")        " If in GVim
+  colorscheme base16-tomorrow
   set guioptions=-t          " No goddamned toolbars
   set guifont=Source\ Code\ Pro\ for\ Powerline\ 11
 endif
