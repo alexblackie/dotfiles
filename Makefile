@@ -16,7 +16,7 @@ clean:
 	rm -rf ~/.irssi
 
 linuxclean:
-	rm -rf ~/.fonts.conf
+	rm -rf ~/.config/fontconfig/fonts.conf
 	rm -rf ~/.themes
 	rm -rf ~/.Xresources
 
@@ -37,8 +37,8 @@ install:
 	cp -r ./.irssi            ~/.irssi
 
 linuxinstall:
-	cp    ./.fonts.conf       ~/.fonts.conf
-	cp -r ./.themes            ~/.themes
+	cp    ./.fonts.conf       ~/.config/fontconfig/fonts.conf
+	cp -r ./.themes           ~/.themes
 	cp    ./.Xresources       ~/.Xresources
 
 osxinstall:
