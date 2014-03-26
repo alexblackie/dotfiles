@@ -38,6 +38,9 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+
 syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 set t_Co=256        " LOTS OF COLOURS
@@ -56,8 +59,6 @@ endif
 if has("gui_macvim")    " If on a Mac
   set guifont=Source\ Code\ Pro\ for\ Powerline:h14 " Fuck you, OSX Vim and your different syntax and font sizes
 endif
-
-let g:airline_powerline_fonts = 1 " Dem Symbols
 
 set list listchars=tab:»·,trail:· " show extra space characters
 
