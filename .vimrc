@@ -53,11 +53,11 @@ highlight ColorColumn ctermbg=233 guibg=#151515
 if has("gui_running")        " If in GVim
   colorscheme base16-tomorrow
   set guioptions=-t          " No goddamned toolbars
-  set guifont=Source\ Code\ Pro\ for\ Powerline\ 14
+  set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
 endif
 
 if has("gui_macvim")    " If on a Mac
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h16 " Fuck you, OSX Vim and your different syntax and font sizes
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h11 " Fuck you, OSX Vim and your different syntax and font sizes
 endif
 
 set list listchars=tab:»·,trail:· " show extra space characters
