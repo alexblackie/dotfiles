@@ -28,7 +28,12 @@ set ruler " Show the cursor position
 
 set title          " Show the filename in the window titlebar.
 set ttyfast        " Send more characters at a given time.
-set ttymouse=xterm " Set mouse type to xterm.
+
+if has("mouse_sgr") " Fix mouse for really large Vim windows
+  set ttymouse=sgr
+else
+  set ttymouse=xterm2
+end
 
 set backspace=2 " make backspace work like most other apps
 
