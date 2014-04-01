@@ -107,6 +107,6 @@ map <leader>qq :cclose<CR>
 " Filetype-specific overrides
 augroup filetypedetect
   autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown :set textwidth=80
+  autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG :set textwidth=72
+  autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
 augroup END
-
-autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
