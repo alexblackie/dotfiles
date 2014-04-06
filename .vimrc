@@ -110,3 +110,9 @@ augroup filetypedetect
   autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG :set textwidth=72
   autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
 augroup END
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
