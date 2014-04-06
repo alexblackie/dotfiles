@@ -13,7 +13,6 @@ clean:
 	rm -rf ~/.gemrc
 	rm -rf ~/.ruby-version
 	rm -rf ~/.gitignore_global
-	rm -rf ~/.irssi
 
 linuxclean:
 	rm -rf ~/.config/fontconfig/fonts.conf
@@ -34,7 +33,6 @@ install:
 	cp    ./.gemrc            ~/.gemrc
 	cp    ./.ruby-version     ~/.ruby-version
 	cp    ./.gitignore_global ~/.gitignore_global
-	cp -r ./.irssi            ~/.irssi
 
 linuxinstall:
 	cp    ./.fonts.conf       ~/.config/fontconfig/fonts.conf
