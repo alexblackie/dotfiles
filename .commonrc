@@ -1,27 +1,27 @@
 # Aliases
 # ----------------------------------------
 
-alias ls="ls -Gp"
-alias l="ls"
-alias la="ls -a"
-alias ll="ls -lh"
-alias lal="ls -al"
+alias ls='ls -Gp'
+alias l='ls'
+alias la='ls -a'
+alias ll='ls -lh'
+alias lal='ls -al'
 
-alias g="git"
+alias g='git'
 alias v='vim'
 alias gv='gvim'
 
-alias be="bundle exec"
-alias rake="bundle exec rake"
-alias ann="bundle exec annotate"
+alias be='bundle exec'
+alias rake='bundle exec rake'
+alias ann='bundle exec annotate'
 alias bems='bundle exec middleman server'
+alias befs='bundl exec foreman start'
 alias fr='foreman run'
 
 alias fucking='sudo'
 alias :wq='exit'
 alias :q='exit'
 alias yolo='git push -f origin'
-alias vag='vagrant'
 
 
 # Libraries/Imports
@@ -32,9 +32,9 @@ if [ -f ~/.env ]; then
   source ~/.env
 fi
 
-export EDITOR="vim"
+export EDITOR='vim'
 
-export CHRUBY_ROOT="/usr/local/share/chruby"
+export CHRUBY_ROOT='/usr/local/share/chruby'
 if [ -d "${CHRUBY_ROOT}" ]; then
   source "$CHRUBY_ROOT/chruby.sh"
   source "$CHRUBY_ROOT/auto.sh"
