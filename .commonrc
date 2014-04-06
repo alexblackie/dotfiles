@@ -15,7 +15,7 @@ alias be='bundle exec'
 alias rake='bundle exec rake'
 alias ann='bundle exec annotate'
 alias bems='bundle exec middleman server'
-alias befs='bundl exec foreman start'
+alias befs='bundle exec foreman start'
 alias fr='foreman run'
 
 alias fucking='sudo'
