@@ -111,8 +111,10 @@ augroup filetypedetect
   autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
 augroup END
 
-" RSpec.vim mappings
+" RSpec.vim
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_runner = "os_x_iterm"
