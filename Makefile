@@ -16,7 +16,6 @@ clean:
 
 linuxclean:
 	rm -rf ~/.config/fontconfig/fonts.conf
-	rm -rf ~/.themes
 	rm -rf ~/.Xresources
 
 osxclean:
