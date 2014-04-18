@@ -45,7 +45,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/bin:./node_modules/.bin:$PATH
+export PATH=$HOME/bin:./node_modules/.bin:./bin:$PATH
 
 # My custom things
 setopt nocorrectall; setopt correct # Don't offer corrections for arguments, just commands
