@@ -17,6 +17,7 @@
   pu = push -u
   p  = push
   pl = pull
+  pul = pull
   st = status
   sta = stash
   sl = stash list
