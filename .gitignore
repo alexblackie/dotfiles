@@ -1,10 +1,2 @@
-# Ignore BT Sync shit
-.SyncID
-.SyncIgnore
-.SyncArchive
-
 # Ignore Vim's netrwhist
 .vim/.netrwhist
-
-# Ignore playlists in deadbeef
-.config/deadbeef/playlists
