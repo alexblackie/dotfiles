@@ -118,3 +118,4 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_runner = "os_x_iterm"
+let g:rspec_command = "!foreman run rspec {spec}"
