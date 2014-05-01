@@ -86,7 +86,7 @@ endfor
 " CtrlP.vim
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore     = 'tmp'
-let g:ctrlp_custom_ignore     = 'git\|node_modules\|bower_components\|sass-cache\|coverage'
+let g:ctrlp_custom_ignore     = 'git\|node_modules\|bower_components\|sass-cache\|coverage\|build'
 
 " Autoresize.vim
 let &winwidth = 90
