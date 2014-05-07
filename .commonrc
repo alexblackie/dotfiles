@@ -1,6 +1,5 @@
 # Aliases
 # ----------------------------------------
-
 alias ls='ls -Gp'
 alias l='ls'
 alias la='ls -a'
@@ -37,3 +36,7 @@ if [ -d "${CHRUBY_ROOT}" ]; then
   source "$CHRUBY_ROOT/chruby.sh"
   source "$CHRUBY_ROOT/auto.sh"
 fi
+
+# PATH
+# ----------------------------------------
+export PATH=$HOME/bin:./node_modules/.bin:./bin:$PATH
