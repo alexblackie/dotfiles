@@ -109,6 +109,7 @@ augroup filetypedetect
   autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown :set textwidth=80
   autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG :set textwidth=72
   autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
+  autocmd BufNewFile,BufReadPost *.styl set filetype=sass
 augroup END
 
 " RSpec.vim
