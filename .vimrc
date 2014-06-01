@@ -56,7 +56,7 @@ let &colorcolumn=81 " Change show 80-char line
 highlight ColorColumn ctermbg=233 guibg=#151515
 
 if has("gui_running")        " If in GVim
-  colorscheme base16-tomorrow
+  colorscheme base16-atelierlakeside
   set guioptions=-t          " No goddamned toolbars
   set guifont=Source\ Code\ Pro\ for\ Powerline\ 11
 endif
