@@ -76,3 +76,6 @@
 [submodule ".vim/bundle/vim-dispatch"]
 	path = .vim/bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
+[submodule ".vim/bundle/jshint.vim"]
+	path = .vim/bundle/jshint.vim
+	url = https://github.com/wookiehangover/jshint.vim.git
