@@ -76,6 +76,9 @@ set magic         " Enable extended regexes.
 set mouse=a       " Enable moouse in all in all modes.
 set incsearch     " show search results in 'real-time'
 
+set exrc    " enable per-directory .vimrc files
+set secure  " disable unsafe commands in local .vimrc files
+
 " Kick the arrow key habit
 for prefix in ['i', 'n', 'v']
   for key in ['<Up>', '<Down>', '<Left>', '<Right>']
