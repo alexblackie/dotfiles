@@ -1848,15 +1848,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>821 77 459 270 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>3040 416 924 485 2560 360 1920 1080 </string>
+	<string>172 56 605 485 0 0 1280 800 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>877 4 400 129 0 0 1280 778 </string>
+	<string>1051 809 400 129 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlertFrame</key>
 	<string>992 784 575 392 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2870 608 650 552 2560 360 1920 1058 </string>
+	<string>2560 362 1914 1056 2560 360 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>866 77 1658 948 0 0 2560 1418 </string>
+	<string>268 90 2074 1290 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>834 11 1074 945 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_E3E47718-920D-40CE-971C-4CEB27FA42C3</key>
@@ -2131,7 +2131,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -4278,7 +4278,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-06-06T20:42:12Z</date>
+	<date>2014-06-10T19:04:23Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -4326,7 +4326,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20140601-nightly</string>
+	<string>1.0.0.20140606-nightly</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>kPreferenceKeyWindowStyle</key>
