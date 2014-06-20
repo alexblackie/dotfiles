@@ -62,7 +62,7 @@ if has("gui_running")        " If in GVim
 endif
 
 if has("gui_macvim")    " If on a Mac
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+  set guifont=Menlo:h11
 endif
 
 set list listchars=tab:»·,trail:· " show extra space characters
