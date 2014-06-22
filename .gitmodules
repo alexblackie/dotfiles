@@ -61,9 +61,6 @@
 [submodule ".vim/bundle/jellybeans.vim"]
 	path = .vim/bundle/jellybeans.vim
 	url = https://github.com/nanotech/jellybeans.vim.git
-[submodule ".ruby-install"]
-	path = .ruby-install
-	url = https://github.com/postmodern/ruby-install.git
 [submodule ".vim/bundle/unimpaired"]
 	path = .vim/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
