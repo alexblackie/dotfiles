@@ -34,8 +34,10 @@ install:
 	cp    ./gitignore_global ~/.gitignore_global
 
 linuxinstall:
-	cp    ./fonts.conf       ~/.config/fontconfig/fonts.conf
-	cp    ./Xresources       ~/.Xresources
+	mkdir -p ~/.config/fontconfig ~/.config/terminator
+	cp ./fonts.conf  ~/.config/fontconfig/fonts.conf
+	cp ./Xresources  ~/.Xresources
+	cp ./config/terminator/config ~/.config/terminator/config
 
 osxinstall:
 	chflags nohidden ~/Library
