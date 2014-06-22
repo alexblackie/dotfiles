@@ -22,21 +22,21 @@ osxclean:
 	rm -rf ~/.tmux-osx.conf
 
 install:
-	cp    ./.zshrc            ~/.zshrc
-	cp -r ./.oh-my-zsh        ~/.oh-my-zsh
-	cp    ./.commonrc         ~/.commonrc
-	cp    ./.gitconfig        ~/.gitconfig
-	cp    ./.tmux.conf        ~/.tmux.conf
-	cp -r ./.vim              ~/.vim
-	cp    ./.vimrc            ~/.vimrc
-	cp    ./.gemrc            ~/.gemrc
-	cp    ./.ruby-version     ~/.ruby-version
-	cp    ./.gitignore_global ~/.gitignore_global
+	cp    ./zshrc            ~/.zshrc
+	cp -r ./oh-my-zsh        ~/.oh-my-zsh
+	cp    ./commonrc         ~/.commonrc
+	cp    ./gitconfig        ~/.gitconfig
+	cp    ./tmux.conf        ~/.tmux.conf
+	cp -r ./vim              ~/.vim
+	cp    ./vimrc            ~/.vimrc
+	cp    ./gemrc            ~/.gemrc
+	cp    ./ruby-version     ~/.ruby-version
+	cp    ./gitignore_global ~/.gitignore_global
 
 linuxinstall:
-	cp    ./.fonts.conf       ~/.config/fontconfig/fonts.conf
-	cp -r ./.themes           ~/.themes
-	cp    ./.Xresources       ~/.Xresources
+	cp    ./fonts.conf       ~/.config/fontconfig/fonts.conf
+	cp -r ./themes           ~/.themes
+	cp    ./Xresources       ~/.Xresources
 
 osxinstall:
 	chflags nohidden ~/Library
@@ -68,4 +68,4 @@ osxinstall:
 	defaults write com.apple.dock wvous-tl-corner -int 2
 	defaults write com.apple.dock wvous-tl-modifier -int 0
 	defaults write -g NSScrollViewRubberbanding -int 0
-	cp ./.tmux-osx.conf ~/.tmux-osx.conf
+	cp ./tmux-osx.conf ~/.tmux-osx.conf
