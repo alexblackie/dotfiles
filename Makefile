@@ -35,7 +35,6 @@ install:
 
 linuxinstall:
 	cp    ./fonts.conf       ~/.config/fontconfig/fonts.conf
-	cp -r ./themes           ~/.themes
 	cp    ./Xresources       ~/.Xresources
 
 osxinstall:
