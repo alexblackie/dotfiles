@@ -79,9 +79,6 @@ nnoremap <c-l> <c-w>l
 " Quick-close quickfix
 map <leader>qq :cclose<CR>
 
-" Selecta as CtrlP (muscle memory)
-nnoremap <C-p> :call SelectaCommand("find * -type f", "", ":e")<cr>
-
 
 " ------------------------------------------------------------------------------
 "  Filetype-specific overrides
@@ -119,17 +116,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_runner = "os_x_iterm"
 let g:rspec_command = "!foreman run rspec {spec}"
 
-" Selecta
-" -------
-function! SelectaCommand(choice_command, selecta_args, vim_command)
-  try
-    silent let selection = system(a:choice_command . " | selecta " . a:selecta_args)
-  catch /Vim:Interrupt/
-    " Swallow the ^C so that the redraw below happens; otherwise there will be
-    " leftovers from selecta on the screen
-    redraw!
-    return
-  endtry
-  redraw!
-  exec a:vim_command . " " . selection
-endfunction
+" CtrlP.vim
+" ---------
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore     = '\v[\/]\.(git|hg|svn|sass-cache)$'
+let g:ctrlp_custom_ignore     = 'node_modules\|bower_components\|coverage\|build'
+let g:ctrlp_user_command      = 'ag %s -l --nocolor -g ""'
