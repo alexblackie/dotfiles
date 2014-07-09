@@ -24,7 +24,7 @@ set tabstop=2        " 2-space tabs
 syntax on           " COLOURS!!!11!1
 
 set background=dark " The only way to code is in darkness
-colorscheme grb256  " Works very well with almost all terminal colour schemes
+colorscheme solarized  " Works very well with almost all terminal colour schemes
 
 highlight ColorColumn ctermbg=233 guibg=black
 
