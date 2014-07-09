@@ -116,6 +116,11 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_runner = "os_x_iterm"
 let g:rspec_command = "!foreman run rspec {spec}"
 
+" Airline.vim
+" -----------
+let g:airline_left_sep  = ''
+let g:airline_right_sep = ''
+
 " CtrlP.vim
 " ---------
 let g:ctrlp_working_path_mode = 0
