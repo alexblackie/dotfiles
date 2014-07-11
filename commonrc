@@ -22,6 +22,11 @@ alias :q='exit'
 alias yolo='git push -f origin'
 alias fucking='sudo'
 
+if hash hub 2>/dev/null; then
+  # Disabled for machines without Hub (servers, etc)
+  alias git='hub'
+fi
+
 
 # ------------------------------------------------------------------------------
 # Libraries/Imports
