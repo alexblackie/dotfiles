@@ -4,7 +4,7 @@ setup:
 
 clean:
 	rm -rf ~/.zshrc
-	rm -rf ~/.oh-my-zsh
+	rm -rf ~/.zsh
 	rm -rf ~/.commonrc
 	rm -rf ~/.gitconfig
 	rm -rf ~/.tmux.conf
@@ -23,7 +23,7 @@ osxclean:
 
 install:
 	cp    ./zshrc            ~/.zshrc
-	cp -r ./oh-my-zsh        ~/.oh-my-zsh
+	cp -r ./zsh              ~/.zsh
 	cp    ./commonrc         ~/.commonrc
 	cp    ./gitconfig        ~/.gitconfig
 	cp    ./tmux.conf        ~/.tmux.conf
