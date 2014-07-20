@@ -8,6 +8,9 @@ alias ll='ls -lh'
 alias lal='ls -al'
 
 alias g='git'
+alias gst='git status'
+alias gp='git push'
+
 alias v='vim'
 alias gv='gvim'
 
