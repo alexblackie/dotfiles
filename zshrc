@@ -26,6 +26,10 @@ zle -N history-substring-search-up
 
 zmodload zsh/terminfo
 
+# Tab-completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
+
 # Autocorrection
 setopt nocorrectall # disable for arguments
 setopt correct
