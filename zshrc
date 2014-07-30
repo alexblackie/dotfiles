@@ -82,11 +82,13 @@ bindkey "^[[A" history-substring-search-up
 bindkey "^[0A" history-substring-search-up
 
 # Enable HOME key
+bindkey "^[[H" beginning-of-line
 if [[ "${terminfo[khome]}" != "" ]]; then
   bindkey "${terminfo[khome]}" beginning-of-line
 fi
 
 # Enable END key
+bindkey "^[[F" end-of-line
 if [[ "${terminfo[kend]}" != "" ]]; then
   bindkey "${terminfo[kend]}"  end-of-line
 fi
