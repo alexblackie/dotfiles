@@ -133,3 +133,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore     = '\v[\/]\.(git|hg|svn|sass-cache)$'
 let g:ctrlp_custom_ignore     = 'node_modules\|bower_components\|coverage\|build'
 let g:ctrlp_user_command      = 'ag %s -l --nocolor -g ""'
+
+" Markdown.vim
+" ------------
+let g:vim_markdown_folding_disabled = 1
