@@ -79,6 +79,9 @@ nnoremap <c-l> <c-w>l
 " Quick-close quickfix
 map <leader>qq :cclose<CR>
 
+" Run current file as a script
+map <leader>r :!./%<CR>
+
 
 " ------------------------------------------------------------------------------
 "  Filetype-specific overrides
