@@ -82,6 +82,8 @@ map <leader>qq :cclose<CR>
 " Run current file as a script
 map <leader>r :!./%<CR>
 
+" Compile and run Elixir in Vagrant
+map <leader>E :!elixir %<CR>
 
 " ------------------------------------------------------------------------------
 "  Filetype-specific overrides
