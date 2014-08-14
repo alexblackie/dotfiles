@@ -85,6 +85,9 @@ map <leader>r :!./%<CR>
 " Compile and run Elixir in Vagrant
 map <leader>E :!elixir %<CR>
 
+" Run current ExUnit file
+map <leader>et :!mix test %<CR>
+
 " ------------------------------------------------------------------------------
 "  Filetype-specific overrides
 " ------------------------------------------------------------------------------
