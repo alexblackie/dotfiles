@@ -23,6 +23,8 @@ alias fr='bundle exec foreman run'
 
 alias vag='vagrant'
 
+alias mc='mix compile'
+
 alias :wq='exit'
 alias :q='exit'
 alias yolo='git push -f origin'
