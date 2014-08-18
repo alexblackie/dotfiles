@@ -1859,9 +1859,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1028 347 445 269 0 0 2560 1418 </string>
+	<string>835 4 445 269 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1169 236 924 485 0 0 2560 1418 </string>
+	<string>356 60 924 485 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1368 86 1130 656 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -2430,11 +2430,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Menlo-Regular 14</string>
+			<string>AndaleMono 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>AndaleMono 12</string>
+			<string>AndaleMono 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
