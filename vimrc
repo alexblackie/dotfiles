@@ -88,6 +88,10 @@ map <leader>E :!elixir %<CR>
 " Run current ExUnit file
 map <leader>et :!mix test %<CR>
 
+" Center things
+map <leader>c :center<CR>
+
+
 " ------------------------------------------------------------------------------
 "  Filetype-specific overrides
 " ------------------------------------------------------------------------------
