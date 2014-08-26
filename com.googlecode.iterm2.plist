@@ -1188,6 +1188,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSColorPanelMode</key>
+	<string>6</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSFontPanelPreviewHeight</key>
@@ -1228,12 +1230,14 @@
 		<key>TB Size Mode</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>586 469 214 309 0 0 1280 800 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>835 58 445 269 0 0 2560 1418 </string>
+	<string>835 378 445 266 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>356 60 924 485 0 0 1280 778 </string>
+	<string>1172 213 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 778 0 0 1280 778 </string>
+	<string>19 42 1256 716 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>4 151 1130 656 0 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_006D7579-60AD-450A-B121-44E041D5B142</key>
@@ -1294,7 +1298,7 @@
 				<key>Blue Component</key>
 				<real>1</real>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.5136532187461853</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -1348,9 +1352,9 @@
 				<key>Blue Component</key>
 				<real>0.85894733667373657</real>
 				<key>Green Component</key>
-				<real>0.034443430602550507</real>
+				<real>0.36636289954185486</real>
 				<key>Red Component</key>
-				<real>0.12391651421785355</real>
+				<real>0.0</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -2781,7 +2785,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-08-18T03:37:52Z</date>
+	<date>2014-08-23T05:13:57Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
