@@ -76,6 +76,6 @@
 [submodule "vim/bundle/rust.vim"]
 	path = vim/bundle/rust.vim
 	url = https://github.com/wting/rust.vim.git
-[submodule "vim/vim/bundle/vim-scala"]
-	path = vim/vim/bundle/vim-scala
+[submodule "vim/bundle/vim-scala"]
+	path = vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
