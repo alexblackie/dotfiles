@@ -31,6 +31,7 @@ URxvt*.scrollBar:   false
 URxvt*.cursorBlink: 1
 URxvt*.foreground:  #e8e8d3
 URxvt.font: xft:Terminus\ \(TTF\):size=12
+URxvt.boldFont:
 
 
 ! ------------------------------------------------------------------------------
