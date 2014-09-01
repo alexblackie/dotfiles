@@ -1,33 +1,28 @@
 ! ------------------------------------------------------------------------------
-! Jellybeans Terminal Colours
+! Tango Terminal Colours
 ! ------------------------------------------------------------------------------
+URxvt*background:     #222222
+URxvt*foreground:     #eeeeec
+URxvt*cursorColor:    #8ae234
+URxvt*colorUL:        #999999
+URxvt*underlineColor: #999999
+URxvt*color0:         #2e3436
+URxvt*color8:         #6e706b
+URxvt*color1:         #cc0000
+URxvt*color9:         #ef2929
+URxvt*color2:         #4e9a06
+URxvt*color10:        #8ae234
+URxvt*color3:         #edd400
+URxvt*color11:        #fce94f
+URxvt*color4:         #3465a4
+URxvt*color12:        #729fcf
+URxvt*color5:         #92659a
+URxvt*color13:        #c19fbe
+URxvt*color6:         #07c7ca
+URxvt*color14:        #63e9e9
+URxvt*color7:         #d3d7cf
+URxvt*color15:        #eeeeec
 
-*background: #151515
-*foreground: #888888
-! black
-*color0: #1C1C1C
-*color8: #404040
-! red
-*color1: #B85335
-*color9: #CF6A4C
-! green
-*color2: #799D6A
-*color10: #99AD6A
-! yellow
-*color3: #FFB964
-*color11: #FAD07A
-! blue
-*color4: #667899
-*color12: #8197BF
-! magenta
-*color5: #8787AF
-*color13: #C6B6EE
-! cyan
-*color6: #668799
-*color14: #8FBFDC
-! white
-*color7: #888888
-*color15: #E8E8D3
 
 ! ------------------------------------------------------------------------------
 ! URxvt
@@ -35,7 +30,8 @@
 URxvt*.scrollBar:   false
 URxvt*.cursorBlink: 1
 URxvt*.foreground:  #e8e8d3
-URxvt.font: xft:Source\ Code\ Pro\ for\ Powerline:size=12
+URxvt.font: xft:Terminus\ \(TTF\):size=12
+
 
 ! ------------------------------------------------------------------------------
 ! Unfuck home/end keys
