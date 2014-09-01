@@ -1,7 +1,7 @@
 ! ------------------------------------------------------------------------------
 ! Tango Terminal Colours
 ! ------------------------------------------------------------------------------
-URxvt*background:     #222222
+URxvt*background:     #0a0a0a
 URxvt*foreground:     #eeeeec
 URxvt*cursorColor:    #8ae234
 URxvt*colorUL:        #999999
