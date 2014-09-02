@@ -46,7 +46,12 @@ else
 end
 
 if has("gui_running")
+  set background=dark
+  colorscheme base16-atelierlakeside
+
   set guioptions=-t " No goddamned toolbars
+  set guifont=Terminus\ \(TTF\):h16
+  set noantialias
 endif
 
 set list listchars=tab:»·,trail:· " show extra space characters
@@ -82,7 +87,7 @@ map <leader>qq :cclose<CR>
 " Run current file as a script
 map <leader>r :!./%<CR>
 
-" Compile and run Elixir in Vagrant
+" Compile and run Elixir
 map <leader>E :!elixir %<CR>
 
 " Run current ExUnit file
