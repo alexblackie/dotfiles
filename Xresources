@@ -4,8 +4,8 @@
 URxvt*background:     #0a0a0a
 URxvt*foreground:     #eeeeec
 URxvt*cursorColor:    #8ae234
-URxvt*colorUL:        #999999
-URxvt*underlineColor: #999999
+URxvt*colorUL:        #eeeeec
+URxvt*underlineColor: #454545
 URxvt*color0:         #2e3436
 URxvt*color8:         #6e706b
 URxvt*color1:         #cc0000
