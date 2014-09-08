@@ -2,4 +2,5 @@
 setxkbmap -option caps:escape &
 xset r rate 220 34 &
 nm-applet &
+sh ~/.fehbg &
 exec i3
