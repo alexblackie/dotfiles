@@ -82,3 +82,6 @@
 [submodule "vim/bundle/vim-twig"]
 	path = vim/bundle/vim-twig
 	url = https://github.com/evidens/vim-twig.git
+[submodule "webshots"]
+	path = webshots
+	url = https://github.com/alexblackie/webshots.git

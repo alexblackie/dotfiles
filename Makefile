@@ -14,6 +14,7 @@ clean:
 	rm -rf ~/.ruby-version
 	rm -rf ~/.gitignore_global
 	rm -rf ~/.agignore
+	rm -rf ~/.webshots
 
 linuxclean:
 	rm -rf ~/.config/fontconfig/fonts.conf
@@ -36,6 +37,7 @@ install:
 	cp    ./ruby-version     ~/.ruby-version
 	cp    ./gitignore_global ~/.gitignore_global
 	cp    ./agignore         ~/.agignore
+	cp -r ./webshots         ~/.webshots
 
 linuxinstall:
 	mkdir -p ~/.config/fontconfig ~/.config/terminator
