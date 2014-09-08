@@ -19,6 +19,7 @@ linuxclean:
 	rm -rf ~/.config/fontconfig/fonts.conf
 	rm -rf ~/.Xresources
 	rm -rf ~/.i3
+	rm -rf ~/.i3status.conf
 
 osxclean:
 	rm -rf ~/.tmux-osx.conf
@@ -38,10 +39,11 @@ install:
 
 linuxinstall:
 	mkdir -p ~/.config/fontconfig ~/.config/terminator
-	cp ./fonts.conf               ~/.config/fontconfig/fonts.conf
-	cp ./Xresources               ~/.Xresources
-	cp ./config/terminator/config ~/.config/terminator/config
-	cp ./i3                       ~/.i3
+	cp    ./fonts.conf               ~/.config/fontconfig/fonts.conf
+	cp    ./Xresources               ~/.Xresources
+	cp    ./config/terminator/config ~/.config/terminator/config
+	cp -r ./i3                       ~/.i3
+	cp    ./i3status.conf            ~/.i3status.conf
 
 osxinstall:
 	chflags nohidden ~/Library
