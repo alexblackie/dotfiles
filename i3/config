@@ -24,6 +24,9 @@ bindsym $mod+Shift+q kill
 # start dmenu
 bindsym $mod+d exec dmenu_run
 
+# start xscreensaver
+bindsym $mod+Shift+s exec xscreensaver-command --lock
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
