@@ -21,6 +21,7 @@ linuxclean:
 	rm -rf ~/.Xresources
 	rm -rf ~/.i3
 	rm -rf ~/.i3status.conf
+	rm -rf ~/.xinitrc
 
 osxclean:
 	rm -rf ~/.tmux-osx.conf
@@ -46,6 +47,7 @@ linuxinstall:
 	cp    ./config/terminator/config ~/.config/terminator/config
 	cp -r ./i3                       ~/.i3
 	cp    ./i3status.conf            ~/.i3status.conf
+	cp    ./xinitrc                  ~/.xinitrc
 
 osxinstall:
 	chflags nohidden ~/Library
