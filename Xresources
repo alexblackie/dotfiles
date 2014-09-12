@@ -2,7 +2,7 @@
 ! Tango Terminal Colours
 ! ------------------------------------------------------------------------------
 ! URxvt
-URxvt*background:     #0a0a0a
+URxvt*background:     #2d2d2d
 URxvt*foreground:     #eeeeec
 URxvt*cursorColor:    #8ae234
 URxvt*colorUL:        #eeeeec
@@ -25,7 +25,7 @@ URxvt*color7:         #d3d7cf
 URxvt*color15:        #eeeeec
 
 ! XTerm
-XTerm*background:     #0a0a0a
+XTerm*background:     #2d2d2d
 XTerm*foreground:     #eeeeec
 XTerm*cursorColor:    #8ae234
 XTerm*colorUL:        #eeeeec
@@ -54,7 +54,7 @@ XTerm*color15:        #eeeeec
 URxvt*.scrollBar:   false
 URxvt*.cursorBlink: 1
 URxvt*.foreground:  #e8e8d3
-URxvt.font:         xft:    Terminus\ \(TTF\): size=12
+URxvt.font:         xft:Terminus\ \(TTF\): size=12
 URxvt.boldFont:
 URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
@@ -63,5 +63,5 @@ URxvt*keysym.End: \033[4~
 ! ------------------------------------------------------------------------------
 ! XTerm
 ! ------------------------------------------------------------------------------
-XTerm*faceName:       Terminus\ \(TTF\): size=12: antialias=false
+XTerm*faceName:       Terminus\ \(TTF\): size=14: antialias=false
 XTerm*allowBoldFonts: false
