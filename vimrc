@@ -24,7 +24,7 @@ set tabstop=2        " 2-space tabs
 syntax on           " COLOURS!!!11!1
 
 set background=dark " The only way to code is in darkness
-colorscheme default
+colorscheme solarized
 
 highlight ColorColumn ctermbg=233 guibg=black
 
@@ -47,7 +47,7 @@ end
 
 if has("gui_running")
   set background=dark
-  colorscheme base16-atelierlakeside
+  colorscheme solarized
 
   set guioptions=-t " No goddamned toolbars
   set guifont=Terminus\ \(TTF\):h16
