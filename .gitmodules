@@ -85,3 +85,6 @@
 [submodule "webshots"]
 	path = webshots
 	url = https://github.com/alexblackie/webshots.git
+[submodule "vim/bundle/colorschemes"]
+	path = vim/bundle/colorschemes
+	url = git@github.com:flazz/vim-colorschemes.git
