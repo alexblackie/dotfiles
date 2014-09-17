@@ -7,3 +7,4 @@ build
 .svn
 .hg
 .sass-cache
+_build
