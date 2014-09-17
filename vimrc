@@ -39,12 +39,6 @@ set t_Co=256        " LOTS OF COLOURS
 set title           " Show the filename in the window titlebar.
 set ttyfast         " Send more characters at a given time.
 
-if has("mouse_sgr") " Fix mouse for really large Vim windows
-  set ttymouse=sgr
-else
-  set ttymouse=xterm2
-end
-
 if has("gui_running")
   set background=dark
   colorscheme solarized
@@ -62,7 +56,6 @@ set list listchars=tab:»·,trail:· " show extra space characters
 " ------------------------------------------------------------------------------
 set exrc          " enable per-directory .vimrc files
 set magic         " Enable extended regexes
-set mouse=a       " Enable mouse in all in all modes
 set nobackup      " Call me naive, but Vim has never crashed
 set nostartofline " Don't reset cursor to start of line when moving around.
 set noswapfile    " Seriously don't care
@@ -80,6 +73,12 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" Unlearn peasantry
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 " Quick-close quickfix
 map <leader>qq :cclose<CR>
