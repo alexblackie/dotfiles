@@ -24,7 +24,7 @@ set tabstop=2        " 2-space tabs
 syntax on           " COLOURS!!!11!1
 
 set background=dark " The only way to code is in darkness
-colorscheme solarized
+colorscheme default
 
 highlight ColorColumn ctermbg=233 guibg=black
 
@@ -44,7 +44,7 @@ if has("gui_running")
   colorscheme solarized
 
   set guioptions=-t " No goddamned toolbars
-  set guifont=Terminus\ \(TTF\):h16
+  set guifont=Source\ Code\ Pro\ 12
   set noantialias
 endif
 
@@ -136,7 +136,7 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-let g:rspec_runner = "os_x_iterm"
+let g:rspec_runner  = "os_x_iterm"
 let g:rspec_command = "!foreman run rspec {spec}"
 
 " Airline.vim
