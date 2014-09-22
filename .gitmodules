@@ -88,3 +88,6 @@
 [submodule "vim/bundle/colorschemes"]
 	path = vim/bundle/colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "vim/bundle/vim-puppet"]
+	path = vim/bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
