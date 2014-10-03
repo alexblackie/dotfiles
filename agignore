@@ -8,3 +8,4 @@ build
 .hg
 .sass-cache
 _build
+deps
