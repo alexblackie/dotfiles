@@ -44,8 +44,7 @@ if has("gui_running")
   colorscheme solarized
 
   set guioptions=-t " No goddamned toolbars
-  set guifont=Source\ Code\ Pro\ 12
-  set noantialias
+  set guifont=Source\ Code\ Pro\ 13
 endif
 
 set list listchars=tab:»·,trail:· " show extra space characters
