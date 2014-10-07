@@ -137,19 +137,21 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1066 469 214 309 0 0 1280 778 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>821 378 459 266 0 0 1280 778 </string>
+	<string>821 377 459 266 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>293 191 796 474 0 0 1280 778 </string>
+	<string>26 812 796 474 0 0 2560 1418 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>109 1010 400 129 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 770 620 392 0 0 2560 1418 </string>
+	<string>3530 769 620 392 2560 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>2640 358 592 584 2560 164 1280 778 </string>
+	<string>229 834 592 584 0 0 2560 1418 </string>
 	<key>NSWindow Frame com.apple.typography_panel_SourceCodePro-Medium</key>
 	<string>776 812 260 205 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3502 117 1274 1165 2560 0 2560 1418 </string>
+	<string>0 0 1280 778 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 4 1280 774 0 0 1280 778 </string>
+	<string>2560 0 2560 1418 2560 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_006D7579-60AD-450A-B121-44E041D5B142</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_E3E47718-920D-40CE-971C-4CEB27FA42C3</key>
@@ -429,7 +431,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.9992293392319278</real>
+			<real>0.99471126694277112</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -909,7 +911,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.029269138313609468</real>
+			<real>0.013313609467455622</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -921,6 +923,8 @@
 			<key>Use Canonical Parser</key>
 			<false/>
 			<key>Use Italic Font</key>
+			<false/>
+			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
 			<real>0.9992293392319278</real>
@@ -1174,7 +1178,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<real>1.0037474115210845</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1742,19 +1746,19 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-10-03T01:40:48Z</date>
+	<date>2014-10-05T12:31:29Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.10000000149011612</real>
+	<real>0.10159004407051282</real>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -1768,7 +1772,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1412191872</real>
+	<real>1412395392</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
@@ -1792,7 +1796,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20141001-nightly</string>
+	<string>2.9.20141005-nightly</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>kPreferenceKeyWindowStyle</key>
