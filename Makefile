@@ -15,6 +15,7 @@ clean:
 	rm -rf ~/.gitignore_global
 	rm -rf ~/.agignore
 	rm -rf ~/.webshots
+	rm -rf ~/.config/htop
 
 linuxclean:
 	rm -rf ~/.config/fontconfig/fonts.conf
@@ -40,6 +41,7 @@ install:
 	cp    ./gitignore_global ~/.gitignore_global
 	cp    ./agignore         ~/.agignore
 	cp -r ./webshots         ~/.webshots
+	cp -r ./config/htop      ~/.config/htop
 
 linuxinstall:
 	mkdir -p ~/.config/fontconfig ~/.config/terminator
