@@ -5,4 +5,5 @@ nm-applet &
 sh ~/.fehbg &
 /usr/bin/xscreensaver -no-splash &
 xrdb -load ~/.Xresources &
+/usr/bin/start-pulseaudio-x11 &
 exec i3
