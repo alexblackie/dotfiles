@@ -26,7 +26,7 @@ syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 colorscheme solarized
 
-highlight ColorColumn ctermbg=233 guibg=black
+highlight ColorColumn ctermbg=00 guibg=black
 
 set colorcolumn=81 " Highlight text over 80-characters
 set cursorline      " Highlight current line
