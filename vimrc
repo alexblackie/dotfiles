@@ -40,11 +40,11 @@ set title           " Show the filename in the window titlebar.
 set ttyfast         " Send more characters at a given time.
 
 if has("gui_running")
-  set background=dark
+  set background=light
   colorscheme solarized
 
   set guioptions=-t " No goddamned toolbars
-  set guifont=Source\ Code\ Pro\ 13
+  set guifont=Source\ Code\ Pro\ 12
 endif
 
 set list listchars=tab:»·,trail:· " show extra space characters
