@@ -31,8 +31,7 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' completer _expand _complete _ignored _approximate
 
 # Autocorrection
-setopt nocorrectall # disable for arguments
-setopt correct
+setopt nocorrect # disable for arguments
 
 # Autocomplete
 unsetopt menu_complete
