@@ -66,4 +66,4 @@ fi
 # ------------------------------------------------------------------------------
 # PATH
 # ------------------------------------------------------------------------------
-export PATH=$HOME/bin:./node_modules/.bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:./node_modules/.bin:/usr/local/bin:/usr/local/sbin:./bin/:$PATH
