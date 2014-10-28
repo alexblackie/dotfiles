@@ -18,7 +18,7 @@ would be the case if you symlinked them).
 
 ## Preview
 
-![Preview of my terminal](.preview.png)
+![Preview of my terminal](http://s.fromalex.com/Zyzzb.png)
 
 ## OSX
 
