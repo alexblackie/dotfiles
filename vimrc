@@ -61,7 +61,7 @@ set noswapfile    " Seriously don't care
 set incsearch     " Show search results 'as you type'
 set secure        " disable unsafe commands in per-directory .vimrc files
 
-let &winwidth = 90 " Don't let active pane be under 90 characters wide
+let &winwidth = 85 " Ensure a minimum width for active split
 
 
 " ------------------------------------------------------------------------------
