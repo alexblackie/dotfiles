@@ -49,7 +49,7 @@ URxvt*color15: S_base3
 ! ------------------------------------------------------------------------------
 URxvt*.scrollBar:   false
 URxvt*.cursorBlink: 1
-URxvt.font:         xft:Source\ Code\ Pro:size=11
+URxvt.font:         xft:Source\ Code\ Pro:size=10
 URxvt.boldFont:
 URxvt*keysym.Home:  \033[1~
 URxvt*keysym.End:   \033[4~
