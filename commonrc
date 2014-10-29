@@ -55,8 +55,6 @@ if [ -f ~/.env ]; then
   source ~/.env
 fi
 
-export EDITOR='vim'
-
 export CHRUBY_ROOT='/usr/local/share/chruby'
 if [ -d "${CHRUBY_ROOT}" ]; then
   source "$CHRUBY_ROOT/chruby.sh"
@@ -64,6 +62,12 @@ if [ -d "${CHRUBY_ROOT}" ]; then
 fi
 
 # ------------------------------------------------------------------------------
-# PATH
+# Environment
 # ------------------------------------------------------------------------------
-export PATH=$HOME/bin:./node_modules/.bin:/usr/local/bin:/usr/local/sbin:./bin/:$PATH
+export EDITOR='vim'
+export PATH="$HOME/bin:./node_modules/.bin:./bin/:$HOME/.gem_local/bin:$PATH"
+
+if [ -d "$HOME/.gem_local" ]; then
+  # allows use of system ruby without `sudo`
+  export GEM_HOME="$HOME/.gem_local"
+fi

@@ -27,6 +27,9 @@ osxclean:
 	rm -rf ~/.tmux-osx.conf
 
 install:
+	mkdir -p ~/.config/fontconfig
+	mkdir -p ~/.config/terminator
+	mkdir -p ~/.gem_local
 	cp    ./zshrc            ~/.zshrc
 	cp -r ./zsh              ~/.zsh
 	cp    ./commonrc         ~/.commonrc
@@ -40,10 +43,8 @@ install:
 	cp    ./agignore         ~/.agignore
 	cp -r ./webshots         ~/.webshots
 	cp -r ./config/htop      ~/.config/htop
-	mkdir -p ~/.config/fontconfig
 	cp    ./fonts.conf               ~/.config/fontconfig/fonts.conf
 	cp    ./Xresources               ~/.Xresources
-	mkdir -p ~/.config/terminator
 	cp    ./config/terminator/config ~/.config/terminator/config
 	cp -r ./i3                       ~/.i3
 	cp    ./i3status.conf            ~/.i3status.conf
