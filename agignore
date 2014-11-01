@@ -10,3 +10,4 @@ build
 _build
 deps
 rel
+tmp
