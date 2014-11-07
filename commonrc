@@ -36,6 +36,15 @@ serve() {
   ruby -run -e httpd . -p $port
 }
 
+refactor() {
+  # Takes two args:
+  #   $1 = current
+  #   $2 = wanted
+  # ex, to change "user" to "account": `refactor user account`
+
+  for f in `ack -l $1 | xargs`; do sed -i "s/$1/$2/g" $f; done
+}
+
 
 # ------------------------------------------------------------------------------
 # Libraries/Imports
