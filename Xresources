@@ -1,48 +1,33 @@
 ! ------------------------------------------------------------------------------
-! Solarized Dark (official!)
+! Jellybeans Terminal Colours
 ! ------------------------------------------------------------------------------
-#define S_yellow  #b58900
-#define S_orange  #cb4b16
-#define S_red     #dc322f
-#define S_magenta #d33682
-#define S_violet  #6c71c4
-#define S_blue    #268bd2
-#define S_cyan    #2aa198
-#define S_green   #859900
 
-#define S_base03  #002b36
-#define S_base02  #073642
-#define S_base01  #586e75
-#define S_base00  #657b83
-#define S_base0   #839496
-#define S_base1   #93a1a1
-#define S_base2   #eee8d5
-#define S_base3   #fdf6e3
-
-URxvt*background:             S_base03
-URxvt*foreground:             S_base0
-URxvt*fading:                 40
-URxvt*fadeColor:              S_base03
-URxvt*cursorColor:            S_base1
-URxvt*pointerColorBackground: S_base01
-URxvt*pointerColorForeground: S_base1
-
-URxvt*color0:  S_base02
-URxvt*color1:  S_red
-URxvt*color2:  S_green
-URxvt*color3:  S_yellow
-URxvt*color4:  S_blue
-URxvt*color5:  S_magenta
-URxvt*color6:  S_cyan
-URxvt*color7:  S_base2
-URxvt*color8:  S_base03
-URxvt*color9:  S_orange
-URxvt*color10: S_base01
-URxvt*color11: S_base00
-URxvt*color12: S_base0
-URxvt*color13: S_violet
-URxvt*color14: S_base1
-URxvt*color15: S_base3
+*background: #151515
+*foreground: #888888
+! black
+*color0: #1C1C1C
+*color8: #404040
+! red
+*color1: #B85335
+*color9: #CF6A4C
+! green
+*color2: #799D6A
+*color10: #99AD6A
+! yellow
+*color3: #FFB964
+*color11: #FAD07A
+! blue
+*color4: #667899
+*color12: #8197BF
+! magenta
+*color5: #8787AF
+*color13: #C6B6EE
+! cyan
+*color6: #668799
+*color14: #8FBFDC
+! white
+*color7: #888888
+*color15: #E8E8D3
 
 
 ! ------------------------------------------------------------------------------
