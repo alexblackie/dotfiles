@@ -72,7 +72,7 @@
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/vim-elixir"]
 	path = vim/bundle/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir.git
+	url = https://github.com/alexblackie/vim-elixir.git
 [submodule "vim/bundle/rust.vim"]
 	path = vim/bundle/rust.vim
 	url = https://github.com/wting/rust.vim.git
