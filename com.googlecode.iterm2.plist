@@ -305,6 +305,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
+	<key>NSColorPanelMode</key>
+	<string>0</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
@@ -332,8 +334,14 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>586 519 214 309 0 0 2560 1418 </string>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>821 374 459 270 0 0 1280 778 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>23 294 918 464 0 0 1280 800 </string>
+	<string>129 133 918 464 0 0 1280 778 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>1241 986 400 129 0 0 2560 1418 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 290 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -352,7 +360,7 @@
 	<array>
 		<dict>
 			<key>ASCII Anti Aliased</key>
-			<true/>
+			<false/>
 			<key>Allow Title Reporting</key>
 			<true/>
 			<key>Ambiguous Double Width</key>
@@ -947,7 +955,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Monaco 11</string>
+			<string>TerminusTTF 16</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1856,6 +1864,10 @@
 			<string>/Users/alex</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
 	<key>NoSyncSuppressAnnyoingBellOffer</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -1930,7 +1942,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-11-20T02:05:58Z</date>
+	<date>2014-12-07T00:35:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1980,7 +1992,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20141117-nightly</string>
+	<string>2.9.20141127-nightly</string>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 	<key>kPreferenceKeyWindowStyle</key>
