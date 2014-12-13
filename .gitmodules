@@ -1,96 +1,93 @@
-[submodule "vim/bundle/git-vim"]
-	path = vim/bundle/git-vim
+[submodule "configs/.vim/bundle/git-vim"]
+	path = configs/.vim/bundle/git-vim
 	url = https://github.com/motemen/git-vim.git
-[submodule "vim/bundle/vim-coffee-script"]
-	path = vim/bundle/vim-coffee-script
+[submodule "configs/.vim/bundle/vim-coffee-script"]
+	path = configs/.vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/vim-colors-solarized"]
-	path = vim/bundle/vim-colors-solarized
+[submodule "configs/.vim/bundle/vim-colors-solarized"]
+	path = configs/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/vim-css-color"]
-	path = vim/bundle/vim-css-color
+[submodule "configs/.vim/bundle/vim-css-color"]
+	path = configs/.vim/bundle/vim-css-color
 	url = https://github.com/gf3/vim-css-color.git
-[submodule "vim/bundle/vim-handlebars"]
-	path = vim/bundle/vim-handlebars
+[submodule "configs/.vim/bundle/vim-handlebars"]
+	path = configs/.vim/bundle/vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
-[submodule "vim/bundle/vim-markdown"]
-	path = vim/bundle/vim-markdown
+[submodule "configs/.vim/bundle/vim-markdown"]
+	path = configs/.vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "vim/bundle/vim-rails"]
-	path = vim/bundle/vim-rails
+[submodule "configs/.vim/bundle/vim-rails"]
+	path = configs/.vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails
-[submodule "vim/bundle/vim-ruby"]
-	path = vim/bundle/vim-ruby
+[submodule "configs/.vim/bundle/vim-ruby"]
+	path = configs/.vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "vim/bundle/vim-slim"]
-	path = vim/bundle/vim-slim
+[submodule "configs/.vim/bundle/vim-slim"]
+	path = configs/.vim/bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
-[submodule "vim/bundle/ack.vim"]
-	path = vim/bundle/ack.vim
+[submodule "configs/.vim/bundle/ack.vim"]
+	path = configs/.vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "vim/bundle/vim-indent-guides"]
-	path = vim/bundle/vim-indent-guides
+[submodule "configs/.vim/bundle/vim-indent-guides"]
+	path = configs/.vim/bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "vim/bundle/tabular"]
-	path = vim/bundle/tabular
+[submodule "configs/.vim/bundle/tabular"]
+	path = configs/.vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "vim/bundle/tlib_vim"]
-	path = vim/bundle/tlib_vim
+[submodule "configs/.vim/bundle/tlib_vim"]
+	path = configs/.vim/bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
-[submodule "vim/bundle/vim-addon-mw-utils"]
-	path = vim/bundle/vim-addon-mw-utils
+[submodule "configs/.vim/bundle/vim-addon-mw-utils"]
+	path = configs/.vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "vim/bundle/vim-snipmate"]
-	path = vim/bundle/vim-snipmate
+[submodule "configs/.vim/bundle/vim-snipmate"]
+	path = configs/.vim/bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
-[submodule "vim/bundle/base16-vim"]
-	path = vim/bundle/base16-vim
+[submodule "configs/.vim/bundle/base16-vim"]
+	path = configs/.vim/bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
-[submodule "vim/bundle/vim-airline"]
-	path = vim/bundle/vim-airline
+[submodule "configs/.vim/bundle/vim-airline"]
+	path = configs/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+[submodule "configs/.vim/bundle/nerdtree"]
+	path = configs/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/bundle/jellybeans.vim"]
-	path = vim/bundle/jellybeans.vim
+[submodule "configs/.vim/bundle/jellybeans.vim"]
+	path = configs/.vim/bundle/jellybeans.vim
 	url = https://github.com/nanotech/jellybeans.vim.git
-[submodule "vim/bundle/unimpaired"]
-	path = vim/bundle/unimpaired
+[submodule "configs/.vim/bundle/unimpaired"]
+	path = configs/.vim/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "vim/bundle/vim-rspec"]
-	path = vim/bundle/vim-rspec
+[submodule "configs/.vim/bundle/vim-rspec"]
+	path = configs/.vim/bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
-[submodule "vim/bundle/vim-fugitive"]
-	path = vim/bundle/vim-fugitive
+[submodule "configs/.vim/bundle/vim-fugitive"]
+	path = configs/.vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/bundle/vim-dispatch"]
-	path = vim/bundle/vim-dispatch
+[submodule "configs/.vim/bundle/vim-dispatch"]
+	path = configs/.vim/bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
-[submodule "vim/bundle/ctrlp"]
-	path = vim/bundle/ctrlp
+[submodule "configs/.vim/bundle/ctrlp"]
+	path = configs/.vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/vim-elixir"]
-	path = vim/bundle/vim-elixir
+[submodule "configs/.vim/bundle/vim-elixir"]
+	path = configs/.vim/bundle/vim-elixir
 	url = https://github.com/alexblackie/vim-elixir.git
-[submodule "vim/bundle/rust.vim"]
-	path = vim/bundle/rust.vim
+[submodule "configs/.vim/bundle/rust.vim"]
+	path = configs/.vim/bundle/rust.vim
 	url = https://github.com/wting/rust.vim.git
-[submodule "vim/bundle/vim-scala"]
-	path = vim/bundle/vim-scala
+[submodule "configs/.vim/bundle/vim-scala"]
+	path = configs/.vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "vim/bundle/vim-twig"]
-	path = vim/bundle/vim-twig
+[submodule "configs/.vim/bundle/vim-twig"]
+	path = configs/.vim/bundle/vim-twig
 	url = https://github.com/evidens/vim-twig.git
-[submodule "webshots"]
-	path = webshots
-	url = https://github.com/alexblackie/webshots.git
-[submodule "vim/bundle/colorschemes"]
-	path = vim/bundle/colorschemes
+[submodule "configs/.vim/bundle/colorschemes"]
+	path = configs/.vim/bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "vim/bundle/vim-puppet"]
-	path = vim/bundle/vim-puppet
+[submodule "configs/.vim/bundle/vim-puppet"]
+	path = configs/.vim/bundle/vim-puppet
 	url = https://github.com/rodjek/vim-puppet.git
-[submodule "vim/bundle/nerdtree.vim"]
-	path = vim/bundle/nerdtree.vim
+[submodule "configs/.vim/bundle/nerdtree.vim"]
+	path = configs/.vim/bundle/nerdtree.vim
 	url = https://github.com/scrooloose/nerdtree.git
