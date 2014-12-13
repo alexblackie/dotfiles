@@ -19,16 +19,3 @@ would be the case if you symlinked them).
 ## Preview
 
 ![Preview of my terminal](./.preview.png)
-
-## OSX
-
-There is a tiny amendment for tmux for OS X to get the pasteboard working
-properly, so if you're installing these on OS X you'll need to run one extra
-make target.
-
-```bash
-$ make osxclean osxinstall
-```
-
-Generally I don't patch anything specifically for a platform, but copy-paste is
-kind of important so I made an exception.
