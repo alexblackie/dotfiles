@@ -1,4 +1,5 @@
-DOTFILES=$(wildcard configs/.*)
+EXCLUDES := configs/. configs/..
+DOTFILES := $(filter-out $(EXCLUDES), $(wildcard configs/.*))
 
 setup:
 	git submodule init
