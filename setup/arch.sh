@@ -31,7 +31,7 @@
 ##------------------------
 
 # Software
-INSTALL_CMD=pacman -S --noconfirm
+INSTALL_CMD="pacman -S --noconfirm"
 
 # System
 IS_EFI=true
