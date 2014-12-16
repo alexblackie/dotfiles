@@ -146,9 +146,6 @@ configure_gnome() {
   # Remap CapsLock to Escape
   gsettings set org.gnome.desktop.input-sources.xkb-options caps:escape
 
-  # Show minimize button on windows
-  gsettings set  org.gnome.shell.overrides button-layout ':minimize,close'
-
   # Show date in menubar
   gsettings set org.gnome.desktop.interface clock-show-date true
 }
