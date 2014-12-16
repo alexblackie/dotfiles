@@ -1,0 +1,5 @@
+#!/bin/sh
+
+xrandr --output LVDS1 --right-of DP1
+xset r rate 220 34
+setxkbmap -option caps:escape

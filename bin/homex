@@ -1,0 +1,9 @@
+#!/bin/sh
+
+xrandr --output DP3 --auto
+sleep 1
+xrandr --output LVDS1 --off
+sleep 1
+xrandr --output DP2 --auto --right-of DP3
+xset r rate 220 34
+setxkbmap -option caps:escape

@@ -10,3 +10,4 @@ clean:
 
 install:
 	cp -Rfv $(DOTFILES) ${HOME}
+	cp -Rfv bin/ ${HOME}/bin
