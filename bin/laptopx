@@ -1,0 +1,5 @@
+#!/bin/sh
+
+xrandr --auto
+xset r rate 220 34
+setxkbmap -option caps:escape
