@@ -91,3 +91,6 @@
 [submodule "configs/.vim/bundle/nerdtree.vim"]
 	path = configs/.vim/bundle/nerdtree.vim
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/elixir-snippets"]
+	path = configs/.vim/bundle/elixir-snippets
+	url = https://github.com/carlosgaldino/elixir-snippets.git
