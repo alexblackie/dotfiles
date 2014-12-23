@@ -109,7 +109,7 @@ install_x() {
 install_desktop() {
   $INSTALL_CMD i3 xscreensaver terminus-font numix-themes lxappearance \
                networkmanager network-manager-applet lightdm \
-               lightdm-gtk2-greeter pulseaudio dmenu dmenu-xft-mouse-height
+               lightdm-gtk2-greeter pulseaudio dmenu
   systemctl enable lightdm
 }
 
