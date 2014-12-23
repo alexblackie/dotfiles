@@ -105,10 +105,12 @@ install_x() {
 }
 
 ##
-# Installs the GNOME 3 desktop environment and some related tools.
+# Installs the i3 window manager, LightDM login manager, and some related tools.
 install_desktop() {
-  $INSTALL_CMD gnome gnome-tweak-tool
-  systemctl enable gdm
+  $INSTALL_CMD i3 xscreensaver terminus-font numix-themes lxappearance \
+               networkmanager network-manager-applet lightdm \
+               lightdm-gtk2-greeter pulseaudio
+  systemctl enable lightdm
 }
 
 ##
@@ -122,7 +124,7 @@ install_development_tools() {
 # Install some other applications and tools.
 install_applications() {
   # General
-  $INSTALL_CMD scrot openssh xclip pass gnupg nmap thunderbird
+  $INSTALL_CMD scrot openssh xclip pass gnupg nmap thunderbird gimp pavucontrol
 
   # AUR apps (have to be built as non-root)
   su -c install_applications_as_user $USERNAME
