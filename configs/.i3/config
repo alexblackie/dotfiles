@@ -60,7 +60,7 @@ set $ws4 4: mail
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $w4
+bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -197,7 +197,7 @@ bar {
   workspace_buttons yes
 
   colors {
-    background $numix-dark-grey
+    background $numix-darker-grey
     statusline $numix-light-grey
 
     focused_workspace  $numix-orange      $numix-orange      #FFFFFF
