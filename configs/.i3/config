@@ -93,8 +93,8 @@ bindsym $mod+Shift+q kill
 # start dmenu
 bindsym $mod+d exec dmenu_run -fn "-xos4-terminus-medium-r-*-*-14-*"
 
-# start xscreensaver
-bindsym $mod+Shift+s exec xscreensaver-command --lock
+# lock screen
+bindsym $mod+Shift+Delete exec $HOME/bin/lock
 
 # take screenshot
 bindsym $mod+Shift+Return exec /usr/bin/node $HOME/.webshots/capture.js
