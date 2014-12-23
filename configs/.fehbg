@@ -1,1 +1,1 @@
-feh  --bg-scale '/home/alex/Wallpapers/W_2013_187_SCOURGE.jpg'
+feh --bg-fill $HOME/.desktop-background.jpg
