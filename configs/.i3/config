@@ -143,6 +143,23 @@ bindsym $mod+r mode "resize"
 
 
 # ------------------------------------------------------------------------------
+# Colours
+# ------------------------------------------------------------------------------
+set $numix-grey        #ABABAB
+set $numix-mid-grey    #303030
+set $numix-dark-grey   #2D2D2D
+set $numix-darker-grey #222222
+set $numix-light-grey  #DEDEDE
+set $numix-orange      #D64937
+
+# class                 border           background       text              indicator
+client.focused          $numix-dark-grey $numix-dark-grey $numix-light-grey $numix-orange
+client.focused_inactive $numix-dark-grey $numix-dark-grey $numix-grey       $numix-orange
+client.unfocused        $numix-dark-grey $numix-dark-greu $numix-grey       $numix-orange
+client.urgent           #2f343a #900000 #ffffff #900000
+
+
+# ------------------------------------------------------------------------------
 # Startup programs
 # ------------------------------------------------------------------------------
 # NetworkManager (yes, I'm sorry)
@@ -173,12 +190,12 @@ bar {
   workspace_buttons yes
 
   colors {
-    background #3C3C3C
-    statusline #DDDDDD
+    background $numix-dark-grey
+    statusline $numix-light-grey
 
-    focused_workspace  #ffffff #285577
-    active_workspace   #ffffff #333333
-    inactive_workspace #888888 #222222
-    urgent_workspace   #ffffff #900000
+    focused_workspace  $numix-orange      $numix-orange      #FFFFFF
+    active_workspace   $numix-dark-grey   $numix-dark-grey   $numix-grey
+    inactive_workspace $numix-dark-grey   $numix-dark-grey   $numix-grey
+    urgent_workspace   #FF00FF            #FF00FF            #FFFFFF
   }
 }
