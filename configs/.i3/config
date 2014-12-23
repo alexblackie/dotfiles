@@ -159,10 +159,10 @@ set $numix-darker-grey #222222
 set $numix-light-grey  #DEDEDE
 set $numix-orange      #D64937
 
-# class                 border           background       text              indicator
-client.focused          $numix-dark-grey $numix-dark-grey $numix-light-grey $numix-orange
-client.focused_inactive $numix-dark-grey $numix-dark-grey $numix-grey       $numix-orange
-client.unfocused        $numix-dark-grey $numix-dark-greu $numix-grey       $numix-orange
+# class                 border             background         text              indicator
+client.focused          $numix-dark-grey   $numix-dark-grey   $numix-light-grey $numix-orange
+client.focused_inactive $numix-dark-grey   $numix-dark-grey   $numix-grey       $numix-orange
+client.unfocused        $numix-darker-grey $numix-darker-grey $numix-grey       $numix-orange
 client.urgent           #2f343a #900000 #ffffff #900000
 
 
