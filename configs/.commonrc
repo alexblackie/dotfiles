@@ -12,6 +12,7 @@ alias gst='git status'
 alias gp='git push'
 alias gap='git add -p'
 alias yolo='git push -f origin'
+alias gist='gist -cp'
 
 alias v='vim'
 alias gv='gvim'
