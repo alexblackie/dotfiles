@@ -35,7 +35,7 @@
 ! ------------------------------------------------------------------------------
 URxvt*.scrollBar:   false
 URxvt*.cursorBlink: 1
-URxvt.font:         xft:Terminus:pixelsize=12
+URxvt.font:         xft:Terminus:pixelsize=14
 URxvt.boldFont:
 URxvt*keysym.Home:  \033[1~
 URxvt*keysym.End:   \033[4~
