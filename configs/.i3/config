@@ -96,7 +96,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run -fn "-xos4-terminus-medium-r-*-*-14-*"
 
 # lock screen
-bindsym $mod+Shift+Delete exec $HOME/bin/lock
+bindsym $mod+Shift+Delete exec --no-startup-id xscreensaver-command -lock
 
 # take screenshot
 bindsym --release $mod+Shift+s exec --no-startup-id $HOME/bin/scrotup/scrotup
@@ -182,6 +182,9 @@ exec --no-startup-id set r rate 220 34
 
 # Set desktop background
 exec --no-startup-id sh ~/.fehbg
+
+# Start XScreensaver
+exec --no-startup-id xscreensaver --no-splash
 
 # Pulseaudio server (yes, I'm sorry)
 exec --no-startup-id /usr/bin/start-pulseaudio-x11
