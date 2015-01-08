@@ -161,11 +161,14 @@ set $numix-darker-grey #222222
 set $numix-light-grey  #DEDEDE
 set $numix-orange      #D64937
 
+set $jellybeans-dark-grey #121212
+set $jellybeans-white #d7d7d7
+
 # class                 border             background         text              indicator
 client.focused          $numix-dark-grey   $numix-dark-grey   $numix-light-grey $numix-orange
 client.focused_inactive $numix-dark-grey   $numix-dark-grey   $numix-grey       $numix-orange
 client.unfocused        $numix-darker-grey $numix-darker-grey $numix-grey       $numix-orange
-client.urgent           #2f343a #900000 #ffffff #900000
+client.urgent           #2f343a            #900000            #ffffff           #900000
 
 
 # ------------------------------------------------------------------------------
@@ -196,12 +199,13 @@ bar {
   workspace_buttons yes
 
   colors {
-    background $numix-darker-grey
-    statusline $numix-light-grey
+    background $jellybeans-dark-grey
+    statusline $jellybeans-white
 
-    focused_workspace  $numix-orange      $numix-orange      #FFFFFF
-    active_workspace   $numix-dark-grey   $numix-dark-grey   $numix-grey
-    inactive_workspace $numix-dark-grey   $numix-dark-grey   $numix-grey
-    urgent_workspace   #FF00FF            #FF00FF            #FFFFFF
+    # class            border                 background              text
+    focused_workspace  $numix-dark-grey       $numix-dark-grey        #FFFFFF
+    active_workspace   $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
+    inactive_workspace $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
+    urgent_workspace   #FF00FF                #FF00FF                 #FFFFFF
   }
 }
