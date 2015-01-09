@@ -58,9 +58,6 @@
 [submodule "configs/.vim/bundle/unimpaired"]
 	path = configs/.vim/bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "configs/.vim/bundle/vim-rspec"]
-	path = configs/.vim/bundle/vim-rspec
-	url = https://github.com/thoughtbot/vim-rspec.git
 [submodule "configs/.vim/bundle/vim-fugitive"]
 	path = configs/.vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
