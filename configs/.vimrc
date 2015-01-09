@@ -46,7 +46,7 @@ if has("gui_running")
   set guifont=Terminus\ 12
 endif
 
-set list listchars=tab:»·,trail:· " show extra space characters
+set list listchars=trail:· " show extra space characters
 
 
 " ------------------------------------------------------------------------------
