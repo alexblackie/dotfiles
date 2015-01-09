@@ -41,10 +41,9 @@ set ttyfast         " Send more characters at a given time.
 
 if has("gui_running")
   set background=dark
-  colorscheme solarized
-
+  colorscheme Tomorrow-Night
   set guioptions=-t " No goddamned toolbars
-  set guifont=Source\ Code\ Pro\ 13
+  set guifont=Terminus\ 12
 endif
 
 set list listchars=tab:»·,trail:· " show extra space characters
