@@ -178,7 +178,7 @@ client.urgent           #2f343a            #900000            #ffffff           
 exec --no-startup-id setxkbmap -option caps:escape
 
 # Set an (in)sane key repeat rate
-exec --no-startup-id set r rate 220 34
+exec --no-startup-id xset r rate 220 34
 
 # Set desktop background
 exec --no-startup-id sh ~/.fehbg
