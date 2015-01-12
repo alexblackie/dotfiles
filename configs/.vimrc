@@ -148,3 +148,8 @@ let g:ctrlp_user_command      = 'ag %s -l --nocolor -g ""'
 " Markdown.vim
 " ------------
 let g:vim_markdown_folding_disabled = 1
+
+" Personal Overrides
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
