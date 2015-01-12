@@ -89,7 +89,8 @@ map <leader>r :!./%<CR>
 map <leader>E :!elixir %<CR>
 
 " Run current ExUnit file
-map <leader>et :!mix test %<CR>
+map <leader>s :!.test_runner<CR>
+map <Leader>t :!.test_runner %<CR>
 
 " Center things
 map <leader>c :center<CR>
@@ -129,11 +130,6 @@ nmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
 vmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
 nmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
-
-" RSpec.vim
-" ---------
-map <Leader>t :!mix test %<CR>
-map <Leader>s :!mix test<CR>
 
 " Airline.vim
 " -----------

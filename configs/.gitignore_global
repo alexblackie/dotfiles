@@ -4,3 +4,4 @@
 .vimrc
 Vagrantfile
 .vagrant
+.test_runner
