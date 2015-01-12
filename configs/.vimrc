@@ -89,8 +89,8 @@ map <leader>r :!./%<CR>
 map <leader>E :!elixir %<CR>
 
 " Run current ExUnit file
-map <leader>s :!.test_runner<CR>
-map <Leader>t :!.test_runner %<CR>
+map <leader>s :!./.test_runner<CR>
+map <Leader>t :!./.test_runner %<CR>
 
 " Center things
 map <leader>c :center<CR>
