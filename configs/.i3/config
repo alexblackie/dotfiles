@@ -46,6 +46,10 @@ bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
+# move workspaces
+bindsym $mod+Control+Right move workspace to output right
+bindsym $mod+Control+Left move workspace to output left
+
 
 # ------------------------------------------------------------------------------
 # Workspaces
