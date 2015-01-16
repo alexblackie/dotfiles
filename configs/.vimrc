@@ -42,7 +42,7 @@ set ttyfast         " Send more characters at a given time.
 
 if has("gui_running")
   set background=dark
-  colorscheme Tomorrow-Night
+  colorscheme jellybeans
   set guioptions=-t " No goddamned toolbars
   set guifont=Terminus\ 12
 endif
