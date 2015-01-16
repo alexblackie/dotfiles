@@ -9,7 +9,7 @@
 
 [alias]
   aa = add --all
-  br = branch
+  br = branch -a
   ci = commit
   co = checkout
   df = diff
