@@ -105,8 +105,9 @@ augroup filetypedetect
   autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
   autocmd BufNewFile,BufReadPost *.styl set filetype=sass
   autocmd BufNewFile,BufReadPost *.info set filetype=dosini
+  autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
+  autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
 augroup END
-
 
 " ------------------------------------------------------------------------------
 "  Automatic things
