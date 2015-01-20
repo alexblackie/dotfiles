@@ -88,7 +88,7 @@ map <leader>r :!./%<CR>
 " Compile and run Elixir
 map <leader>E :!elixir %<CR>
 
-" Run current ExUnit file
+" Run current project's test suite
 map <leader>s :!./.test_runner<CR>
 map <Leader>t :!./.test_runner %<CR>
 
