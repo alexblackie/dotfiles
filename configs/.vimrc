@@ -44,7 +44,12 @@ if has("gui_running")
   set background=dark
   colorscheme jellybeans
   set guioptions=-t " No goddamned toolbars
-  set guifont=Terminus\ 12
+  set noantialias
+  set guifont=6x13\ 13
+
+  if has("gui_macvim")
+    set guifont=6x13:h13
+  endif
 endif
 
 set list listchars=trail:· " show extra space characters
