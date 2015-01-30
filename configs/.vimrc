@@ -53,7 +53,8 @@ if has("gui_running")
   endif
 endif
 
-set list listchars=trail:· " show extra space characters
+set hlsearch
+hi Search cterm=NONE ctermfg=black ctermbg=yellow
 
 
 " ------------------------------------------------------------------------------
