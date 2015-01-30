@@ -46,7 +46,7 @@ if has("gui_running")
   colorscheme jellybeans
   set guioptions=-t " No goddamned toolbars
   set noantialias
-  set guifont=6x13\ 13
+  set guifont=Fixed
 
   if has("gui_macvim")
     set guifont=6x13:h13
