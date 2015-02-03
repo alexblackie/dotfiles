@@ -40,6 +40,7 @@ set ruler           " Show cursor position
 set t_Co=256        " LOTS OF COLOURS
 set title           " Show the filename in the window titlebar.
 set ttyfast         " Send more characters at a given time.
+set laststatus=2    " Always show bar
 
 if has("gui_running")
   set background=dark
