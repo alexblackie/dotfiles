@@ -1,33 +1,24 @@
 ! ------------------------------------------------------------------------------
-! Jellybeans Terminal Colours
+! Pastel colour scheme
 ! ------------------------------------------------------------------------------
-
-*background: #151515
-*foreground: #888888
-! black
-*color0: #1C1C1C
-*color8: #404040
-! red
-*color1: #B85335
-*color9: #CF6A4C
-! green
-*color2: #799D6A
-*color10: #99AD6A
-! yellow
-*color3: #FFB964
-*color11: #FAD07A
-! blue
-*color4: #667899
-*color12: #8197BF
-! magenta
-*color5: #8787AF
-*color13: #C6B6EE
-! cyan
-*color6: #668799
-*color14: #8FBFDC
-! white
-*color7: #888888
-*color15: #E8E8D3
+urxvt.background: #000000
+urxvt.foreground: #D3D2D3
+urxvt.color0: #000000
+urxvt.color1: #FF7768
+urxvt.color2: #ABFA68
+urxvt.color3: #FFFD88
+urxvt.color4: #98D0FE
+urxvt.color5: #FF85FD
+urxvt.color6: #CACBFE
+urxvt.color7: #EFEFEF
+urxvt.color8: #848484
+urxvt.color9: #FFBCB5
+urxvt.color10: #D1FCB1
+urxvt.color11: #FFFDD0
+urxvt.color12: #BADFFF
+urxvt.color13: #FFA9FE
+urxvt.color14: #E2E3FE
+urxvt.color15: #FFFFFF
 
 
 ! ------------------------------------------------------------------------------
@@ -35,7 +26,7 @@
 ! ------------------------------------------------------------------------------
 URxvt*.scrollBar:   false
 URxvt*.cursorBlink: 1
-URxvt.font:         -Misc-Fixed-Medium-R-SemiCondensed--13-120-75-75-C-60-ISO10646-1
+URxvt.font:         xft:Terminus:pixelsize=14
 URxvt.boldFont:
 URxvt*keysym.Home:  \033[1~
 URxvt*keysym.End:   \033[4~

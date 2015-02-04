@@ -25,7 +25,7 @@ set tabstop=2        " 2-space tabs
 syntax on           " COLOURS!!!11!1
 
 set background=dark " The only way to code is in darkness
-colorscheme jellybeans
+colorscheme grb256
 
 highlight ColorColumn ctermbg=00 guibg=black
 
