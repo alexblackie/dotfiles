@@ -3,7 +3,7 @@
 ! ------------------------------------------------------------------------------
 urxvt.background: #000000
 urxvt.foreground: #D3D2D3
-urxvt.color0: #000000
+urxvt.color0: #1C1C1C
 urxvt.color1: #FF7768
 urxvt.color2: #ABFA68
 urxvt.color3: #FFFD88
