@@ -1,33 +1,33 @@
 ! ------------------------------------------------------------------------------
 ! Pastel colour scheme
 ! ------------------------------------------------------------------------------
-urxvt.background: #000000
-urxvt.foreground: #D3D2D3
-urxvt.color0: #1C1C1C
-urxvt.color1: #FF7768
-urxvt.color2: #ABFA68
-urxvt.color3: #FFFD88
-urxvt.color4: #98D0FE
-urxvt.color5: #FF85FD
-urxvt.color6: #CACBFE
-urxvt.color7: #EFEFEF
-urxvt.color8: #848484
-urxvt.color9: #FFBCB5
-urxvt.color10: #D1FCB1
-urxvt.color11: #FFFDD0
-urxvt.color12: #BADFFF
-urxvt.color13: #FFA9FE
-urxvt.color14: #E2E3FE
-urxvt.color15: #FFFFFF
+*.background: #000000
+*.foreground: #D3D2D3
+*.color0: #1C1C1C
+*.color1: #FF7768
+*.color2: #ABFA68
+*.color3: #FFFD88
+*.color4: #98D0FE
+*.color5: #FF85FD
+*.color6: #CACBFE
+*.color7: #EFEFEF
+*.color8: #848484
+*.color9: #FFBCB5
+*.color10: #D1FCB1
+*.color11: #FFFDD0
+*.color12: #BADFFF
+*.color13: #FFA9FE
+*.color14: #E2E3FE
+*.color15: #FFFFFF
 
 
 ! ------------------------------------------------------------------------------
 ! URxvt
 ! ------------------------------------------------------------------------------
-URxvt*.scrollBar:   false
-URxvt*.cursorBlink: 1
+URxvt.scrollBar:   false
+URxvt.cursorBlink: 1
 URxvt.font:         xft:Terminus:pixelsize=14
 URxvt.boldFont:
-URxvt*keysym.Home:  \033[1~
-URxvt*keysym.End:   \033[4~
-URxvt*fading:       0
+URxvt.keysym.Home:  \033[1~
+URxvt.keysym.End:   \033[4~
+URxvt.fading:       0
