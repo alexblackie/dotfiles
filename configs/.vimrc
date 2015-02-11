@@ -90,6 +90,9 @@ noremap <Right> <NOP>
 " Quick-close quickfix
 map <leader>qq :cclose<CR>
 
+" Clear highlights
+map <leader>nh :nohl<CR>
+
 " Run current file as a script
 map <leader>r :!./%<CR>
 
