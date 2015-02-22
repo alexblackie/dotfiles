@@ -143,10 +143,11 @@ vmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
 nmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 
-" Airline.vim
+" Lightline.vim
 " -----------
-let g:airline_left_sep  = ''
-let g:airline_right_sep = ''
+let g:lightline = {
+  \ 'colorscheme': 'jellybeans',
+  \ }
 
 " CtrlP.vim
 " ---------
