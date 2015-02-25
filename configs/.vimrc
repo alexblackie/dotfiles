@@ -48,10 +48,6 @@ if has("gui_running")
 	set guioptions=-t " No goddamned toolbars
 	set noantialias
 	set guifont=Fixed
-
-	if has("gui_macvim")
-	  set guifont=6x13:h13
-	endif
 endif
 
 set hlsearch
