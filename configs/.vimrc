@@ -10,13 +10,13 @@ call pathogen#infect() " Init Pathogen
 " ------------------------------------------------------------------------------
 set autoindent       " Hit enter, re-indents according to last line
 set backspace=2      " Use sane backspace behaviour
-set expandtab        " Space-indent masterrace
+set noexpandtab      " Hard-tabs masterrace
 set nocompatible     " Don't care about Vi compat
 set nowrap           " Line wrapping is a sin
 set smartcase        " More sane searching
-set shiftwidth=2     " Instruct `<< >>` to use 2 spaces
 set pastetoggle=<F2> " Stop the insane cascading-indents when pasting
-set tabstop=2        " 2-space tabs
+set tabstop=4        " 4-space-sized tabs
+set shiftwidth=4     " Instruct `<< >>` to match tabstop
 
 
 " ------------------------------------------------------------------------------
