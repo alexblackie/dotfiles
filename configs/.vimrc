@@ -142,8 +142,23 @@ vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 " Lightline.vim
 " -----------
 let g:lightline = {
-	\ 'colorscheme': 'jellybeans',
-	\ }
+  \ 'colorscheme': 'jellybeans',
+  \ 'component': {
+    \ 'gitbranch': '%{gitbranch#name()}',
+  \ }
+\ }
+
+let g:lightline.active = {
+  \ 'left': [
+    \ [ 'mode', 'paste' ],
+    \ [ 'gitbranch' ],
+    \ [ 'readonly', 'filename', 'modified' ]
+  \ ], 'right': [
+    \ [ 'lineinfo' ],
+	  \ [ 'percent' ],
+		\ [ 'fileformat', 'fileencoding', 'filetype' ]
+  \ ]
+\ }
 
 " CtrlP.vim
 " ---------
