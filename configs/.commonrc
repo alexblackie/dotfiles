@@ -32,22 +32,22 @@ alias :q='exit'
 alias fucking='sudo'
 
 vs() {
-  args=$(printf "%s " "$@") # concatenate arguments into single string
-  vagrant ssh -c "$args"
+	args=$(printf "%s " "$@") # concatenate arguments into single string
+	vagrant ssh -c "$args"
 }
 
 serve() {
-  port="${1:-3000}"
-  ruby -run -e httpd . -p $port
+	port="${1:-3000}"
+	ruby -run -e httpd . -p $port
 }
 
 refactor() {
-  # Takes two args:
-  #   $1 = current
-  #   $2 = wanted
-  # ex, to change "user" to "account": `refactor user account`
+	# Takes two args:
+	#	 $1 = current
+	#	 $2 = wanted
+	# ex, to change "user" to "account": `refactor user account`
 
-  for f in `ack -l $1 | xargs`; do sed -i "s/$1/$2/g" $f; done
+	for f in `ack -l $1 | xargs`; do sed -i "s/$1/$2/g" $f; done
 }
 
 
@@ -57,13 +57,13 @@ refactor() {
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
 if [ -f ~/.env ]; then
-  source ~/.env
+	source ~/.env
 fi
 
 export CHRUBY_ROOT='/usr/local/share/chruby'
 if [ -d "${CHRUBY_ROOT}" ]; then
-  source "$CHRUBY_ROOT/chruby.sh"
-  source "$CHRUBY_ROOT/auto.sh"
+	source "$CHRUBY_ROOT/chruby.sh"
+	source "$CHRUBY_ROOT/auto.sh"
 fi
 
 
@@ -74,6 +74,6 @@ export EDITOR='vim'
 export PATH="$HOME/bin:./node_modules/.bin:./bin/:$HOME/.gem_local/bin:$PATH"
 
 if [ -d "$HOME/.gem_local" ]; then
-  # allows use of system ruby without `sudo`
-  export GEM_HOME="$HOME/.gem_local"
+	# allows use of system ruby without `sudo`
+	export GEM_HOME="$HOME/.gem_local"
 fi

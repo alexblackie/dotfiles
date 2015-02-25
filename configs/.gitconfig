@@ -1,63 +1,63 @@
 [user]
-  name = Alex Blackie
-  email = alex@alexblackie.com
+	name = Alex Blackie
+	email = alex@alexblackie.com
 
 [core]
-  excludesfile = ~/.gitignore_global
-  attributesfile = ~/.gitattributes_global
-  fileMode = false
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes_global
+	fileMode = false
 
 [alias]
-  aa = add --all
-  br = branch
-  ci = commit
-  co = checkout
-  df = diff
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  pu = push -u
-  p  = push
-  pl = pull
-  pul = pull
-  st = status
-  sta = stash
-  sl = stash list
-  sa = stash apply
-  tlog = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
-  trebase = "!sh -c 'git rebase -i HEAD~`git tlog | wc -l | tr -d \" \"`' -"
-  tdf = diff master...HEAD
-  wdf = diff --color-words=.
-  mycommits = "!sh -c 'echo \"You have made $(git log --pretty=format:\"%an\" | grep \"`git config user.name`\" | wc -l | xargs) commits.\"' -"
+	aa = add --all
+	br = branch
+	ci = commit
+	co = checkout
+	df = diff
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	pu = push -u
+	p	= push
+	pl = pull
+	pul = pull
+	st = status
+	sta = stash
+	sl = stash list
+	sa = stash apply
+	tlog = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
+	trebase = "!sh -c 'git rebase -i HEAD~`git tlog | wc -l | tr -d \" \"`' -"
+	tdf = diff master...HEAD
+	wdf = diff --color-words=.
+	mycommits = "!sh -c 'echo \"You have made $(git log --pretty=format:\"%an\" | grep \"`git config user.name`\" | wc -l | xargs) commits.\"' -"
 
 [color]
-  ui = auto
+	ui = auto
 
 [color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
+	current = yellow reverse
+	local = yellow
+	remote = green
 
 [color "diff"]
-  meta = yellow
-  frag = magenta
-  old = red
-  new = green
+	meta = yellow
+	frag = magenta
+	old = red
+	new = green
 
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 
 [merge]
-  log = true
+	log = true
 
 [rerere]
-  enabled = 1
+	enabled = 1
 
 [diff "exif"]
-  textconv = exiftool
+	textconv = exiftool
 
 [push]
-  default = simple
+	default = simple
 
 [branch]
-  autosetuprebase = always
+	autosetuprebase = always

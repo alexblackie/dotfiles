@@ -43,15 +43,15 @@ set ttyfast         " Send more characters at a given time.
 set laststatus=2    " Always show bar
 
 if has("gui_running")
-  set background=dark
-  colorscheme jellybeans
-  set guioptions=-t " No goddamned toolbars
-  set noantialias
-  set guifont=Fixed
+	set background=dark
+	colorscheme jellybeans
+	set guioptions=-t " No goddamned toolbars
+	set noantialias
+	set guifont=Fixed
 
-  if has("gui_macvim")
-    set guifont=6x13:h13
-  endif
+	if has("gui_macvim")
+	  set guifont=6x13:h13
+	endif
 endif
 
 set hlsearch
@@ -111,13 +111,13 @@ map <leader>c :center<CR>
 "  Filetype-specific overrides
 " ------------------------------------------------------------------------------
 augroup filetypedetect
-  autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown :set textwidth=80
-  autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG :set textwidth=72
-  autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
-  autocmd BufNewFile,BufReadPost *.styl set filetype=sass
-  autocmd BufNewFile,BufReadPost *.info set filetype=dosini
-  autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
-  autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
+	autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown :set textwidth=80
+	autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG :set textwidth=72
+	autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
+	autocmd BufNewFile,BufReadPost *.styl set filetype=sass
+	autocmd BufNewFile,BufReadPost *.info set filetype=dosini
+	autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
+	autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
 augroup END
 
 " ------------------------------------------------------------------------------
@@ -146,8 +146,8 @@ vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 " Lightline.vim
 " -----------
 let g:lightline = {
-  \ 'colorscheme': 'jellybeans',
-  \ }
+	\ 'colorscheme': 'jellybeans',
+	\ }
 
 " CtrlP.vim
 " ---------

@@ -56,10 +56,10 @@ zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' formats '@%b'
 
 precmd () {
-  psvar=()
+	psvar=()
 
-  vcs_info
-  [[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
+	vcs_info
+	[[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
 PROMPT="%{$fg_bold[green]%}(%m)%{$reset_color%} %{$fg[blue]%}%~%{$reset_color%}%{$fg[yellow]%}%1v%{$reset_color%} %% "
@@ -83,22 +83,22 @@ bindkey "^[0A" history-substring-search-up
 # Enable HOME key
 bindkey "^[[H" beginning-of-line
 if [[ "${terminfo[khome]}" != "" ]]; then
-  bindkey "${terminfo[khome]}" beginning-of-line
+	bindkey "${terminfo[khome]}" beginning-of-line
 fi
 
 # Enable END key
 bindkey "^[[F" end-of-line
 if [[ "${terminfo[kend]}" != "" ]]; then
-  bindkey "${terminfo[kend]}"  end-of-line
+	bindkey "${terminfo[kend]}"  end-of-line
 fi
 
 bindkey '^?' backward-delete-char # Enable Backspace (WTF ZSH)
 if [[ "${terminfo[kdch1]}" != "" ]]; then
-  bindkey "${terminfo[kdch1]}" delete-char # Enable forward-delete
+	bindkey "${terminfo[kdch1]}" delete-char # Enable forward-delete
 else
-  bindkey "^[[3~" delete-char
-  bindkey "^[3;5~" delete-char
-  bindkey "\e[3~" delete-char
+	bindkey "^[[3~" delete-char
+	bindkey "^[3;5~" delete-char
+	bindkey "\e[3~" delete-char
 fi
 
 
