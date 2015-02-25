@@ -1,0 +1,62 @@
+# -----------------------------------------------------------------------------
+# Protocol Options
+# -----------------------------------------------------------------------------
+Port 22
+
+Protocol 2
+HostKey /etc/ssh/ssh_host_ed25519_key
+
+SyslogFacility AUTH
+LogLevel INFO
+
+
+# -----------------------------------------------------------------------------
+# Authentication
+# -----------------------------------------------------------------------------
+LoginGraceTime 30s
+PermitRootLogin no
+#StrictModes yes
+MaxAuthTries 2
+MaxSessions 10
+
+RSAAuthentication yes
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
+
+HostbasedAuthentication no
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+KerberosAuthentication no
+GSSAPIAuthentication no
+
+UsePAM yes
+
+
+# -----------------------------------------------------------------------------
+# Forwarding
+# -----------------------------------------------------------------------------
+AllowAgentForwarding yes
+AllowTcpForwarding yes
+GatewayPorts no
+X11Forwarding yes
+X11DisplayOffset 10
+X11UseLocalhost yes
+
+
+# -----------------------------------------------------------------------------
+# Miscellaneous Options
+# -----------------------------------------------------------------------------
+PermitTTY yes
+PrintMotd no
+PrintLastLog yes
+TCPKeepAlive yes
+UseLogin no
+UsePrivilegeSeparation sandbox
+UseDNS no
+PidFile /run/sshd.pid
+
+
+# -----------------------------------------------------------------------------
+# Subsystems
+# -----------------------------------------------------------------------------
+Subsystem sftp /usr/lib/ssh/sftp-server
