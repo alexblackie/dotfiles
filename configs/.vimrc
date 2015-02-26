@@ -142,23 +142,30 @@ vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 " Lightline.vim
 " -----------
 let g:lightline = {
-  \ 'colorscheme': 'jellybeans',
-  \ 'component': {
-    \ 'gitbranch': '%{gitbranch#name()}',
-  \ }
+	\ 'colorscheme': 'jellybeans',
+	\ 'component': {
+		\ 'gitbranch': '%{gitbranch#name()}',
+	\ },
+	\ 'component_function': {
+		\ 'filename': 'FullFilename'
+	\ }
 \ }
 
 let g:lightline.active = {
-  \ 'left': [
-    \ [ 'mode', 'paste' ],
-    \ [ 'gitbranch' ],
-    \ [ 'readonly', 'filename', 'modified' ]
-  \ ], 'right': [
-    \ [ 'lineinfo' ],
-	  \ [ 'percent' ],
+	\ 'left': [
+		\ [ 'mode', 'paste' ],
+		\ [ 'gitbranch' ],
+		\ [ 'readonly', 'filename', 'modified' ]
+	\ ], 'right': [
+		\ [ 'lineinfo' ],
+		\ [ 'percent' ],
 		\ [ 'fileformat', 'fileencoding', 'filetype' ]
-  \ ]
+	\ ]
 \ }
+
+function! FullFilename()
+	return ('' != expand('%') ? expand('%') : '[Untitled]')
+endfunction
 
 " CtrlP.vim
 " ---------
