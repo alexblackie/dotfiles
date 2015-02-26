@@ -13,6 +13,7 @@
 	ci = commit
 	co = checkout
 	df = diff
+	dff = difftool
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	pu = push -u
 	p	= push
@@ -46,6 +47,10 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+
+[diff]
+	tool = vimdiff
+	prompt = false
 
 [merge]
 	log = true
