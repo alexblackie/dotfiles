@@ -77,6 +77,12 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" Invert hjkl keys
+nnoremap h l
+nnoremap l h
+nnoremap j k
+nnoremap k j
+
 " Unlearn peasantry
 noremap <Up> <NOP>
 noremap <Down> <NOP>
