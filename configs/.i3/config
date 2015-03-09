@@ -178,9 +178,6 @@ client.urgent           #2f343a            #900000            #ffffff           
 # ------------------------------------------------------------------------------
 # Startup programs
 # ------------------------------------------------------------------------------
-# Remap capslock to escape
-exec --no-startup-id setxkbmap -option caps:escape
-
 # Set an (in)sane key repeat rate
 exec --no-startup-id xset r rate 220 34
 
