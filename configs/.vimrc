@@ -17,6 +17,8 @@ set smartcase        " More sane searching
 set pastetoggle=<F2> " Stop the insane cascading-indents when pasting
 set tabstop=4        " 4-space-sized tabs
 set shiftwidth=4     " Instruct `<< >>` to match tabstop
+set esckeys          " Kill annoying delay on ESC
+set timeoutlen=1000 ttimeoutlen=0
 
 
 " ------------------------------------------------------------------------------
