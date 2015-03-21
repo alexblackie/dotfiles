@@ -28,6 +28,7 @@ URxvt.scrollBar:   false
 URxvt.cursorBlink: 1
 URxvt.font:        xft:Terminus:pixelsize=10
 URxvt.boldFont:
-URxvt.keysym.Home:  \033[1~
-URxvt.keysym.End:   \033[4~
-URxvt.fading:       0
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End:  \033[4~
+URxvt.fading:      0
+URxvt.geometry:    215x60
