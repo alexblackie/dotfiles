@@ -196,7 +196,7 @@ exec --no-startup-id /usr/bin/start-pulseaudio-x11
 # ------------------------------------------------------------------------------
 bar {
 	status_command i3status
-	position bottom
+	position top
 	workspace_buttons yes
 
 	colors {
