@@ -58,3 +58,6 @@
 [submodule "configs/.vim/bundle/extradite.vim"]
 	path = configs/.vim/bundle/extradite.vim
 	url = git@github.com:int3/vim-extradite.git
+[submodule "configs/.vim/bundle/ag.vim"]
+	path = configs/.vim/bundle/ag.vim
+	url = https://github.com/rking/ag.vim
