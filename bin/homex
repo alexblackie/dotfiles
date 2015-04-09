@@ -1,7 +1,0 @@
-#!/bin/sh
-
-xrandr --auto
-sleep 1
-xrandr --output DP1 --left-of eDP1 --output HDMI2 --left-of DP1
-xset r rate 220 34
-setxkbmap -option caps:escape
