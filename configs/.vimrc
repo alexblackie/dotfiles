@@ -36,7 +36,6 @@ set cursorcolumn    " Highlight current column
 set noerrorbells    " No bells
 set novisualbell    " No visual bells
 set nu              " Enable line numbers
-set relativenumber  " Relative line numbers from cursor
 set ruler           " Show cursor position
 set t_Co=256        " LOTS OF COLOURS
 set title           " Show the filename in the window titlebar.
