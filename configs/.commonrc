@@ -17,9 +17,10 @@ alias gist='gist -cp'
 alias v='vim'
 alias gv='gvim'
 
-alias fr="foreman run"
-alias fs="foreman start"
-alias fds="foreman start -f Procfile.dev"
+alias fr='foreman run'
+alias fs='foreman start'
+alias fds='foreman start -f Procfile.dev'
+alias rs='bundle exec rails s'
 
 alias be='bundle exec'
 alias bems='bundle exec middleman server'
