@@ -4,7 +4,6 @@
 set enc=utf-8          " Force UTF-8 because fuckers
 call pathogen#infect() " Init Pathogen
 
-
 " ------------------------------------------------------------------------------
 "  Text-editing
 " ------------------------------------------------------------------------------
@@ -27,7 +26,7 @@ set timeoutlen=1000 ttimeoutlen=0
 syntax on           " COLOURS!!!11!1
 
 set background=dark " The only way to code is in darkness
-colorscheme jellybeans
+colorscheme grb256
 
 highlight ColorColumn ctermbg=00 guibg=black
 

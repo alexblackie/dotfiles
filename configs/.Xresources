@@ -1,32 +1,31 @@
 ! ------------------------------------------------------------------------------
-! Jellybeans Terminal Colours
+! Pastel Terminal Colours
 ! ------------------------------------------------------------------------------
-*background: #151515
-*foreground: #888888
-*color0: #1C1C1C
-*color8: #404040
-*color1: #B85335
-*color9: #CF6A4C
-*color2: #799D6A
-*color10: #99AD6A
-*color3: #FFB964
-*color11: #FAD07A
-*color4: #667899
-*color12: #8197BF
-*color5: #8787AF
-*color13: #C6B6EE
-*color6: #668799
-*color14: #8FBFDC
-*color7: #888888
-*color15: #E8E8D3
-
+*background: #000000
+*foreground: #D3D2D3
+*color0:     #222222
+*color1:     #FF7768
+*color2:     #ABFA68
+*color3:     #FFFD88
+*color4:     #98D0FE
+*color5:     #FF85FD
+*color6:     #CACBFE
+*color7:     #EFEFEF
+*color8:     #848484
+*color9:     #FFBCB5
+*color10:    #D1FCB1
+*color11:    #FFFDD0
+*color12:    #BADFFF
+*color13:    #FFA9FE
+*color14:    #E2E3FE
+*color15:    #FFFFFF
 
 ! ------------------------------------------------------------------------------
 ! URxvt
 ! ------------------------------------------------------------------------------
 URxvt.scrollBar:   false
 URxvt.cursorBlink: 1
-URxvt.font:        xft:Terminus:pixelsize=10
+URxvt.font:        xft:Terminus:pixelsize=14
 URxvt.boldFont:
 URxvt.keysym.Home: \033[1~
 URxvt.keysym.End:  \033[4~
