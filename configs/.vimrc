@@ -32,7 +32,6 @@ highlight ColorColumn ctermbg=00 guibg=black
 
 set colorcolumn=81 " Highlight text over 80-characters
 set cursorline      " Highlight current line
-set cursorcolumn    " Highlight current column
 set noerrorbells    " No bells
 set novisualbell    " No visual bells
 set nu              " Enable line numbers
