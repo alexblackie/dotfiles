@@ -30,5 +30,5 @@ URxvt.boldFont:
 URxvt.keysym.Home: \033[1~
 URxvt.keysym.End:  \033[4~
 URxvt.fading:      0
-URxvt.geometry:    215x60
+URxvt.geometry:    180x60
 URxvt.iso14755:    false
