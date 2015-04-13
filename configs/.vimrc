@@ -30,7 +30,7 @@ colorscheme grb256
 
 highlight ColorColumn ctermbg=00 guibg=black
 
-set colorcolumn=81 " Highlight text over 80-characters
+set colorcolumn=81  " Show where 80-characters is.
 set cursorline      " Highlight current line
 set noerrorbells    " No bells
 set novisualbell    " No visual bells
