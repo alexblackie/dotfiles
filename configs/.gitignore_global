@@ -6,3 +6,4 @@ Vagrantfile
 .vagrant
 .test_runner
 vendor/bundle
+tags
