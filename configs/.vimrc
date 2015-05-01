@@ -101,6 +101,9 @@ map <Leader>t :!./.test_runner %<CR>
 " Center things
 map <leader>c :center<CR>
 
+" Convert old hashrockets into 1.9 syntax
+noremap <leader>rr :s/:\(\w\+\)\s*=>/\1:/g<CR>
+
 
 " ------------------------------------------------------------------------------
 "  Filetype-specific overrides
