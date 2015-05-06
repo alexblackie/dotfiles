@@ -29,3 +29,14 @@ highlight DiffText term=reverse cterm=bold ctermbg=lightgray ctermfg=16
 highlight DiffDelete term=reverse cterm=bold ctermbg=lightred ctermfg=16
 
 highlight PmenuSel ctermfg=16 ctermbg=156
+
+" YARD syntax highlighting
+hi link yardGenericTag Underlined
+hi link yardDuckType Todo
+hi link yardType Todo
+hi link yardLiteral Todo
+hi link yardOrderDependentList Todo
+hi link yardParametricType Todo
+hi link yardTypeList Todo
+hi link yardHashAngle Todo
+hi link yardHashCurly Todo
