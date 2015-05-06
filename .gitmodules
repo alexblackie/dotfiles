@@ -64,3 +64,6 @@
 [submodule "configs/.vim/bundle/fugitive.vim"]
 	path = configs/.vim/bundle/fugitive.vim
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "configs/.vim/bundle/vim-yardoc"]
+	path = configs/.vim/bundle/vim-yardoc
+	url = https://github.com/noprompt/vim-yardoc.git
