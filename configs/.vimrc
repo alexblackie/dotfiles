@@ -82,6 +82,9 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" Fuck this shit
+noremap K <NOP>
+
 " Quick-close quickfix
 map <leader>qq :cclose<CR>
 
