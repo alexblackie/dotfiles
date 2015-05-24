@@ -5,6 +5,5 @@
 Vagrantfile
 .vagrant
 .test_runner
-vendor/bundle/
-*/vendor/bundle
+**/vendor/bundle
 tags
