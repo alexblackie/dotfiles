@@ -9,13 +9,13 @@ call pathogen#infect() " Init Pathogen
 " ------------------------------------------------------------------------------
 set autoindent       " Hit enter, re-indents according to last line
 set backspace=2      " Use sane backspace behaviour
-set noexpandtab      " Hard-tabs masterrace
+set expandtab      " Hard-tabs masterrace
 set nocompatible     " Don't care about Vi compat
 set nowrap           " Line wrapping is a sin
 set smartcase        " More sane searching
 set pastetoggle=<F2> " Stop the insane cascading-indents when pasting
-set tabstop=4        " 4-space-sized tabs
-set shiftwidth=4     " Instruct `<< >>` to match tabstop
+set tabstop=2        " 4-space-sized tabs
+set shiftwidth=2     " Instruct `<< >>` to match tabstop
 set esckeys          " Kill annoying delay on ESC
 set timeoutlen=1000 ttimeoutlen=0
 
@@ -119,6 +119,7 @@ augroup filetypedetect
 	autocmd BufNewFile,BufReadPost *.info set filetype=dosini
 	autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
 	autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
+	autocmd BufNewFile,BufReadPost *.sh,*.erl,*.java,*.c,*.cc,Makefile set noexpandtab
 augroup END
 
 " ------------------------------------------------------------------------------
