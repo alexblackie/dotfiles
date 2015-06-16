@@ -1,0 +1,4 @@
+set tabsize 2
+set autoindent
+set tempfile
+include /usr/share/nano/*.nanorc
