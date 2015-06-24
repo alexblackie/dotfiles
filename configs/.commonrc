@@ -15,7 +15,6 @@ alias yolo='git push -f origin'
 alias gist='gist -cp'
 
 alias v='vim'
-alias gv='gvim'
 
 alias fr='foreman run'
 alias fs='foreman start'
@@ -55,8 +54,6 @@ refactor() {
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
-[[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
-
 if [ -f ~/.env ]; then
 	source ~/.env
 fi
@@ -71,10 +68,5 @@ fi
 # ------------------------------------------------------------------------------
 # Environment
 # ------------------------------------------------------------------------------
-export EDITOR='vim'
-export PATH="$HOME/bin:./node_modules/.bin:./bin/:$HOME/.gem_local/bin:$PATH"
-
-if [ -d "$HOME/.gem_local" ]; then
-	# allows use of system ruby without `sudo`
-	export GEM_HOME="$HOME/.gem_local"
-fi
+export EDITOR="vim"
+export PATH="$HOME/bin:$HOME/.gem_local/bin:$PATH"
