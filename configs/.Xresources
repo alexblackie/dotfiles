@@ -21,14 +21,19 @@
 *color15:    #FFFFFF
 
 ! ------------------------------------------------------------------------------
-! URxvt
+! Terminal settings
 ! ------------------------------------------------------------------------------
-URxvt.scrollBar:   false
-URxvt.cursorBlink: 1
-URxvt.font:        xft:Terminus:pixelsize=14
-URxvt.boldFont:
-URxvt.keysym.Home: \033[1~
-URxvt.keysym.End:  \033[4~
-URxvt.fading:      0
-URxvt.geometry:    180x60
-URxvt.iso14755:    false
+*geometry: 180x60
+
+urxvt*cursorBlink: 1
+urxvt*font: xft:Terminus:pixelsize=14
+urxvt*boldFont:
+urxvt*keysym.Home: \033[1~
+urxvt*keysym.End: \033[4~
+urxvt*fading: 0
+urxvt*scrollBar: false
+urxvt*iso14755: false
+
+xterm*faceName: Terminus:pixelsize=14:antialias=false
+xterm*allowBoldFonts: false
+xterm*ScrollBar: false
