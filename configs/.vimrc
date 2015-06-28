@@ -112,20 +112,21 @@ map <leader>c :center<CR>
 noremap <leader>rr :s/:\(\w\+\)\s*=>/\1:/g<CR>
 
 
-
 " ------------------------------------------------------------------------------
 "  Filetype-specific overrides
 " ------------------------------------------------------------------------------
 augroup filetypedetect
-	autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown :set textwidth=80
-	autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG :set textwidth=72
+	autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown set textwidth=80
+	autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG set textwidth=72
 	autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
 	autocmd BufNewFile,BufReadPost *.styl set filetype=sass
 	autocmd BufNewFile,BufReadPost *.info set filetype=dosini
 	autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
 	autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
 	autocmd BufNewFile,BufReadPost *.sh,*.erl,*.java,*.c,*.cc,Makefile set noexpandtab
+	autocmd BufNewFile,BufReadPost *.py set tabstop=4 shiftwidth=4
 augroup END
+
 
 " ------------------------------------------------------------------------------
 "  Automatic things
