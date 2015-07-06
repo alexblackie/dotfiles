@@ -2,17 +2,12 @@
 # Aliases & custom functions
 # ------------------------------------------------------------------------------
 alias ls='ls -Gph'
-alias l='ls'
 alias la='ls -ah'
-alias ll='ls -lh'
-alias lal='ls -alh'
 
 alias g='git'
 alias gst='git status'
 alias gp='git push'
-alias gap='git add -p'
 alias yolo='git push -f origin'
-alias gist='gist -cp'
 
 alias v='vim'
 
@@ -26,10 +21,7 @@ alias bems='bundle exec middleman server'
 
 alias vag='vagrant'
 
-alias :wq='exit'
 alias :q='exit'
-
-alias fucking='sudo'
 
 vs() {
 	args=$(printf "%s " "$@") # concatenate arguments into single string
