@@ -26,7 +26,7 @@ set timeoutlen=1000 ttimeoutlen=0
 syntax on           " COLOURS!!!11!1
 
 set background=dark " The only way to code is in darkness
-colorscheme jellybeans
+colorscheme solarized
 
 highlight ColorColumn ctermbg=00 guibg=black
 
@@ -154,7 +154,7 @@ vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 " Lightline.vim
 " -----------
 let g:lightline = {
-	\ 'colorscheme': 'jellybeans',
+	\ 'colorscheme': 'solarized',
 	\ 'component': {
 		\ 'gitbranch': '%{gitbranch#name()}',
 	\ },

@@ -67,3 +67,6 @@
 [submodule "configs/.vim/bundle/vim-yardoc"]
 	path = configs/.vim/bundle/vim-yardoc
 	url = https://github.com/noprompt/vim-yardoc.git
+[submodule "configs/.vim/bundle/vim-solarized"]
+	path = configs/.vim/bundle/vim-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
