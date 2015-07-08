@@ -28,7 +28,7 @@ syntax on           " COLOURS!!!11!1
 set background=dark " The only way to code is in darkness
 colorscheme solarized
 
-highlight ColorColumn ctermbg=00 guibg=black
+highlight ColorColumn ctermbg=00
 
 set colorcolumn=81  " Show where 80-characters is.
 set cursorline      " Highlight current line
@@ -40,14 +40,6 @@ set t_Co=256        " LOTS OF COLOURS
 set title           " Show the filename in the window titlebar.
 set ttyfast         " Send more characters at a given time.
 set laststatus=2    " Always show bar
-
-if has("gui_running")
-	set background=dark
-	colorscheme jellybeans
-	set guioptions=-t " No goddamned toolbars
-	set noantialias
-	set guifont=Fixed
-endif
 
 set hlsearch
 hi Search cterm=NONE ctermfg=black ctermbg=yellow
