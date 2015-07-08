@@ -47,6 +47,9 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history # share history between shells
 
+# Don't ask me if I want to rm a wildcard, DO WHAT I TOLD YOU
+setopt rm_star_silent
+
 
 # ------------------------------------------------------------------------------
 # Prompt
