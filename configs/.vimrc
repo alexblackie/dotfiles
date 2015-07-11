@@ -17,7 +17,7 @@ set smartcase        " Better searching
 set pastetoggle=<F2> " Stop the cascading-indents when pasting
 set tabstop=2
 set shiftwidth=2
-"
+
 " Kill annoying delay on ESC
 set esckeys
 set timeoutlen=1000 ttimeoutlen=0
@@ -28,7 +28,7 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on           " COLOURS!!!11!1
 set background=dark
-colorscheme solarized
+colorscheme pablo
 
 highlight ColorColumn ctermbg=00
 
