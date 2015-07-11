@@ -103,6 +103,12 @@ augroup filetypedetect
 	autocmd BufNewFile,BufReadPost *.py set tabstop=4 shiftwidth=4
 augroup END
 
+" Whitespace highlighting/deleting
+highlight ExtraWhitespace ctermbg=darkred guibg=#382424
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd BufWritePre * :%s/\s\+$//e
 
 
