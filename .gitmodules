@@ -13,9 +13,6 @@
 [submodule "configs/.vim/bundle/vim-ruby"]
 	path = configs/.vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "configs/.vim/bundle/vim-slim"]
-	path = configs/.vim/bundle/vim-slim
-	url = https://github.com/slim-template/vim-slim.git
 [submodule "configs/.vim/bundle/tabular"]
 	path = configs/.vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
