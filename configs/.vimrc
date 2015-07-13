@@ -27,7 +27,7 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on           " COLOURS!!!11!1
 set background=dark
-colorscheme pablo
+colorscheme jellybeans
 
 highlight ColorColumn ctermbg=00
 
@@ -131,7 +131,7 @@ vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
 " Lightline.vim
 " -----------
 let g:lightline = {
-	\ 'colorscheme': 'solarized',
+	\ 'colorscheme': 'jellybeans',
 	\ 'component': {
 		\ 'gitbranch': '%{gitbranch#name()}',
 	\ },
