@@ -12,7 +12,6 @@ set autoindent
 set backspace=2      " Use sane backspace behaviour
 set expandtab        " Spaces for tabs by default
 set nocompatible
-set nowrap
 set smartcase        " Better searching
 set pastetoggle=<F2> " Stop the cascading-indents when pasting
 set tabstop=2
