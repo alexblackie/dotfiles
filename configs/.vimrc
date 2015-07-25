@@ -8,6 +8,8 @@ call pathogen#infect()
 " ------------------------------------------------------------------------------
 "  Text-editing
 " ------------------------------------------------------------------------------
+filetype plugin indent on
+
 set autoindent
 set backspace=2      " Use sane backspace behaviour
 set expandtab        " Spaces for tabs by default
