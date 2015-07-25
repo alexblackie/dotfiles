@@ -35,6 +35,6 @@ urxvt*fading: 0
 urxvt*scrollBar: false
 urxvt*iso14755: false
 
-xterm*faceName: Terminus:pixelsize=14:antialias=false
+xterm*faceName: Terminus:pixelsize=12:antialias=false
 xterm*allowBoldFonts: false
 xterm*ScrollBar: false
