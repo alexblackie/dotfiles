@@ -116,6 +116,21 @@ autocmd BufWritePre * :%s/\s\+$//e
 " ------------------------------------------------------------------------------
 "  Plugin config
 " ------------------------------------------------------------------------------
+" Fzy
+" ---
+function! FzyCommand(choice_command, vim_command)
+  try
+    let output = system(a:choice_command . " | fzy ")
+  catch /Vim:Interrupt/
+    " Swallow errors from ^C, allow redraw! below
+  endtry
+  redraw!
+  if v:shell_error == 0 && !empty(output)
+    exec a:vim_command . ' ' . output
+  endif
+endfunction
+
+nnoremap <c-p> :call FzyCommand("ag . --nocolor -l -g ''", ":e")<cr>
 
 " Tabularize.vim
 " --------------
@@ -157,11 +172,6 @@ let g:lightline.active = {
 function! FullFilename()
 	return ('' != expand('%') ? expand('%') : '[Untitled]')
 endfunction
-
-" CtrlP.vim
-" ---------
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command      = 'ag %s -l --nocolor -g ""'
 
 " Markdown.vim
 " ------------
