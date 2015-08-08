@@ -100,7 +100,7 @@ augroup filetypedetect
 	autocmd BufNewFile,BufReadPost *.info set filetype=dosini
 	autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
 	autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
-	autocmd BufNewFile,BufReadPost *.sh,*.erl,*.java,*.c,*.cc,Makefile,*.conf set noexpandtab tabstop=4 shiftwidth=4
+	autocmd BufNewFile,BufReadPost *.sh,*.erl,*.app.src,*.java,*.c,*.cc,Makefile,*.conf set noexpandtab tabstop=4 shiftwidth=4
 	autocmd BufNewFile,BufReadPost *.py set tabstop=4 shiftwidth=4
 augroup END
 
