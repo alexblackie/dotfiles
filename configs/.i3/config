@@ -91,7 +91,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 # Keybindings
 # ------------------------------------------------------------------------------
 # open terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec urxvt
 
 # KILL focused window
 bindsym $mod+Shift+q kill
