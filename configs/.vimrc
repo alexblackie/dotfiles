@@ -72,15 +72,6 @@ nnoremap <c-l> <c-w>l
 " Fuck this shit
 noremap K <NOP>
 
-" Quick-close quickfix
-map <leader>qq :cclose<CR>
-
-" Clear highlights
-map <leader>nh :nohl<CR>
-
-" Run current file as a script
-map <leader>r :!./%<CR>
-
 " Run current project's test suite
 map <leader>s :!./.test_runner<CR>
 map <Leader>t :!./.test_runner %<CR>
@@ -132,19 +123,6 @@ endfunction
 
 nnoremap <c-p> :call FzyCommand("ag . --nocolor -l -g ''", ":e")<cr>
 
-" Tabularize.vim
-" --------------
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a=> :Tabularize /=><CR>
-vmap <Leader>a=> :Tabularize /=><CR>
-nmap <Leader>a-> :Tabularize /-><CR>
-vmap <Leader>a-> :Tabularize /-><CR>
-nmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
-vmap <Leader>a: :Tabularize /:\zs/l0l1<CR>
-nmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
-vmap <Leader>a, :Tabularize /,\zs/l0l1<CR>
-
 " Lightline.vim
 " -----------
 let g:lightline = {
@@ -172,7 +150,3 @@ let g:lightline.active = {
 function! FullFilename()
 	return ('' != expand('%') ? expand('%') : '[Untitled]')
 endfunction
-
-" Markdown.vim
-" ------------
-let g:vim_markdown_folding_disabled = 1
