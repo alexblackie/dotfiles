@@ -10,9 +10,6 @@
 [submodule "configs/.vim/bundle/vim-ruby"]
 	path = configs/.vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "configs/.vim/bundle/vim-snipmate"]
-	path = configs/.vim/bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule "configs/.vim/bundle/vim-elixir"]
 	path = configs/.vim/bundle/vim-elixir
 	url = https://github.com/alexblackie/vim-elixir.git
