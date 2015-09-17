@@ -122,31 +122,3 @@ function! FzyCommand(choice_command, vim_command)
 endfunction
 
 nnoremap <c-p> :call FzyCommand("ag . --nocolor -l -g ''", ":e")<cr>
-
-" Lightline.vim
-" -----------
-let g:lightline = {
-	\ 'colorscheme': 'jellybeans',
-	\ 'component': {
-		\ 'gitbranch': '%{gitbranch#name()}',
-	\ },
-	\ 'component_function': {
-		\ 'filename': 'FullFilename'
-	\ }
-\ }
-
-let g:lightline.active = {
-	\ 'left': [
-		\ [ 'mode', 'paste' ],
-		\ [ 'gitbranch' ],
-		\ [ 'readonly', 'filename', 'modified' ]
-	\ ], 'right': [
-		\ [ 'lineinfo' ],
-		\ [ 'percent' ],
-		\ [ 'fileformat', 'fileencoding', 'filetype' ]
-	\ ]
-\ }
-
-function! FullFilename()
-	return ('' != expand('%') ? expand('%') : '[Untitled]')
-endfunction
