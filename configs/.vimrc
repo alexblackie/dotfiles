@@ -30,6 +30,7 @@ set timeoutlen=1000 ttimeoutlen=0
 syntax on           " COLOURS!!!11!1
 set background=dark
 colorscheme grb256
+set t_Co=256
 
 highlight ColorColumn ctermbg=00
 
@@ -37,9 +38,6 @@ set colorcolumn=81
 set noerrorbells
 set novisualbell
 set number
-set ruler
-set t_Co=256
-set ttyfast " Gotta go fast!
 set laststatus=2 " Always show bar
 
 set incsearch " Show search results 'as you type'
