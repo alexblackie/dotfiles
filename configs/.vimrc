@@ -29,7 +29,7 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on           " COLOURS!!!11!1
 set background=dark
-colorscheme grb256
+colorscheme jellybeans
 set t_Co=256
 
 highlight ColorColumn ctermbg=00
