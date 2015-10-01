@@ -23,6 +23,14 @@ alias vag='vagrant'
 
 alias :q='exit'
 
+wifi() {
+	if [[ "$2" != "" ]]; then
+		sudo nmcli dev wifi con "$1" name "$1" password "$2"
+	else
+		sudo nmcli dev wifi con "$1" name "$1"
+	fi
+}
+
 vs() {
 	args=$(printf "%s " "$@") # concatenate arguments into single string
 	vagrant ssh -c "$args"
