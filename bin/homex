@@ -1,0 +1,10 @@
+#!/bin/sh
+
+xrandr --auto
+
+xrandr --output eDP1 --left-of DP2 --output HDMI1 --right-of DP2
+
+xset r rate 220 34
+setxkbmap -option caps:escape
+
+sh ~/.fehbg
