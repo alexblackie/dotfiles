@@ -185,7 +185,7 @@ exec --no-startup-id xset r rate 220 34
 exec --no-startup-id sh ~/.fehbg
 
 # Start XScreensaver
-exec --no-startup-id xscreensaver --no-splash
+exec --no-startup-id xscreensaver
 
 # Pulseaudio server (yes, I'm sorry)
 exec --no-startup-id /usr/bin/start-pulseaudio-x11
