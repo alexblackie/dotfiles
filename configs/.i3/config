@@ -200,13 +200,13 @@ bar {
 	workspace_buttons yes
 
 	colors {
-	  background $jellybeans-dark-grey
-	  statusline $jellybeans-white
+		background $jellybeans-dark-grey
+		statusline $jellybeans-white
 
-	  # class            border                 background              text
-	  focused_workspace  $numix-dark-grey       $numix-dark-grey        #FFFFFF
-	  active_workspace   $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
-	  inactive_workspace $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
-	  urgent_workspace   #FF00FF                #FF00FF                 #FFFFFF
+		# class            border                 background              text
+		focused_workspace  $numix-dark-grey       $numix-dark-grey        #FFFFFF
+		active_workspace   $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
+		inactive_workspace $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
+		urgent_workspace   #FF00FF                #FF00FF                 #FFFFFF
 	}
 }
