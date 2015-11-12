@@ -176,22 +176,6 @@ client.urgent           #2f343a            #900000            #ffffff           
 
 
 # ------------------------------------------------------------------------------
-# Startup programs
-# ------------------------------------------------------------------------------
-# Set an (in)sane key repeat rate
-exec --no-startup-id xset r rate 220 34
-
-# Set desktop background
-exec --no-startup-id sh ~/.fehbg
-
-# Start XScreensaver
-exec --no-startup-id xscreensaver
-
-# Pulseaudio server (yes, I'm sorry)
-exec --no-startup-id /usr/bin/start-pulseaudio-x11
-
-
-# ------------------------------------------------------------------------------
 # i3bar and i3status
 # ------------------------------------------------------------------------------
 bar {

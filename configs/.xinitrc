@@ -6,6 +6,21 @@ xrdb -load ~/.Xresources
 # Xmodmap!
 xmodmap ~/.Xmodmap &
 
+# Fix keyboard
+resetkeyboard &
+
+# Start xscreensaver
+xscreensaver &
+
+# Start pulseaudio
+start-pulseaudio-x11 &
+
+# Set background
+sh ~/.fehbg &
+
+# Start dwmstatus
+dwmstatus &
+
 # Fix trackpoint
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
 xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
@@ -14,4 +29,4 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 xinput set-prop "TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.75
 
 # Launch i3 with dbus support
-exec dbus-launch i3
+exec dbus-launch dwm
