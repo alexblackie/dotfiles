@@ -47,7 +47,7 @@ refactor() {
 	#	 $2 = wanted
 	# ex, to change "user" to "account": `refactor user account`
 
-	for f in `ag -l $1 | xargs`; do sed -i "s/$1/$2/g" $f; done
+	ag -l $1 | xargs sed -i "s/$1/$2/g"
 }
 
 
