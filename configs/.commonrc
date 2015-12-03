@@ -50,6 +50,10 @@ refactor() {
 	ag -l $1 | xargs sed -i "s/$1/$2/g"
 }
 
+jsonget() {
+	curl -s "$@" | python -m json.tool | pygmentize -l json
+}
+
 
 # ------------------------------------------------------------------------------
 # Libraries/Imports
