@@ -1,24 +1,11 @@
 ! ------------------------------------------------------------------------------
 ! Colors
 ! ------------------------------------------------------------------------------
-*background: #151515
-*foreground: #888888
+*background: #000000
+*foreground: #D5D5D5
 *color0: #1C1C1C
-*color8: #404040
-*color1: #B85335
-*color9: #CF6A4C
-*color2: #799D6A
-*color10: #99AD6A
-*color3: #FFB964
-*color11: #FAD07A
-*color4: #667899
-*color12: #8197BF
-*color5: #8787AF
-*color13: #C6B6EE
-*color6: #668799
-*color14: #8FBFDC
-*color7: #888888
-*color15: #E8E8D3
+*color4: #6495ED
+*color12: #6495ED
 
 
 ! ------------------------------------------------------------------------------
@@ -27,14 +14,10 @@
 *geometry: 180x60
 
 urxvt*cursorBlink: 1
-urxvt*font: xft:Terminus:pixelsize=12
+urxvt*font: xft:terminus:pixelsize=10
 urxvt*boldFont:
 urxvt*keysym.Home: \033[1~
 urxvt*keysym.End: \033[4~
 urxvt*fading: 0
 urxvt*scrollBar: false
 urxvt*iso14755: false
-
-xterm*faceName: Terminus:pixelsize=12:antialias=false
-xterm*allowBoldFonts: false
-xterm*ScrollBar: false
