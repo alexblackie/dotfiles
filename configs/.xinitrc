@@ -12,6 +12,9 @@ resetkeyboard &
 # Start xscreensaver
 xscreensaver &
 
+# Set status bar area
+dwmstatus &
+
 # Start pulseaudio
 start-pulseaudio-x11 &
 
