@@ -40,6 +40,9 @@ set novisualbell
 set number
 set laststatus=2 " Always show bar
 
+set cursorline
+set cursorcolumn
+
 set incsearch " Show search results 'as you type'
 set hlsearch
 hi Search cterm=NONE ctermfg=black ctermbg=yellow
