@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+export DE=gnome
+
 # Force load Xresources, sometimes it doesn't autoload for some reason
 xrdb -load ~/.Xresources
 
