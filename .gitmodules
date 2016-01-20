@@ -34,3 +34,6 @@
 [submodule "configs/.vim/bundle/logstash.vim"]
 	path = configs/.vim/bundle/logstash.vim
 	url = https://github.com/robbles/logstash.vim.git
+[submodule "configs/.vim/bundle/yajs.vim"]
+	path = configs/.vim/bundle/yajs.vim
+	url = https://github.com/othree/yajs.vim.git
