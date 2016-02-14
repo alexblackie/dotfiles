@@ -12,6 +12,7 @@
 	br = branch
 	ci = commit
 	co = checkout
+	dc = diff --cached
 	df = diff
 	dff = difftool
 	flog = reflog --pretty=format:'%C(bold cyan)%h%C(reset) %C(blue)%cd %C(bold green)%s %C(bold cyan)%an%Creset%C(bold red)%d' --abbrev-commit --date=short
