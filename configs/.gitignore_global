@@ -7,3 +7,4 @@ Vagrantfile
 .test_runner
 **/vendor/bundle
 tags
+.editorconfig
