@@ -29,7 +29,7 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on           " COLOURS!!!11!1
 set background=dark
-colorscheme jellybeans
+colorscheme default
 set t_Co=256
 
 highlight ColorColumn ctermbg=00
@@ -39,9 +39,6 @@ set noerrorbells
 set novisualbell
 set number
 set laststatus=2 " Always show bar
-
-set cursorline
-set cursorcolumn
 
 set incsearch " Show search results 'as you type'
 set hlsearch
