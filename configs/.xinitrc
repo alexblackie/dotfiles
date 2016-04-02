@@ -14,21 +14,11 @@ resetkeyboard &
 # Start xscreensaver
 xscreensaver &
 
-# Set status bar area
-dwmstatus &
-
 # Start pulseaudio
 start-pulseaudio-x11 &
 
 # Set background
 sh ~/.fehbg &
 
-# Fix trackpoint
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
-xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
-xinput set-prop "TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.75
-
 # Launch i3 with dbus support
-exec dbus-launch dwm
+exec dbus-launch i3
