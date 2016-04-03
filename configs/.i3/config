@@ -160,7 +160,7 @@ for_window [window_role="pop-up"] floating enable
 # ------------------------------------------------------------------------------
 set $numix-grey        #ABABAB
 set $numix-mid-grey    #303030
-set $numix-dark-grey   #2D2D2D
+set $numix-dark-grey   #444444
 set $numix-darker-grey #222222
 set $numix-light-grey  #DEDEDE
 set $numix-orange      #D64937
