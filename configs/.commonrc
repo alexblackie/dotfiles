@@ -30,6 +30,7 @@ wifi() {
 		sudo nmcli dev wifi con "$1" name "$1"
 	fi
 }
+alias widown='sudo nmcli dev disconnect wlp3s0'
 
 vs() {
 	args=$(printf "%s " "$@") # concatenate arguments into single string
