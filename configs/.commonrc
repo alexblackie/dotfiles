@@ -52,7 +52,7 @@ refactor() {
 }
 
 jsonget() {
-	curl -s "$@" | python -m json.tool | pygmentize -l json
+	curl -s $@ | python -m json.tool | pygmentize -l json
 }
 
 
