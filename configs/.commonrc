@@ -23,6 +23,11 @@ alias vag='vagrant'
 
 alias :q='exit'
 
+fpass() {
+	filename=$(cd $HOME/.password-store && ag . -l -g '' | fzy)
+	pass -c ${filename/.gpg/}
+}
+
 wifi() {
 	if [[ "$2" != "" ]]; then
 		sudo nmcli dev wifi con "$1" name "$1" password "$2"
