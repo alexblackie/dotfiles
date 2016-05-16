@@ -37,3 +37,6 @@
 [submodule "configs/.vim/bundle/yajs.vim"]
 	path = configs/.vim/bundle/yajs.vim
 	url = https://github.com/othree/yajs.vim.git
+[submodule "configs/.vim/bundle/vim-solarized"]
+	path = configs/.vim/bundle/vim-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

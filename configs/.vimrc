@@ -28,8 +28,8 @@ set timeoutlen=1000 ttimeoutlen=0
 "  UI Things
 " ------------------------------------------------------------------------------
 syntax on           " COLOURS!!!11!1
-set background=dark
-colorscheme jellybeans
+set background=light
+colorscheme solarized
 set t_Co=256
 
 highlight ColorColumn ctermbg=00
