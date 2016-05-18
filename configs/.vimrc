@@ -32,7 +32,7 @@ set background=light
 colorscheme solarized
 set t_Co=256
 
-highlight ColorColumn ctermbg=00
+highlight ColorColumn ctermbg=LightGrey
 
 set colorcolumn=81
 set noerrorbells
