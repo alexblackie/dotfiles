@@ -1,8 +1,9 @@
 # ------------------------------------------------------------------------------
 # Aliases & custom functions
 # ------------------------------------------------------------------------------
-alias ls='ls -Gph'
+alias ls='ls -Gph --color=auto'
 alias la='ls -ah'
+alias ll='ls -l'
 
 alias g='git'
 alias gst='git status'
