@@ -32,7 +32,7 @@ set background=light
 colorscheme jellybeans
 set t_Co=256
 
-highlight ColorColumn ctermbg=LightGrey
+highlight ColorColumn ctermbg=00
 
 set colorcolumn=81
 set noerrorbells
