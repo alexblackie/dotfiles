@@ -56,7 +56,6 @@
 
 [merge]
 	log = true
-	conflictstyle = diff3
 
 [rerere]
 	enabled = 1
