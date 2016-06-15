@@ -12,6 +12,9 @@ alias yolo='git push -f origin'
 
 alias v='vim'
 
+alias tm='tmux'
+alias tma='tmux attach'
+
 alias fr='foreman run'
 alias fs='foreman start'
 alias fds='foreman start -f Procfile.dev'
