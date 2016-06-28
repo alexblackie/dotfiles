@@ -18,14 +18,24 @@ alias tma='tmux attach'
 alias fr='foreman run'
 alias fs='foreman start'
 alias fds='foreman start -f Procfile.dev'
-alias rs='bundle exec rails s'
-
-alias be='bundle exec'
-alias bems='bundle exec middleman server'
 
 alias vag='vagrant'
 
 alias :q='exit'
+
+# ex., dexec java 8080 -lc mvn jetty:run
+dexec() {
+	docker run -it --rm -v `pwd`:/data -p $2:$2 alexblackie/dev_$1 ${@:3}
+}
+
+rubyexec() {
+	dexec ruby $1 ${@:2}
+}
+
+# ex., be 3000 rails s
+be() {
+	rubyexec $1 -lc "bundle exec ${@:2}"
+}
 
 fpass() {
 	filename=$(cd $HOME/.password-store && ag . -l -g '' | fzy)
