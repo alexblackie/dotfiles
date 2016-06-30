@@ -37,6 +37,15 @@ be() {
 	rubyexec $1 -lc "bundle exec ${@:2}"
 }
 
+startdb() {
+	DIR="$HOME/.postgresql_data/$1"
+	PORT=${2:-5432}
+	mkdir -p "$DIR"
+	sudo chown 26:26 "$DIR"
+	sudo chcon -Rt svirt_sandbox_file_t "$DIR"
+	docker run -v "$DIR:/var/lib/pgsql/data" -p $PORT:5432 -e POSTGRES_PASSWORD=password123 postgres
+}
+
 fpass() {
 	filename=$(cd $HOME/.password-store && ag . -l -g '' | fzy)
 	pass -c ${filename/.gpg/}
