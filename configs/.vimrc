@@ -92,6 +92,7 @@ augroup filetypedetect
 	autocmd BufNewFile,BufReadPost *.sh,*.erl,*.app.src,*.java,*.c,*.cc,Makefile,*.conf set noexpandtab tabstop=4 shiftwidth=4
 	autocmd BufNewFile,BufReadPost *.py set tabstop=4 shiftwidth=4
 	autocmd BufNewFile,BufReadPost *.es6 set filetype=javascript
+	autocmd BufNewFile,BufReadPost *.go set noexpandtab tabstop=8 shiftwidth=8
 augroup END
 
 " Whitespace highlighting/deleting
