@@ -43,7 +43,7 @@ startdb() {
 	mkdir -p "$DIR"
 	sudo chown 26:26 "$DIR"
 	sudo chcon -Rt svirt_sandbox_file_t "$DIR"
-	docker run -v "$DIR:/var/lib/pgsql/data" -p $PORT:5432 -e POSTGRES_PASSWORD=password123 postgres
+	docker run -v "$DIR:/var/lib/postgresql/data" -p $PORT:5432 -e POSTGRES_PASSWORD=password123 postgres
 }
 
 fpass() {
