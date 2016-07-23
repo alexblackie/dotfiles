@@ -27,12 +27,12 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 "  UI Things
 " ------------------------------------------------------------------------------
-syntax on           " COLOURS!!!11!1
+syntax on
 set background=light
-colorscheme jellybeans
+colorscheme default
 set t_Co=256
 
-highlight ColorColumn ctermbg=00
+highlight ColorColumn ctermbg=255
 
 set colorcolumn=81
 set noerrorbells
