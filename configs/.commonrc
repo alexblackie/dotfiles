@@ -23,16 +23,26 @@ alias vag='vagrant'
 
 alias :q='exit'
 
-# ex., dexec java 8080 -lc mvn jetty:run
+# In these Dockerized functions, you can forward a port by passing the port
+# number as the second argument.
+#
+# ex., dexec java 8080 -lc 'mvn jetty:run'
+# or,  dexec java -lc 'mvn package'
 dexec() {
-	docker run -it --rm -v `pwd`:/data -p $2:$2 alexblackie/dev_$1 ${@:3}
+	numerical="^[0-9]+$"
+	if [[ "$2" =~ $numerical ]] ; then
+		docker run -it --rm -v `pwd`:/data -p $2:$2 alexblackie/dev_$1 ${@:3}
+	else
+		docker run -it --rm -v `pwd`:/data alexblackie/dev_$1 ${@:2}
+	fi
 }
 
 rubyexec() {
-	dexec ruby $1 ${@:2}
+	dexec ruby $@
 }
 
 # ex., be 3000 rails s
+# or,  be rake some:task
 be() {
 	rubyexec $1 -lc "bundle exec ${@:2}"
 }
