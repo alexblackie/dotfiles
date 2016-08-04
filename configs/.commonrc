@@ -26,15 +26,26 @@ alias :q='exit'
 # In these Dockerized functions, you can forward a port by passing the port
 # number as the second argument.
 #
-# ex., dexec java 8080 -lc 'mvn jetty:run'
-# or,  dexec java -lc 'mvn package'
+# ex., dexec java 8080 mvn jetty:run
+# or, dexec java mvn package
 dexec() {
 	numerical="^[0-9]+$"
 	if [[ "$2" =~ $numerical ]] ; then
-		docker run -it --rm -v `pwd`:/data -p $2:$2 alexblackie/dev_$1 ${@:3}
+		PORTS=(-p "$2:$2")
+
+		if [[ "${@:3}" != "" ]] ; then
+			CONTAINER_ARGS="${@:3}"
+			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1 -lc "$CONTAINER_ARGS"
+		fi
 	else
-		docker run -it --rm -v `pwd`:/data alexblackie/dev_$1 ${@:2}
+		if [[ "${@:2}" != "" ]] ; then
+			CONTAINER_ARGS="${@:2}"
+			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1 -lc "$CONTAINER_ARGS"
+		else
+			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1
+		fi
 	fi
+
 }
 
 rubyexec() {
@@ -42,9 +53,14 @@ rubyexec() {
 }
 
 # ex., be 3000 rails s
-# or,  be rake some:task
+# or, be rake some:task
 be() {
-	rubyexec $1 -lc "bundle exec ${@:2}"
+	numerical="^[0-9]+$"
+	if [[ "$1" =~ $numerical ]] ; then
+		rubyexec $1 bundle exec ${@:2}
+	else
+		rubyexec bundle exec $@
+	fi
 }
 
 startdb() {
