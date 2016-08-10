@@ -38,6 +38,7 @@ set colorcolumn=81
 set noerrorbells
 set novisualbell
 set number
+set ruler
 set laststatus=2 " Always show bar
 
 set incsearch " Show search results 'as you type'
