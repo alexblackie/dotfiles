@@ -46,7 +46,6 @@ let &winwidth = 87 " Ensure a minimum width for active split
 
 highlight Search      ctermbg=LightYellow ctermfg=Black cterm=NONE
 highlight ColorColumn ctermbg=LightGrey
-highlight StatusLine  ctermbg=NONE        ctermfg=Grey cterm=NONE
 
 " ------------------------------------------------------------------------------
 " System
