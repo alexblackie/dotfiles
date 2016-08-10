@@ -32,8 +32,6 @@ set background=light
 colorscheme solarized
 set t_Co=256
 
-highlight ColorColumn ctermbg=255
-
 set colorcolumn=81
 set noerrorbells
 set novisualbell
@@ -43,10 +41,12 @@ set laststatus=2 " Always show bar
 
 set incsearch " Show search results 'as you type'
 set hlsearch
-hi Search cterm=NONE ctermfg=black ctermbg=yellow
 
 let &winwidth = 87 " Ensure a minimum width for active split
 
+highlight Search      ctermbg=LightYellow ctermfg=Black cterm=NONE
+highlight ColorColumn ctermbg=LightGrey
+highlight StatusLine  ctermbg=NONE        ctermfg=Grey cterm=NONE
 
 " ------------------------------------------------------------------------------
 " System
