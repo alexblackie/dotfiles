@@ -97,7 +97,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run -fn "Terminus-8"
 
 # lock screen
-bindsym $mod+Shift+Delete exec --no-startup-id xscreensaver-command -lock
+bindsym $mod+Shift+Delete exec --no-startup-id lock
 
 # take screenshot
 bindsym --release $mod+Shift+s exec --no-startup-id $HOME/bin/scrotup/scrotup
