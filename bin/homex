@@ -1,7 +1,6 @@
 #!/bin/sh
 
-xrandr --auto
-xrandr --output eDP1 --off --output HDMI1 --mode 2560x1440 --right-of DP2 --output DP2 --mode 1920x1200
+xrandr --output eDP1 --pos 1920x600 --output HDMI1 --mode 1920x1200 --pos 0x0
 
 $HOME/bin/resetkeyboard
 
