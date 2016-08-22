@@ -48,7 +48,7 @@ dexec() {
 
 }
 
-rubyexec() {
+rux() {
 	dexec ruby $@
 }
 
@@ -57,9 +57,9 @@ rubyexec() {
 be() {
 	numerical="^[0-9]+$"
 	if [[ "$1" =~ $numerical ]] ; then
-		rubyexec $1 bundle exec ${@:2}
+		rux $1 bundle exec ${@:2}
 	else
-		rubyexec bundle exec $@
+		rux bundle exec $@
 	fi
 }
 
