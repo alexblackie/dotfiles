@@ -93,7 +93,7 @@ vs() {
 
 serve() {
 	port="${1:-3000}"
-	rux ruby -run -e httpd . -p $port
+	rux $port ruby -run -e httpd . -p $port
 }
 
 refactor() {
