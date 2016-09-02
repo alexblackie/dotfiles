@@ -36,6 +36,8 @@ dexec() {
 		if [[ "${@:3}" != "" ]] ; then
 			CONTAINER_ARGS="${@:3}"
 			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1 -lc "$CONTAINER_ARGS"
+		else
+			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1
 		fi
 	else
 		if [[ "${@:2}" != "" ]] ; then
