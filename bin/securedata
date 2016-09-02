@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Decrypt and mount the MMC device that contains all my keys and secrets.
+
+if ! [ -d "$HOME/.secure" ] ; then
+	mkdir -p "$HOME/.secure"
+fi
+
+sudo cryptsetup luksOpen /dev/mmcblk0p1 securedata
+sudo mount /dev/disk/by-label/securedata $HOME/.secure
