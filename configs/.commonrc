@@ -50,9 +50,7 @@ dexec() {
 
 }
 
-rux() {
-	dexec ruby $@
-}
+alias rux="dexec ruby"
 
 # ex., be 3000 rails s
 # or, be rake some:task
