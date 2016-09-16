@@ -8,3 +8,4 @@ Vagrantfile
 **/vendor/bundle
 /tags
 .editorconfig
+.pip_cache
