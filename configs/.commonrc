@@ -70,7 +70,10 @@ startdb() {
 	PORT=${2:-5432}
 	mkdir -p "$DIR"
 	sudo chown 26:26 "$DIR"
-	sudo chcon -Rt svirt_sandbox_file_t "$DIR"
+	if hash chcon >/dev/null 2>&1 ; then
+		# only try to set SELinux type if we have SELinux
+		sudo chcon -Rt svirt_sandbox_file_t "$DIR"
+	fi
 	docker run -v "$DIR:/var/lib/postgresql/data" -p $PORT:5432 -e POSTGRES_PASSWORD=password123 postgres
 }
 
