@@ -13,7 +13,3 @@ The Makefile simply copies the files out of the `configs/` folder and into `~/`.
 This allows you to, for example, add passwords to configuration files, without
 accidentally committing them or being annoyed by constant untracked changes (as
 would be the case if you symlinked them).
-
-## Preview
-
-![Preview of my terminal](./.preview.png)
