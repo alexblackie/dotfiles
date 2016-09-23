@@ -53,6 +53,7 @@ dexec() {
 alias rux="dexec ruby"
 alias pyx="dexec python"
 alias erx="dexec erlang"
+alias gox="dexec go"
 
 # ex., be 3000 rails s
 # or, be rake some:task
