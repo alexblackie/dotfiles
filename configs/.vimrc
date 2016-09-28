@@ -33,6 +33,7 @@ colorscheme solarized
 set t_Co=256
 
 set colorcolumn=80
+set cursorline
 set noerrorbells
 set novisualbell
 set number
