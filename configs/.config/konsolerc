@@ -1,0 +1,21 @@
+[Desktop Entry]
+DefaultProfile=Solarized.profile
+
+[Favorite Profiles]
+Favorites=Solarized.profile
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+Height 1080=1080
+Height 2160=1252
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAQZAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1920
+Width 3840=2203
+Window-Maximized 1080x1920=true
+
+[TabBar]
+TabBarVisibility=ShowTabBarWhenNeeded
