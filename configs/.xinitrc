@@ -11,9 +11,6 @@ xmodmap ~/.Xmodmap &
 # Fix keyboard
 resetkeyboard &
 
-# Start xscreensaver
-xscreensaver &
-
 # Start pulseaudio
 start-pulseaudio-x11 &
 
