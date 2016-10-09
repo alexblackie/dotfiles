@@ -1,8 +1,3 @@
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-
 # Import git prompt functions for __git_ps1
 source /usr/share/git-core/contrib/completion/git-prompt.sh
 
