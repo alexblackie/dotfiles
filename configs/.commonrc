@@ -31,7 +31,7 @@ alias :q='exit'
 dexec() {
 	numerical="^[0-9]+$"
 	if [[ "$2" =~ $numerical ]] ; then
-		PORTS=(-p "$2:$2")
+		PORTS=-p\ $2:$2
 
 		if [[ "${@:3}" != "" ]] ; then
 			CONTAINER_ARGS="${@:3}"
