@@ -30,21 +30,23 @@ alias :q='exit'
 # or, dexec java mvn package
 dexec() {
 	numerical="^[0-9]+$"
+	TAG=${DOCKER_TAG:-latest}
+
 	if [[ "$2" =~ $numerical ]] ; then
 		PORTS=-p\ $2:$2
 
 		if [[ "${@:3}" != "" ]] ; then
 			CONTAINER_ARGS="${@:3}"
-			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1 -lc "$CONTAINER_ARGS"
+			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1:$TAG -lc "$CONTAINER_ARGS"
 		else
-			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1
+			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1:$TAG
 		fi
 	else
 		if [[ "${@:2}" != "" ]] ; then
 			CONTAINER_ARGS="${@:2}"
-			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1 -lc "$CONTAINER_ARGS"
+			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1:$TAG -lc "$CONTAINER_ARGS"
 		else
-			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1
+			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1:$TAG
 		fi
 	fi
 
