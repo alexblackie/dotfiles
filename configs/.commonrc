@@ -71,7 +71,6 @@ startdb() {
 	DIR="$HOME/.postgresql_data/$1"
 	PORT=${2:-5432}
 	mkdir -p "$DIR"
-	sudo chown 26:26 "$DIR"
 	if hash chcon >/dev/null 2>&1 ; then
 		# only try to set SELinux type if we have SELinux
 		sudo chcon -Rt svirt_sandbox_file_t "$DIR"
