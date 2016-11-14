@@ -6,6 +6,16 @@
 			"simple_modifications": {
 				"caps_lock": "escape"
 			}
+		},
+		{
+			"name": "PC Keyboard",
+			"simple_modifications": {
+				"caps_lock": "escape",
+				"left_option": "left_command",
+				"left_command": "left_option",
+				"right_command": "right_option",
+				"right_option": "right_command"
+			}
 		}
 	]
 }
