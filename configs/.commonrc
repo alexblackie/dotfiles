@@ -55,6 +55,7 @@ dexec() {
 alias rux="dexec ruby"
 alias erx="dexec erlang"
 alias jax="dexec java"
+alias elx="dexec elixir"
 
 # ex., be 3000 rails s
 # or, be rake some:task
