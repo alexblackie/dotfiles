@@ -1,5 +1,12 @@
-# Import git prompt functions for __git_ps1
-source /usr/share/git-core/contrib/completion/git-prompt.sh
+if [ -e /usr/share/git-core/contrib/completion/git-prompt.sh ] ; then
+	# Import git prompt functions for __git_ps1
+	source /usr/share/git-core/contrib/completion/git-prompt.sh
+fi
+
+if [ -e /usr/local/etc/bash_completion.d/git-prompt.sh ] ; then
+	# Import git prompt functions for __git_ps1
+	source /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
 
 # Turn on parallel history
 shopt -s histappend
