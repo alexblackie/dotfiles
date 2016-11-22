@@ -12,7 +12,7 @@
 	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "configs/.vim/bundle/vim-elixir"]
 	path = configs/.vim/bundle/vim-elixir
-	url = https://github.com/alexblackie/vim-elixir.git
+	url = https://github.com/elixir-lang/vim-elixir.git
 [submodule "bin/scrotup"]
 	path = bin/scrotup
 	url = https://github.com/alexblackie/scrotup.git
