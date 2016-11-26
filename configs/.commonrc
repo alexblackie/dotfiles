@@ -31,22 +31,29 @@ alias :q='exit'
 dexec() {
 	numerical="^[0-9]+$"
 	TAG=${DOCKER_TAG:-latest}
+	MOUNTDIR=`pwd`
+
+	if hash chcon >/dev/null 2>&1 ; then
+	  # Automatically mark pwd as mountable by containers if we have SELinux.
+	  # I always forget to do this and SELinux starts yelling at me.
+	  chcon -Rt svirt_sandbox_file_t "$MOUNTDIR"
+	fi
 
 	if [[ "$2" =~ $numerical ]] ; then
 		PORTS=-p\ $2:$2
 
 		if [[ "${@:3}" != "" ]] ; then
 			CONTAINER_ARGS="${@:3}"
-			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1:$TAG -lc "$CONTAINER_ARGS"
+			docker run -it --rm -v "$MOUNTDIR:/data" $PORTS alexblackie/dev_$1:$TAG -lc "$CONTAINER_ARGS"
 		else
-			docker run -it --rm -v `pwd`:/data $PORTS alexblackie/dev_$1:$TAG
+			docker run -it --rm -v "$MOUNTDIR:/data" $PORTS alexblackie/dev_$1:$TAG
 		fi
 	else
 		if [[ "${@:2}" != "" ]] ; then
 			CONTAINER_ARGS="${@:2}"
-			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1:$TAG -lc "$CONTAINER_ARGS"
+			docker run -it --rm -v $MOUNTDIR:/data alexblackie/dev_$1:$TAG -lc "$CONTAINER_ARGS"
 		else
-			docker run -it --rm -v `pwd`:/data alexblackie/dev_$1:$TAG
+			docker run -it --rm -v $MOUNTDIR:/data alexblackie/dev_$1:$TAG
 		fi
 	fi
 
