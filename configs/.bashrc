@@ -1,12 +1,14 @@
-if [ -e /usr/share/git-core/contrib/completion/git-prompt.sh ] ; then
-	# Import git prompt functions for __git_ps1
-	source /usr/share/git-core/contrib/completion/git-prompt.sh
-fi
+# Import git prompt functions for __git_ps1
+[[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]] && source /usr/share/git-core/contrib/completion/git-prompt.sh
+[[ -e /usr/local/etc/bash_completion.d/git-prompt.sh ]] && source /usr/local/etc/bash_completion.d/git-prompt.sh
 
-if [ -e /usr/local/etc/bash_completion.d/git-prompt.sh ] ; then
-	# Import git prompt functions for __git_ps1
-	source /usr/local/etc/bash_completion.d/git-prompt.sh
-fi
+# Import git completion for args (eg., branch names!)
+# On Fedora, this is under `git-core-doc` which seems super wrong...
+[[ -e /usr/share/doc/git-core-doc/contrib/completion/git-completion.bash ]] && source /usr/share/doc/git-core-doc/contrib/completion/git-completion.bash
+[[ -e /usr/local/etc/bash_completion.d/git-completion.bash ]] && source /usr/local/etc/bash_completion.d/git-completion.bash
+
+# Tell git to also complete for my `g` alias
+$(declare -f __git_complete 2>&1 >/dev/null) && __git_complete g __git_main
 
 # Turn on parallel history
 shopt -s histappend
