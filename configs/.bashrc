@@ -1,11 +1,18 @@
-# Import git prompt functions for __git_ps1
-[[ -e /usr/share/git-core/contrib/completion/git-prompt.sh ]] && source /usr/share/git-core/contrib/completion/git-prompt.sh
-[[ -e /usr/local/etc/bash_completion.d/git-prompt.sh ]] && source /usr/local/etc/bash_completion.d/git-prompt.sh
+EXTENSIONS=(
+	# Fedora
+	/usr/share/git-core/contrib/completion/git-prompt.sh
+	/usr/share/doc/git-core-doc/contrib/completion/git-completion.bash
 
-# Import git completion for args (eg., branch names!)
-# On Fedora, this is under `git-core-doc` which seems super wrong...
-[[ -e /usr/share/doc/git-core-doc/contrib/completion/git-completion.bash ]] && source /usr/share/doc/git-core-doc/contrib/completion/git-completion.bash
-[[ -e /usr/local/etc/bash_completion.d/git-completion.bash ]] && source /usr/local/etc/bash_completion.d/git-completion.bash
+	# macOS/BSD
+	/usr/local/etc/bash_completion.d/git-prompt.sh
+	/usr/local/etc/bash_completion.d/git-completion.sh
+)
+
+for e in ${EXTENSIONS[*]} ; do
+	# Source each extension only if it exists. This allows us to pile up groups
+	# of paths for different OS's and only load the ones for the current OS.
+	[[ -e "$e" ]] && source "$e"
+done
 
 # Tell git to also complete for my `g` alias
 $(declare -f __git_complete 2>&1 >/dev/null) && __git_complete g __git_main
