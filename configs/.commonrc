@@ -36,7 +36,7 @@ dexec() {
 	if hash chcon >/dev/null 2>&1 ; then
 	  # Automatically mark pwd as mountable by containers if we have SELinux.
 	  # I always forget to do this and SELinux starts yelling at me.
-	  chcon -Rt svirt_sandbox_file_t "$MOUNTDIR"
+	  chcon -Rt container_file_t "$MOUNTDIR"
 	fi
 
 	if [[ "$2" =~ $numerical ]] ; then
