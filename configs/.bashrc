@@ -6,6 +6,10 @@ EXTENSIONS=(
 	# macOS/BSD
 	/usr/local/etc/bash_completion.d/git-prompt.sh
 	/usr/local/etc/bash_completion.d/git-completion.sh
+
+	# FreeBSD
+	/usr/local/share/git-core/contrib/completion/git-prompt.sh
+	/usr/local/share/git-core/contrib/completion/git-completion.bash
 )
 
 for e in ${EXTENSIONS[*]} ; do
