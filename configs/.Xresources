@@ -10,6 +10,8 @@
 ! ------------------------------------------------------------------------------
 *geometry: 180x60
 
+xterm*font: 6x11
+
 urxvt*cursorBlink: 1
 urxvt*font: xft:terminus:pixelsize=10
 urxvt*boldFont:
