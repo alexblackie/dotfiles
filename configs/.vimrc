@@ -29,11 +29,10 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on
 set background=light
-colorscheme solarized
+colorscheme blue
 set t_Co=256
 
 set colorcolumn=80
-set cursorline
 set noerrorbells
 set novisualbell
 set number
