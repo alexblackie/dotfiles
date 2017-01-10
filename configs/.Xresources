@@ -11,6 +11,7 @@
 *geometry: 180x60
 
 xterm*font: 6x11
+xterm*scrollBar: false
 
 urxvt*cursorBlink: 1
 urxvt*font: xft:terminus:pixelsize=10
