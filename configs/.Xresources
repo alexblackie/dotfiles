@@ -10,7 +10,7 @@
 ! ------------------------------------------------------------------------------
 *geometry: 180x60
 
-xterm*font: 6x11
+xterm*font: 6x13
 xterm*scrollBar: false
 
 urxvt*cursorBlink: 1
