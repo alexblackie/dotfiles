@@ -17,5 +17,8 @@ start-pulseaudio-x11 &
 # Set background
 sh ~/.fehbg &
 
+# Start redshift-gtk to save my eyes
+redshift-gtk &
+
 # Launch i3 with dbus support
 exec dbus-launch i3
