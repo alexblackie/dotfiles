@@ -4,7 +4,8 @@
 		"**/.git": true,
 		"**/.svn": true,
 		"**/.hg": true,
-		"**/vendor/bundle": true
+		"**/vendor/bundle": true,
+		"**/_build": true
 	},
 	"editor.renderIndentGuides": true,
 	"git.enabled": false,
