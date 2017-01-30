@@ -1,0 +1,19 @@
+{
+	"editor.renderWhitespace": "all",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/vendor/bundle": true
+	},
+	"editor.renderIndentGuides": true,
+	"git.enabled": false,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"workbench.activityBar.visible": false,
+	"editor.rulers": [80, 120],
+	"window.zoomLevel": 0,
+	"editor.fontSize": 12,
+	"editor.fontFamily": "'Source Code Pro', Inconsolata, monospace",
+	"editor.tabSize": 2
+}
