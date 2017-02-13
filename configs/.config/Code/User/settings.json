@@ -19,5 +19,6 @@
 	"editor.fontFamily": "'Source Code Pro', Inconsolata, monospace",
 	"editor.tabSize": 2,
 	"terminal.integrated.fontSize": 12,
-	"workbench.welcome.enabled": false
+	"workbench.welcome.enabled": false,
+	"window.menuBarVisibility": "toggle"
 }
