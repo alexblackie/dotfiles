@@ -5,7 +5,8 @@
 		"**/.svn": true,
 		"**/.hg": true,
 		"**/vendor/bundle": true,
-		"**/_build": true
+		"**/_build": true,
+		"**/rel": true
 	},
 	"editor.renderIndentGuides": true,
 	"git.enabled": false,
@@ -16,5 +17,7 @@
 	"window.zoomLevel": 0,
 	"editor.fontSize": 12,
 	"editor.fontFamily": "'Source Code Pro', Inconsolata, monospace",
-	"editor.tabSize": 2
+	"editor.tabSize": 2,
+	"terminal.integrated.fontSize": 12,
+	"workbench.welcome.enabled": false
 }
