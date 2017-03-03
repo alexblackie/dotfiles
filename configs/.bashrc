@@ -5,7 +5,7 @@ EXTENSIONS=(
 
 	# macOS/BSD
 	/usr/local/etc/bash_completion.d/git-prompt.sh
-	/usr/local/etc/bash_completion.d/git-completion.sh
+	/usr/local/etc/bash_completion.d/git-completion.bash
 
 	# FreeBSD
 	/usr/local/share/git-core/contrib/completion/git-prompt.sh
