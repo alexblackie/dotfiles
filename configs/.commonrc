@@ -23,6 +23,8 @@ alias vag='vagrant'
 
 alias :q='exit'
 
+alias gs='echo "saved you from ghostscript"'
+
 # In these Dockerized functions, you can forward a port by passing the port
 # number as the second argument.
 #
