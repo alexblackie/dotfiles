@@ -1,29 +1,9 @@
 # ------------------------------------------------------------------------------
 # Aliases & custom functions
 # ------------------------------------------------------------------------------
-alias ls='ls -Gph'
-alias la='ls -ah'
-alias ll='ls -l'
-
-alias g='git'
-alias gst='git status'
-alias gp='git push'
-alias yolo='git push -f origin'
-
-alias v='vim'
-
 alias tm='tmux'
 alias tma='tmux attach'
-
-alias fr='foreman run'
-alias fs='foreman start'
-alias fds='foreman start -f Procfile.dev'
-
-alias vag='vagrant'
-
-alias :q='exit'
-
-alias gs='echo "saved you from ghostscript"'
+alias yolo='git push -f origin'
 
 # In these Dockerized functions, you can forward a port by passing the port
 # number as the second argument.
