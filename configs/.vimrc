@@ -45,7 +45,7 @@ set hlsearch
 let &winwidth = 87 " Ensure a minimum width for active split
 
 highlight Search      ctermbg=LightYellow ctermfg=Black cterm=NONE
-highlight ColorColumn ctermbg=LightGray cterm=NONE
+highlight ColorColumn ctermbg=Black cterm=NONE
 
 " ------------------------------------------------------------------------------
 " System
