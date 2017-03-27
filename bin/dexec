@@ -1,0 +1,36 @@
+#!/bin/bash
+
+##
+# SYNOPSIS:
+#
+#	A small helper script to start a development container in the current
+#	working directory, either by spawning a shell or running a one-off
+#	command. Additionally allows passing ports to be forwarded, in case the
+#	one-off command you're running starts a server, for example.
+#
+# USAGE:
+#	dexec java 8080 mvn jetty:run
+#	dexec java mvn package
+##
+
+NUMERICAL="^[0-9]+$"
+TAG=${DOCKER_TAG:-latest}
+MOUNTDIR=`pwd`
+
+if hash chcon >/dev/null 2>&1 ; then
+	# Automatically mark pwd as mountable by containers if we have SELinux.
+	# I always forget to do this and SELinux starts yelling at me.
+	#
+	# TODO: prompt to do this and allow skipping it. I accidentally
+	# relable $HOME more times than I'd like to admit.
+	chcon -Rt container_file_t "$MOUNTDIR"
+fi
+
+if [[ "$2" =~ $NUMERICAL ]] ; then
+	PORTS=-p\ $2:$2
+	CONTAINER_ARGS="${@:3}"
+else
+	CONTAINER_ARGS="${@:2}"
+fi
+
+docker run -it --rm -v "$MOUNTDIR:/data" $PORTS alexblackie/dev_$1:$TAG $CONTAINER_ARGS
