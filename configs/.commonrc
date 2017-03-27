@@ -75,20 +75,6 @@ fpass() {
 	pass -c ${filename/.gpg/}
 }
 
-wifi() {
-	if [[ "$2" != "" ]]; then
-		sudo nmcli dev wifi con "$1" name "$1" password "$2"
-	else
-		sudo nmcli dev wifi con "$1" name "$1"
-	fi
-}
-alias widown='sudo nmcli dev disconnect wlp3s0'
-
-vs() {
-	args=$(printf "%s " "$@") # concatenate arguments into single string
-	vagrant ssh -c "$args"
-}
-
 serve() {
 	port="${1:-3000}"
 	rux $port ruby -run -e httpd . -p $port
