@@ -33,4 +33,4 @@ else
 	CONTAINER_ARGS="${@:2}"
 fi
 
-docker run -it --rm -v "$MOUNTDIR:/data" $PORTS alexblackie/dev_$1:$TAG $CONTAINER_ARGS
+docker run -it --rm -v "$MOUNTDIR:/data" $PORTS alexblackie/dev_$1:$TAG "$CONTAINER_ARGS"
