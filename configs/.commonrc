@@ -10,7 +10,10 @@ alias erx="dexec erlang"
 alias jax="dexec java"
 alias elx="dexec elixir"
 
-alias crun="docker-compose run --rm"
+crun() {
+	CMD="${@:2}"
+	docker-compose run --rm $1 "$CMD"
+}
 
 # ex., be 3000 rails s
 # or, be rake some:task
