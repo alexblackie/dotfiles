@@ -1,7 +1,0 @@
-#!/bin/sh
-
-xrandr --output eDP1 --pos 1920x600 --output HDMI1 --mode 1920x1200 --pos 0x0
-
-$HOME/bin/resetkeyboard
-
-sh ~/.fehbg

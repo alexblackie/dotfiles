@@ -1,4 +1,0 @@
-#!/bin/sh
-
-xrandr --auto
-$HOME/bin/resetkeyboard
