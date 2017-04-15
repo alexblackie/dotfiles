@@ -96,6 +96,7 @@ augroup filetypedetect
 	" vim's default indenting of erlang is fucking annoying and mixes
 	" tabs/spaces. Just turn it off, I'll deal with just autoindent thanks
 	autocmd BufNewFile,BufReadPost *.erl filetype plugin indent off
+	autocmd FileType yaml setl indentkeys-=<:>
 augroup END
 
 " Whitespace highlighting/deleting
