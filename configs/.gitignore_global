@@ -9,3 +9,4 @@ Vagrantfile
 /tags
 .editorconfig
 .pip_cache
+.crundefault

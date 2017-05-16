@@ -11,8 +11,15 @@ alias jax="dexec java"
 alias elx="dexec elixir"
 
 crun() {
-	CMD="${@:2}"
-	docker-compose run --rm $1 "$CMD"
+	if [ -f .crundefault ] ; then
+		CONTAINER_NAME="$(cat .crundefault | xargs)"
+		CMD="$@"
+	else
+		CONTAINER_NANME="$1"
+		CMD="${@:2}"
+	fi
+
+	docker-compose run --rm $CONTAINER_NAME "$CMD"
 }
 
 # ex., be 3000 rails s
