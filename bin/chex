@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# vim: noexpandtab ts=4 sw=4
+
+set -e
+
+PREFIX="$HOME/.elixir"
+
+if [ "$1" = "" ] ; then
+	VERSION_FILE="$(if [ -e .elixir-version ] ; then cat .elixir-version | xargs ; else echo ; fi)"
+	if [ "$VERSION_FILE" = "" ] ; then
+		echo "You must pass a version number as the argument, or make an '.elixir-version' file in the current directory."
+		exit 1
+	fi
+	VERSION="$VERSION_FILE"
+else
+	VERSION="$1"
+fi
+
+if [ ! -d "$PREFIX" ] ; then
+	mkdir -p "$PREFIX"
+	echo "Created directory $PREFIX."
+fi
+
+INSTALL_PATH="$PREFIX/$VERSION"
+if [ ! -d "$INSTALL_PATH" ] ; then
+	echo "Fetching and installing precompiled release for Elixir $VERSION..."
+	mkdir -p "$INSTALL_PATH"
+	curl -Lso "$INSTALL_PATH.zip" "https://github.com/elixir-lang/elixir/releases/download/v$VERSION/Precompiled.zip"
+	unzip -qq -d "$INSTALL_PATH" "$INSTALL_PATH.zip"
+	rm "$INSTALL_PATH.zip"
+fi
+
+export PATH="$PREFIX/$VERSION/bin:$PATH"
+echo "Now using Elixir $VERSION."
