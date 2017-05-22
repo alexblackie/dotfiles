@@ -10,6 +10,10 @@ alias erx="dexec erlang"
 alias jax="dexec java"
 alias elx="dexec elixir"
 
+chex() {
+	source $HOME/bin/change-elixir $@
+}
+
 crun() {
 	if [ -f .crundefault ] ; then
 		CONTAINER_NAME="$(cat .crundefault | xargs)"
