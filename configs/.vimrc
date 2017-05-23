@@ -29,7 +29,7 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on
 set background=light
-colorscheme solarized
+colorscheme grb256
 set t_Co=256
 
 set colorcolumn=80
@@ -45,7 +45,7 @@ set hlsearch
 let &winwidth = 87 " Ensure a minimum width for active split
 
 highlight Search      ctermbg=LightYellow ctermfg=Black cterm=NONE
-highlight ColorColumn ctermbg=LightGray cterm=NONE
+highlight ColorColumn ctermbg=Black cterm=NONE
 
 " ------------------------------------------------------------------------------
 " System
