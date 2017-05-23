@@ -10,6 +10,8 @@ alias erx="dexec erlang"
 alias jax="dexec java"
 alias elx="dexec elixir"
 
+alias be="bundle exec"
+
 chex() {
 	source $HOME/bin/change-elixir $@
 }
@@ -24,17 +26,6 @@ crun() {
 	fi
 
 	docker-compose run --rm $CONTAINER_NAME "$CMD"
-}
-
-# ex., be 3000 rails s
-# or, be rake some:task
-be() {
-	numerical="^[0-9]+$"
-	if [[ "$1" =~ $numerical ]] ; then
-		rux $1 bundle exec ${@:2}
-	else
-		rux bundle exec $@
-	fi
 }
 
 startdb() {
@@ -54,8 +45,7 @@ fpass() {
 }
 
 serve() {
-	port="${1:-3000}"
-	rux $port ruby -run -e httpd . -p $port
+	ruby -run -e httpd . -p ${1:-3000}
 }
 
 refactor() {
