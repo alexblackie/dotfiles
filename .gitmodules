@@ -25,3 +25,9 @@
 [submodule "configs/.vim/bundle/editorconfig-vim"]
 	path = configs/.vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "configs/.config/sublime-text-3/Packages/EditorConfig"]
+	path = configs/.config/sublime-text-3/Packages/EditorConfig
+	url = https://github.com/sindresorhus/editorconfig-sublime.git
+[submodule "configs/.config/sublime-text-3/Packages/Theme - Flatland"]
+	path = configs/.config/sublime-text-3/Packages/Theme - Flatland
+	url = https://github.com/thinkpixellab/flatland.git
