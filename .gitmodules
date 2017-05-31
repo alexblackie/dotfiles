@@ -31,3 +31,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/Theme - Flatland"]
 	path = configs/.config/sublime-text-3/Packages/Theme - Flatland
 	url = https://github.com/thinkpixellab/flatland.git
+[submodule "configs/.config/sublime-text-3/Packages/elixir-tmbundle"]
+	path = configs/.config/sublime-text-3/Packages/elixir-tmbundle
+	url = https://github.com/elixir-lang/elixir-tmbundle.git
