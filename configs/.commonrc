@@ -12,6 +12,8 @@ alias elx="dexec elixir"
 
 alias be="bundle exec"
 
+alias sub="/usr/local/sublime_text_3/sublime_text"
+
 chex() {
 	source $HOME/bin/change-elixir $@
 }
