@@ -16,6 +16,7 @@
 	],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "vendor/bundle", "_build", "deps", "rel"],
 }
 
