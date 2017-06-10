@@ -34,3 +34,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/elixir-tmbundle"]
 	path = configs/.config/sublime-text-3/Packages/elixir-tmbundle
 	url = https://github.com/elixir-lang/elixir-tmbundle.git
+[submodule "configs/.config/sublime-text-3/Packages/st2-zonefile"]
+	path = configs/.config/sublime-text-3/Packages/st2-zonefile
+	url = https://github.com/sixty4k/st2-zonefile.git
