@@ -69,7 +69,7 @@ if [ -f ~/.env ]; then
 	source ~/.env
 fi
 
-export CHRUBY_ROOT="/usr/share/chruby"
+export CHRUBY_ROOT="/usr/local/share/chruby"
 if [ -d "$CHRUBY_ROOT" ] ; then
 	source "$CHRUBY_ROOT/chruby.sh"
 	source "$CHRUBY_ROOT/auto.sh"
