@@ -28,7 +28,7 @@ set timeoutlen=1000 ttimeoutlen=0
 "  UI Things
 " ------------------------------------------------------------------------------
 syntax on
-set background=light
+set background=dark
 colorscheme solarized
 set t_Co=256
 
@@ -45,7 +45,7 @@ set hlsearch
 let &winwidth = 87 " Ensure a minimum width for active split
 
 highlight Search      ctermbg=LightYellow ctermfg=Black cterm=NONE
-highlight ColorColumn ctermbg=LightGrey cterm=NONE
+highlight ColorColumn ctermbg=Black cterm=NONE
 
 " ------------------------------------------------------------------------------
 " System
