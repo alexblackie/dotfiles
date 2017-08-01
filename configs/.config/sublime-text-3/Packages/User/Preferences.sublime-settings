@@ -1,7 +1,19 @@
 {
-	"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
+	"color_scheme": "Packages/Solarized/Solarized (dark).tmTheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "selection",
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"vendor/bundle",
+		"_build",
+		"deps",
+		"rel"
+	],
 	"font_face": "Source Code Pro",
 	"font_size": 10,
 	"highlight_line": true,
@@ -15,8 +27,7 @@
 		100
 	],
 	"tab_size": 2,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"ensure_newline_at_eof_on_save": true,
-	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "vendor/bundle", "_build", "deps", "rel"],
+	"trim_trailing_white_space_on_save": true
 }
