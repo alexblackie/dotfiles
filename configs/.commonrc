@@ -16,6 +16,11 @@ chex() {
 	source $HOME/bin/change-elixir $@
 }
 
+genuuid() {
+	NUMTIMES=${1:-1}
+	ruby -r securerandom -e "$NUMTIMES.times{ puts SecureRandom.uuid }"
+}
+
 crun() {
 	if [ -f .crundefault ] ; then
 		CONTAINER_NAME="$(cat .crundefault | xargs)"
