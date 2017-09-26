@@ -40,3 +40,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/Solarized"]
 	path = configs/.config/sublime-text-3/Packages/Solarized
 	url = https://github.com/braver/Solarized.git
+[submodule "configs/.config/sublime-text-3/Packages/ayu"]
+	path = configs/.config/sublime-text-3/Packages/ayu
+	url = https://github.com/dempfi/ayu.git
