@@ -15,7 +15,9 @@
 		"vendor/bundle",
 		"_build",
 		"deps",
-		"rel"
+		"rel",
+		"coverage",
+		"node_modules"
 	],
 	"font_face": "Source Code Pro",
 	"font_options":
