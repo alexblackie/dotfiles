@@ -1,5 +1,8 @@
 {
-	"color_scheme": "Packages/ayu/ayu-light.tmTheme",
+	"adaptive_dividers": true,
+	"auto_complete_commit_on_tab": true,
+	"auto_find_in_selection": true,
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
@@ -27,9 +30,6 @@
 	],
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
-	"auto_complete_commit_on_tab": true,
-	"auto_find_in_selection": true,
-	"adaptive_dividers": true,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
