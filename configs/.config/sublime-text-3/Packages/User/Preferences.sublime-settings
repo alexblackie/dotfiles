@@ -2,7 +2,7 @@
 	"adaptive_dividers": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_find_in_selection": true,
-	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+	"color_scheme": "Packages/User/Tomorrow.tmTheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
@@ -24,14 +24,14 @@
 	[
 		"no_italic"
 	],
-	"font_size": 10,
+	"font_size": 11,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 6,
+	"line_padding_top": 6,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -39,7 +39,7 @@
 		100
 	],
 	"tab_size": 2,
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
