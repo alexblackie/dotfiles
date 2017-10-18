@@ -43,3 +43,9 @@
 [submodule "configs/.config/sublime-text-3/Packages/ayu"]
 	path = configs/.config/sublime-text-3/Packages/ayu
 	url = https://github.com/dempfi/ayu.git
+[submodule "configs/.config/sublime-text-3/Packages/sass-textmate-bundle"]
+	path = configs/.config/sublime-text-3/Packages/sass-textmate-bundle
+	url = https://github.com/nathos/sass-textmate-bundle.git
+[submodule "configs/.config/sublime-text-3/Packages/orgmode"]
+	path = configs/.config/sublime-text-3/Packages/orgmode
+	url = https://github.com/danielmagnussons/orgmode.git
