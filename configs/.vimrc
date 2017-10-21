@@ -126,3 +126,22 @@ function! FzyCommand(choice_command, vim_command)
 endfunction
 
 nnoremap <c-p> :call FzyCommand("ag . --nocolor -l -g ''", ":e")<cr>
+
+" Goyo
+" ----
+function! ActivateGoyo()
+	silent !tmux set status off
+	set background=light
+	set noshowmode
+endfunction
+
+function! DisableGoyo()
+	silent !tmux set status on
+	set background=dark
+	set showmode
+endfunction
+
+autocmd! User GoyoEnter nested call ActivateGoyo()
+autocmd! User GoyoLeave nested call DisableGoyo()
+
+nnoremap <c-g><c-y> :Goyo<cr>
