@@ -81,6 +81,8 @@ noremap <leader>rr :s/:\(\w\+\)\s*=>/\1:/g<CR>
 " ------------------------------------------------------------------------------
 "  Automatic things
 " ------------------------------------------------------------------------------
+
+" Custom filetype style/syntax overrides
 augroup filetypedetect
 	autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown set textwidth=80
 	autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG set textwidth=72
@@ -126,6 +128,14 @@ function! FzyCommand(choice_command, vim_command)
 endfunction
 
 nnoremap <c-p> :call FzyCommand("ag . --nocolor -l -g ''", ":e")<cr>
+
+" NERDTree
+" --------
+" open by default
+autocmd vimenter * NERDTree
+" exit vim when if nerdtree is the only buffer left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
 
 " Goyo
 " ----
