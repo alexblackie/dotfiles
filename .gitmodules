@@ -52,3 +52,6 @@
 [submodule "configs/.vim/bundle/goyo.vim"]
 	path = configs/.vim/bundle/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
+[submodule "configs/.vim/bundle/nerdtree"]
+	path = configs/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
