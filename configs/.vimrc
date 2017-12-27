@@ -29,7 +29,7 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on
 set background=dark
-colorscheme grb256
+colorscheme solarized
 set t_Co=256
 
 set colorcolumn=80
