@@ -55,3 +55,6 @@
 [submodule "configs/.vim/bundle/nerdtree"]
 	path = configs/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "configs/.config/sublime-text-3/Packages/babel"]
+	path = configs/.config/sublime-text-3/Packages/babel
+	url = https://github.com/babel/babel-sublime.git
