@@ -8,6 +8,8 @@ install:
 
 dconfdump:
 	dconf dump /org/gnome/terminal/legacy/ > ./configs/gnome-terminal.ini
+	dconf dump /org/gnome/shell/extensions/ > ./configs/gnome-extensions.ini
 
 dconf:
 	dconf load /org/gnome/terminal/legacy/ < ./configs/gnome-terminal.ini
+	dconf load /org/gnome/shell/extensions/ < ./configs/gnome-extensions.ini
