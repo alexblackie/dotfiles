@@ -58,3 +58,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/babel"]
 	path = configs/.config/sublime-text-3/Packages/babel
 	url = https://github.com/babel/babel-sublime.git
+[submodule "configs/.config/sublime-text-3/Packages/sublime-haproxy"]
+	path = configs/.config/sublime-text-3/Packages/sublime-haproxy
+	url = https://github.com/ramonfritsch/sublime-haproxy.git
