@@ -139,13 +139,11 @@ map <C-n> :NERDTreeToggle<CR>
 " Goyo
 " ----
 function! ActivateGoyo()
-	silent !tmux set status off
 	set background=light
 	set noshowmode
 endfunction
 
 function! DisableGoyo()
-	silent !tmux set status on
 	set background=dark
 	set showmode
 endfunction
