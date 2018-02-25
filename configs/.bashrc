@@ -3,6 +3,9 @@ EXTENSIONS=(
 	/usr/share/git-core/contrib/completion/git-prompt.sh
 	/usr/share/doc/git-core-doc/contrib/completion/git-completion.bash
 
+	# RHEL/CentOS
+	/usr/share/doc/git-*/contrib/completion/git-completion.bash
+
 	# macOS/BSD
 	/usr/local/etc/bash_completion.d/git-prompt.sh
 	/usr/local/etc/bash_completion.d/git-completion.bash
