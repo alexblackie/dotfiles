@@ -1,9 +1,9 @@
 # ------------------------------------------------------------------------------
 # Aliases & custom functions
 # ------------------------------------------------------------------------------
-alias tm='tmux'
-alias tma='tmux attach'
-alias yolo='git push -f origin'
+alias tm="tmux"
+alias tma="tmux attach"
+alias yolo="git push -f origin"
 
 alias be="bundle exec"
 
@@ -23,7 +23,7 @@ startdb() {
 }
 
 fpass() {
-	filename=$(cd $HOME/.password-store && ag . -l -g '' | fzy)
+	filename=$(cd $HOME/.password-store && ag . -l -g "" | fzy)
 	pass -c ${filename/.gpg/}
 }
 
