@@ -18,9 +18,6 @@ for e in ${EXTENSIONS[*]} ; do
 	[[ -e "$e" ]] && source "$e"
 done
 
-# Tell git to also complete for my `g` alias
-$(declare -f __git_complete 2>&1 >/dev/null) && __git_complete g __git_main
-
 # Turn on parallel history
 shopt -s histappend
 history -a
