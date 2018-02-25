@@ -61,21 +61,8 @@ set nostartofline " Don't reset cursor to start of line when moving around.
 " ------------------------------------------------------------------------------
 "  Mappings
 " ------------------------------------------------------------------------------
-" Move around splits with ctrl-{h,j,k,l}
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-" Fuck this shit
+" Disable hotkey manpage lookups
 noremap K <NOP>
-
-" Run current project's test suite
-map <leader>s :!./.test_runner<CR>
-map <Leader>t :!./.test_runner %<CR>
-
-" Convert old hashrockets into 1.9 syntax
-noremap <leader>rr :s/:\(\w\+\)\s*=>/\1:/g<CR>
 
 
 " ------------------------------------------------------------------------------
