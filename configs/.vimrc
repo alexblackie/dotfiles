@@ -78,11 +78,8 @@ augroup filetypedetect
 	autocmd BufNewFile,BufReadPost *.info set filetype=dosini
 	autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
 	autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
-	autocmd BufNewFile,BufReadPost *.sh,*.erl,*.app.src,*.java,*.c,*.cc,Makefile,*.conf set noexpandtab tabstop=4 shiftwidth=4
-	autocmd BufNewFile,BufReadPost *.py set tabstop=4 shiftwidth=4
 	autocmd BufNewFile,BufReadPost *.es6 set filetype=javascript
 	autocmd BufNewFile,BufReadPost Jenkinsfile* set filetype=groovy
-	autocmd BufNewFile,BufReadPost *.go set noexpandtab tabstop=8 shiftwidth=8
 	" vim's default indenting of erlang is fucking annoying and mixes
 	" tabs/spaces. Just turn it off, I'll deal with just autoindent thanks
 	autocmd BufNewFile,BufReadPost *.erl filetype plugin indent off
