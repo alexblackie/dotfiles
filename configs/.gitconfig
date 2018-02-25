@@ -4,7 +4,6 @@
 
 [core]
 	excludesfile = ~/.gitignore_global
-	attributesfile = ~/.gitattributes_global
 	fileMode = false
 
 [alias]
@@ -14,8 +13,6 @@
 	co = checkout
 	dc = diff --cached
 	df = diff
-	dff = difftool
-	flog = reflog --pretty=format:'%C(bold cyan)%h%C(reset) %C(blue)%cd %C(bold green)%s %C(bold cyan)%an%Creset%C(bold red)%d' --abbrev-commit --date=short
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	pu = push -u
 	p = push
@@ -26,10 +23,7 @@
 	sl = stash list
 	sa = stash apply
 	tlog = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
-	trebase = "!sh -c 'git rebase -i HEAD~`git tlog | wc -l | tr -d \" \"`' -"
 	tdf = diff master...HEAD
-	wdf = diff --color-words=.
-	mycommits = "!sh -c 'echo \"You have made $(git log --pretty=format:\"%an\" | grep \"`git config user.name`\" | wc -l | xargs) commits.\"' -"
 
 [color]
 	ui = auto
