@@ -61,3 +61,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/Terraform.tmlanguage"]
 	path = configs/.config/sublime-text-3/Packages/Terraform.tmlanguage
 	url = https://github.com/alexlouden/Terraform.tmLanguage.git
+[submodule "configs/.config/sublime-text-3/Packages/sublime-text-git"]
+	path = configs/.config/sublime-text-3/Packages/sublime-text-git
+	url = https://github.com/kemayo/sublime-text-git.git
