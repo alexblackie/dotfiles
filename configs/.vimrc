@@ -123,12 +123,10 @@ map <C-n> :NERDTreeToggle<CR>
 " Goyo
 " ----
 function! ActivateGoyo()
-	set background=light
 	set noshowmode
 endfunction
 
 function! DisableGoyo()
-	set background=dark
 	set showmode
 endfunction
 
