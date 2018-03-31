@@ -1,0 +1,13 @@
+[Layout]
+DisplayNames=
+LayoutList=
+LayoutLoopCount=-1
+Model=pc101
+Options=,caps:escape,compose:rctrl,grp:win_space_toggle
+ResetOldOptions=true
+ShowFlag=false
+ShowLabel=true
+ShowLayoutIndicator=true
+ShowSingle=false
+SwitchMode=Global
+Use=false
