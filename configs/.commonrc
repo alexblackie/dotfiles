@@ -40,6 +40,10 @@ refactor() {
 	ag -l $1 | xargs sed -i "s/$1/$2/g"
 }
 
+gitclean() {
+	# Deletes all merged branches locally.
+	git branch --merged | cut -f3 -d" " | xargs git branch -d
+}
 
 # ------------------------------------------------------------------------------
 # Libraries/Imports
