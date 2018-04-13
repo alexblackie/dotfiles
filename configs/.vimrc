@@ -120,6 +120,7 @@ nnoremap <c-p> :call FzyCommand("ag . --nocolor -l -g ''", ":e")<cr>
 " exit vim when if nerdtree is the only buffer left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 map <C-n> :NERDTreeToggle<CR>
+map <C-b> :NERDTreeFind<CR>
 
 " Goyo
 " ----
