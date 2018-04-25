@@ -37,6 +37,7 @@ set noerrorbells
 set novisualbell
 set number
 set ruler
+set cursorline
 set laststatus=2 " Always show bar
 
 set incsearch " Show search results 'as you type'
