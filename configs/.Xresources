@@ -28,9 +28,6 @@
 ! ------------------------------------------------------------------------------
 *geometry: 180x60
 
-xterm*font: 9x13
-xterm*scrollBar: false
-
 URxvt.cursorBlink: 1
 URxvt.font: 9x15
 URxvt.boldfont: 9x15bold
