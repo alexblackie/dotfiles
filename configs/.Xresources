@@ -33,7 +33,7 @@ xterm*scrollBar: false
 
 URxvt.cursorBlink: 1
 URxvt.font: 9x15
-URxvt.boldFont:
+URxvt.boldfont: 9x15bold
 URxvt.keysym.Home: \033[1~
 URxvt.keysym.End: \033[4~
 URxvt.fading: 0
