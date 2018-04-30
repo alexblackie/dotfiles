@@ -34,7 +34,7 @@ set t_Co=256
 
 set colorcolumn=80
 set noerrorbells
-set novisualbell
+set visualbell
 set number
 set ruler
 set cursorline
