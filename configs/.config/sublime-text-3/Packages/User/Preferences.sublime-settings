@@ -2,7 +2,7 @@
 	"adaptive_dividers": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_find_in_selection": true,
-	"color_scheme": "Packages/Solarized/Solarized (dark).tmTheme",
+	"color_scheme": "Packages/Base16/Themes/base16-atelier-savanna.tmTheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
@@ -19,7 +19,7 @@
 		"coverage",
 		"node_modules"
 	],
-	"font_face": "Source Code Pro Medium",
+	"font_face": "Fira Mono Medium",
 	"font_options":
 	[
 		"no_italic"
