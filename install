@@ -1,0 +1,62 @@
+#!/bin/sh
+
+# ~/.dotfiles - install
+#
+#    This is a script to install my dotfiles on a machine by symlinking
+#    everything into the right place in the home directory.
+#
+# OPTIONS
+#    Pass -f to force overwrite
+#    DEBUG=1 to dry run
+
+set -e
+
+# find is a dumb cli to work with so we grep. sue me.
+CONFIGS="$(find configs/ -type f -printf '%P\n' | grep -v 'gnome*' | sed 's/ /FUCKSPACE/g')"
+BINS=$(find bin/ -type f)
+MKDIR=mkdir
+LN=ln
+RM=rm
+
+if [[ "$DEBUG" -ne "" ]] ; then
+	# If we pass 'DEBUG=1' (value is irrelevant), we should prefix commands
+	# with 'echo' to do a dry run.
+	MKDIR="echo mkdir"
+	LN="echo ln"
+	RM="echo rm"
+fi
+
+link_configs() {
+	for RAW_F in $CONFIGS ; do
+		F="$(echo $RAW_F | sed 's/FUCKSPACE/ /g')"
+		target="$HOME/$F"
+
+		if [ "$1" = "-f" ] ; then
+			$RM "$target"
+		fi
+
+		if [ ! -e "$target" ] ; then
+			parent="$(dirname "$target")"
+			if [ ! -e "$parent" ] ; then
+				$MKDIR -p "$parent"
+			fi
+
+			$LN -s "$PWD/configs/$F" "$target"
+		fi
+	done
+}
+
+link_bins() {
+	if [ ! -d $HOME/bin ] ; then
+		$MKDIR $HOME/bin
+	fi
+	for F in $BINS ; do
+		target="$HOME/$F"
+		if [ ! -f $target ] ; then
+			$LN -s $PWD/$F $target
+		fi
+	done
+}
+
+link_configs $1
+link_bins

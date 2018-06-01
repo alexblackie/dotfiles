@@ -2,8 +2,8 @@
 
 This is what I use every day for work, play, and everything else.
 
-You may also like [bootstart](https://github.com/alexblackie/bootstart): the
-Ansible playbooks I use to provision my workstations/laptops.
+You may also like [bootstart](https://projects.blackieops.com/alexblackie/bootstart):
+the Ansible playbooks I use to provision my workstations/laptops.
 
 Setup is very easy:
 
