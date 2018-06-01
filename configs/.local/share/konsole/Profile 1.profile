@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=DarkPastels
-Font=Source Code Pro,12,-1,5,50,0,0,0,0,0,Regular
+Font=Source Code Pro,10,-1,5,50,0,0,0,0,0,Regular
 
 [Cursor Options]
 CustomCursorColor=0,255,127
