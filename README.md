@@ -8,24 +8,38 @@ the Ansible playbooks I use to provision my workstations/laptops.
 Setup is very easy:
 
 ```bash
-$ make
+$ ./install
 ```
 
-The Makefile simply copies the files out of the `configs/` folder and into `~/`.
+The script will symlink all the configs into the right place in the home folder.
 
-There is also some dconf config tracked for Gnome Terminal and Gnome Extension
-settings. It's also managed via make targets.
+If you want it to remove existing files to ensure they're fresh and overwritten,
+you can run:
 
-To load tracked dconf keys:
-
-```bash
-$ make dconf
+```
+$ ./install -f
 ```
 
-To dump your dconf config:
+If you want it to echo every command it will run without actually changing
+anything, you can set `DEBUG` to any value before running:
 
-```bash
-$ make dconfdump
+```
+$ DEBUG=1 ./install
 ```
 
-Then commit the changes.
+## dconf
+
+There are also `dconf` schema dumps for some Gnome settings. To use these,
+you'll need to use the `dconf` CLI:
+
+```
+$ dconf load /org/gnome/terminal/legacy/ < ./configs/gnome-terminal.ini
+$ dconf load /org/gnome/shell/extensions/ < ./configs/gnome-extensions.ini
+```
+
+And to regenerate them from the current dconf settings:
+
+```
+$ dconf dump /org/gnome/terminal/legacy/ > ./configs/gnome-terminal.ini
+$ dconf dump /org/gnome/shell/extensions/ > ./configs/gnome-extensions.ini
+```
