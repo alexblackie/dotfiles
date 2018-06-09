@@ -31,7 +31,7 @@ link_configs() {
 		F="$(echo $RAW_F | sed 's/FUCKSPACE/ /g')"
 		target="$HOME/$F"
 
-		if [ "$1" = "-f" ] ; then
+		if [ "$1" = "-f" ] && [ -e "$target" ] ; then
 			$RM "$target"
 		fi
 
