@@ -6,6 +6,10 @@ EXTENSIONS=(
 	# RHEL/CentOS
 	/usr/share/doc/git-*/contrib/completion/git-completion.bash
 
+	# Ubuntu/Debian
+	/etc/bash_completion.d/git-prompt
+	/usr/share/bash-completion/completions/git
+
 	# macOS/BSD
 	/usr/local/etc/bash_completion.d/git-prompt.sh
 	/usr/local/etc/bash_completion.d/git-completion.bash
