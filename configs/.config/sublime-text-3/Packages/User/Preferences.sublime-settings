@@ -19,12 +19,12 @@
 		"coverage",
 		"node_modules"
 	],
-	"font_face": "Fira Mono Medium",
+	"font_face": "Source Code Pro Medium",
 	"font_options":
 	[
 		"no_italic"
 	],
-	"font_size": 12,
+	"font_size": 11,
 	"highlight_line": true,
 	"ignored_packages":
 	[
