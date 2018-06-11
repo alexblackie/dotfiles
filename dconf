@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Dumps or loads a bunch of Gnome app settings.
+#
+# USAGE:
+#
+#     ./dconf       # Default behaviour is to load.
+#     ./dconf dump  # Pass dump to, well, dump the existing to the ini files.
+#
+
+if [ "$1" = "dump" ] ; then
+	dconf dump /org/gnome/terminal/legacy/ > ./configs/gnome-terminal.ini
+	dconf dump /org/gnome/shell/extensions/ > ./configs/gnome-extensions.ini
+else
+	dconf load /org/gnome/terminal/legacy/ < ./configs/gnome-terminal.ini
+	dconf load /org/gnome/shell/extensions/ < ./configs/gnome-extensions.ini
+fi

@@ -29,17 +29,15 @@ $ DEBUG=1 ./install
 
 ## dconf
 
-There are also `dconf` schema dumps for some Gnome settings. To use these,
-you'll need to use the `dconf` CLI:
+There are also `dconf` schema dumps for some Gnome settings. Another script is
+included to manage these dumps. Just run it to restore the dump:
 
 ```
-$ dconf load /org/gnome/terminal/legacy/ < ./configs/gnome-terminal.ini
-$ dconf load /org/gnome/shell/extensions/ < ./configs/gnome-extensions.ini
+$ ./dconf
 ```
 
 And to regenerate them from the current dconf settings:
 
 ```
-$ dconf dump /org/gnome/terminal/legacy/ > ./configs/gnome-terminal.ini
-$ dconf dump /org/gnome/shell/extensions/ > ./configs/gnome-extensions.ini
+$ ./dconf dump
 ```
