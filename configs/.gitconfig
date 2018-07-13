@@ -50,6 +50,7 @@
 
 [merge]
 	log = true
+	ff = false
 
 [rerere]
 	enabled = 1
