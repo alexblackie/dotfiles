@@ -42,11 +42,10 @@ set laststatus=2 " Always show bar
 
 set incsearch " Show search results 'as you type'
 set hlsearch
+highlight Search ctermbg=LightYellow ctermfg=Black cterm=NONE
 
 let &winwidth = 87 " Ensure a minimum width for active split
 
-highlight Search      ctermbg=LightYellow ctermfg=Black cterm=NONE
-highlight ColorColumn ctermbg=Black cterm=NONE
 
 " ------------------------------------------------------------------------------
 " System
