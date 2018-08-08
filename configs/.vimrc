@@ -135,3 +135,10 @@ autocmd! User GoyoEnter nested call ActivateGoyo()
 autocmd! User GoyoLeave nested call DisableGoyo()
 
 nnoremap <c-g><c-y> :Goyo<cr>
+
+" ------------------------------------------------------------------------------
+" Load local modifications
+" ------------------------------------------------------------------------------
+if filereadable(expand("~/.vimrc.local"))
+	source ~/.vimrc.local
+endif
