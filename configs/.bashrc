@@ -33,7 +33,11 @@ history -a
 shopt -s checkwinsize
 
 # Set a custom fancy prompt
-export PS1="\[\033[34m\]\w\[\033[33m\]\$(__git_ps1 '@%s' 2>/dev/null)\[\033[0m\] → "
+# If we're running in a VM, mark it as such.
+IS_VM=$([ -e /proc/cpuinfo ] && grep -q hypervisor /proc/cpuinfo && echo "[vm] ")
+# If we're running as root, also mark that loudly.
+IS_ROOT=$([ "$UID" = "0" ] && echo "[ROOT] ")
+export PS1="\[\033[31m\]$IS_ROOT$IS_VM\[\033[34m\]\w\[\033[33m\]\$(__git_ps1 '@%s' 2>/dev/null)\[\033[0m\] → "
 
 # Import shell-agnostic functions and aliases
 source $HOME/.commonrc
