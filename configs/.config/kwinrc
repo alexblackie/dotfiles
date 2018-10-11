@@ -1,5 +1,14 @@
 [Compositing]
+AnimationSpeed=2
+Backend=OpenGL
+Enabled=true
+GLCore=true
+GLPreferBufferSwap=a
+GLTextureFilter=0
+HiddenPreviews=5
 OpenGLIsUnsafe=false
+WindowsBlockCompositing=true
+XRenderSmoothScale=false
 
 [Desktops]
 Number=1
