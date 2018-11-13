@@ -52,12 +52,6 @@ if [ -f ~/.env ]; then
 	source ~/.env
 fi
 
-export CHRUBY_ROOT="/usr/local/share/chruby"
-if [ -d "$CHRUBY_ROOT" ] ; then
-	source "$CHRUBY_ROOT/chruby.sh"
-	source "$CHRUBY_ROOT/auto.sh"
-fi
-
 if [ -d "$HOME/.asdf" ] ; then
 	source "$HOME/.asdf/asdf.sh"
 fi
