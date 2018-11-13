@@ -58,6 +58,9 @@ if [ -d "$CHRUBY_ROOT" ] ; then
 	source "$CHRUBY_ROOT/auto.sh"
 fi
 
+if [ -d "$HOME/.asdf" ] ; then
+	source "$HOME/.asdf/asdf.sh"
+fi
 
 # ------------------------------------------------------------------------------
 # Environment

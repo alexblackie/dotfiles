@@ -17,6 +17,9 @@ EXTENSIONS=(
 	# FreeBSD
 	/usr/local/share/git-core/contrib/completion/git-prompt.sh
 	/usr/local/share/git-core/contrib/completion/git-completion.bash
+
+	# asdf version manager
+	$HOME/.asdf/completions/asdf.bash
 )
 
 for e in ${EXTENSIONS[*]} ; do
