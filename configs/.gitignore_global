@@ -10,3 +10,4 @@ Vagrantfile
 .editorconfig
 .pip_cache
 .crundefault
+.tool-versions
