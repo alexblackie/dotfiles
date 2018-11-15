@@ -25,9 +25,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/EditorConfig"]
 	path = configs/.config/sublime-text-3/Packages/EditorConfig
 	url = https://github.com/sindresorhus/editorconfig-sublime.git
-[submodule "configs/.config/sublime-text-3/Packages/Theme - Flatland"]
-	path = configs/.config/sublime-text-3/Packages/Theme - Flatland
-	url = https://github.com/thinkpixellab/flatland.git
 [submodule "configs/.config/sublime-text-3/Packages/elixir-tmbundle"]
 	path = configs/.config/sublime-text-3/Packages/elixir-tmbundle
 	url = https://github.com/elixir-lang/elixir-tmbundle.git
@@ -37,9 +34,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/Solarized"]
 	path = configs/.config/sublime-text-3/Packages/Solarized
 	url = https://github.com/braver/Solarized.git
-[submodule "configs/.config/sublime-text-3/Packages/ayu"]
-	path = configs/.config/sublime-text-3/Packages/ayu
-	url = https://github.com/dempfi/ayu.git
 [submodule "configs/.config/sublime-text-3/Packages/sass-textmate-bundle"]
 	path = configs/.config/sublime-text-3/Packages/sass-textmate-bundle
 	url = https://github.com/nathos/sass-textmate-bundle.git
