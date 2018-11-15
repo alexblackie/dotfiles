@@ -43,9 +43,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/sass-textmate-bundle"]
 	path = configs/.config/sublime-text-3/Packages/sass-textmate-bundle
 	url = https://github.com/nathos/sass-textmate-bundle.git
-[submodule "configs/.config/sublime-text-3/Packages/orgmode"]
-	path = configs/.config/sublime-text-3/Packages/orgmode
-	url = https://github.com/danielmagnussons/orgmode.git
 [submodule "configs/.vim/bundle/goyo.vim"]
 	path = configs/.vim/bundle/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
