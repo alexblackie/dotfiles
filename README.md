@@ -17,7 +17,7 @@ If you want it to remove existing files to ensure they're fresh and overwritten,
 you can run:
 
 ```
-$ ./install -f
+$ FORCE=1 ./install
 ```
 
 If you want it to echo every command it will run without actually changing
@@ -25,6 +25,23 @@ anything, you can set `DEBUG` to any value before running:
 
 ```
 $ DEBUG=1 ./install
+```
+
+## Platform-specific configuration
+
+By default, only platform-agnostic configuration is installed (such as vim, git,
+etc). However, Linux and macOS have specific software that also needs to be
+configured, but I didn't want those to be spewed all over each other
+unnecessarily.
+
+So, dotfiles are split into three groups: `macOS`, `linux`, and `common`.
+`common` is always installed, and `linux` and `macos` can be passed as arguments
+to the script to install those respective platform-specific configs.
+
+For example:
+
+```
+$ ./install linux
 ```
 
 ## dconf
