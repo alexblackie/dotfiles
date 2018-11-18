@@ -1,18 +1,41 @@
 #!/bin/bash
 
-# ~/.dotfiles - install
+# install
 #
 #    This is a script to install my dotfiles on a machine by symlinking
 #    everything into the right place in the home directory.
 #
+#    The dotfiles themselves are split into multiple categories, which
+#    translates to folders under `configs`. These categories are:
+#
+#        - `linux` for GNU/Linux-specific applications or settings
+#          + eg., `.Xresources`, `.config/konsolerc`
+#        - `macos` for macOS-specific applications or settings
+#          + eg., `com.googlecode.iterm2.plist`
+#        - `common` for any tools that are cross-OS.
+#          + eg., `.gitconfig`, `.vimrc`
+#
+#    By default, only `common` dotfiles will be installed, to avoid littering
+#    a bunch of stuff you don't need.
+#
+#    To install platform-specific dotfiles, pass the platform as the argument
+#    to the script. i.e., `./install linux`.
+#
 # OPTIONS
-#    Pass -f to force overwrite
-#    DEBUG=1 to dry run
+#
+#    - `FORCE=1` to force overwrite
+#    - `DEBUG=1` to dry run
+#
 
 set -e
 
-# find is a dumb cli to work with so we grep. sue me.
-CONFIGS="$(find configs/ -type f -printf '%P\n' | grep -v 'gnome*' | sed 's/ /FUCKSPACE/g')"
+find_configs() {
+	OS="${1:-common}"
+	# find is a dumb cli to work with so we grep. sue me.
+	find "configs/$OS" -type f -printf '%P\n' | grep -v 'gnome*' | sed 's/ /FUCKSPACE/g'
+}
+
+COMMON_CONFIGS="$(find_configs)"
 BINS=$(find bin/ -type f)
 MKDIR=mkdir
 LN=ln
@@ -27,12 +50,12 @@ if [[ "$DEBUG" -ne "" ]] ; then
 fi
 
 link_configs() {
-	for RAW_F in $CONFIGS ; do
+	for RAW_F in "${@:2}" ; do
 		F="$(echo $RAW_F | sed 's/FUCKSPACE/ /g')"
 		target="$HOME/$F"
 
-		if [ "$1" = "-f" ] && [ -e "$target" ] ; then
-			$RM "$target"
+		if [ "$FORCE" != "" ] ; then
+			$RM -f "$target"
 		fi
 
 		if [ ! -e "$target" ] ; then
@@ -41,7 +64,7 @@ link_configs() {
 				$MKDIR -p "$parent"
 			fi
 
-			$LN -s "$PWD/configs/$F" "$target"
+			$LN -s "$PWD/configs/$1/$F" "$target"
 		fi
 	done
 }
@@ -58,5 +81,13 @@ link_bins() {
 	done
 }
 
-link_configs $1
+link_configs common $COMMON_CONFIGS
+
+if [[ "$@" =~ "linux" ]] ; then
+	link_configs linux "$(find_configs linux)"
+fi
+if [[ "$@" =~ "macos" ]] ; then
+	link_configs macos "$(find_configs macos)"
+fi
+
 link_bins

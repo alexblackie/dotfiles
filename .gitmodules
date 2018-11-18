@@ -1,63 +1,63 @@
 [submodule "configs/.vim/bundle/vim-ruby"]
-	path = configs/.vim/bundle/vim-ruby
+	path = configs/common/.vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "configs/.vim/bundle/vim-elixir"]
-	path = configs/.vim/bundle/vim-elixir
+	path = configs/common/.vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
 [submodule "configs/.vim/bundle/jellybeans"]
-	path = configs/.vim/bundle/jellybeans
+	path = configs/common/.vim/bundle/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
 [submodule "configs/.vim/bundle/extradite.vim"]
-	path = configs/.vim/bundle/extradite.vim
+	path = configs/common/.vim/bundle/extradite.vim
 	url = https://github.com/int3/vim-extradite.git
 [submodule "configs/.vim/bundle/fugitive.vim"]
-	path = configs/.vim/bundle/fugitive.vim
+	path = configs/common/.vim/bundle/fugitive.vim
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "configs/.vim/bundle/vim-yardoc"]
-	path = configs/.vim/bundle/vim-yardoc
+	path = configs/common/.vim/bundle/vim-yardoc
 	url = https://github.com/noprompt/vim-yardoc.git
 [submodule "configs/.vim/bundle/vim-solarized"]
-	path = configs/.vim/bundle/vim-solarized
+	path = configs/common/.vim/bundle/vim-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "configs/.vim/bundle/editorconfig-vim"]
-	path = configs/.vim/bundle/editorconfig-vim
+	path = configs/common/.vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "configs/.config/sublime-text-3/Packages/EditorConfig"]
-	path = configs/.config/sublime-text-3/Packages/EditorConfig
+	path = configs/common/.config/sublime-text-3/Packages/EditorConfig
 	url = https://github.com/sindresorhus/editorconfig-sublime.git
 [submodule "configs/.config/sublime-text-3/Packages/elixir-tmbundle"]
-	path = configs/.config/sublime-text-3/Packages/elixir-tmbundle
+	path = configs/common/.config/sublime-text-3/Packages/elixir-tmbundle
 	url = https://github.com/elixir-lang/elixir-tmbundle.git
 [submodule "configs/.config/sublime-text-3/Packages/st2-zonefile"]
-	path = configs/.config/sublime-text-3/Packages/st2-zonefile
+	path = configs/common/.config/sublime-text-3/Packages/st2-zonefile
 	url = https://github.com/sixty4k/st2-zonefile.git
 [submodule "configs/.config/sublime-text-3/Packages/Solarized"]
-	path = configs/.config/sublime-text-3/Packages/Solarized
+	path = configs/common/.config/sublime-text-3/Packages/Solarized
 	url = https://github.com/braver/Solarized.git
 [submodule "configs/.config/sublime-text-3/Packages/sass-textmate-bundle"]
-	path = configs/.config/sublime-text-3/Packages/sass-textmate-bundle
+	path = configs/common/.config/sublime-text-3/Packages/sass-textmate-bundle
 	url = https://github.com/nathos/sass-textmate-bundle.git
 [submodule "configs/.vim/bundle/goyo.vim"]
-	path = configs/.vim/bundle/goyo.vim
+	path = configs/common/.vim/bundle/goyo.vim
 	url = https://github.com/junegunn/goyo.vim.git
 [submodule "configs/.vim/bundle/nerdtree"]
-	path = configs/.vim/bundle/nerdtree
+	path = configs/common/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "configs/.config/sublime-text-3/Packages/babel"]
-	path = configs/.config/sublime-text-3/Packages/babel
+	path = configs/common/.config/sublime-text-3/Packages/babel
 	url = https://github.com/babel/babel-sublime.git
 [submodule "configs/.config/sublime-text-3/Packages/sublime-haproxy"]
-	path = configs/.config/sublime-text-3/Packages/sublime-haproxy
+	path = configs/common/.config/sublime-text-3/Packages/sublime-haproxy
 	url = https://github.com/ramonfritsch/sublime-haproxy.git
 [submodule "configs/.config/sublime-text-3/Packages/Terraform.tmlanguage"]
-	path = configs/.config/sublime-text-3/Packages/Terraform.tmlanguage
+	path = configs/common/.config/sublime-text-3/Packages/Terraform.tmlanguage
 	url = https://github.com/alexlouden/Terraform.tmLanguage.git
 [submodule "configs/.config/sublime-text-3/Packages/sublime-text-git"]
-	path = configs/.config/sublime-text-3/Packages/sublime-text-git
+	path = configs/common/.config/sublime-text-3/Packages/sublime-text-git
 	url = https://github.com/kemayo/sublime-text-git.git
 [submodule "configs/.config/sublime-text-3/Packages/Base16"]
-	path = configs/.config/sublime-text-3/Packages/Base16
+	path = configs/common/.config/sublime-text-3/Packages/Base16
 	url = https://github.com/chriskempson/base16-textmate.git
 [submodule "configs/.config/sublime-text-3/Packages/asciidoc"]
-	path = configs/.config/sublime-text-3/Packages/asciidoc
+	path = configs/common/.config/sublime-text-3/Packages/asciidoc
 	url = https://github.com/asciidoctor/sublimetext-asciidoc.git
