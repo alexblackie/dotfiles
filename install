@@ -29,17 +29,15 @@
 
 set -e
 
-find_configs() {
-	OS="${1:-common}"
-	# find is a dumb cli to work with so we grep. sue me.
-	find "configs/$OS" -type f -printf '%P\n' | grep -v 'gnome*' | sed 's/ /FUCKSPACE/g'
-}
-
-COMMON_CONFIGS="$(find_configs)"
-BINS=$(find bin/ -type f)
 MKDIR=mkdir
 LN=ln
 RM=rm
+
+if hash gfind 2>&1 >/dev/null ; then
+	FIND=gfind
+else
+	FIND="find"
+fi
 
 if [[ "$DEBUG" -ne "" ]] ; then
 	# If we pass 'DEBUG=1' (value is irrelevant), we should prefix commands
@@ -48,6 +46,12 @@ if [[ "$DEBUG" -ne "" ]] ; then
 	LN="echo ln"
 	RM="echo rm"
 fi
+
+find_configs() {
+	OS="${1:-common}"
+	# find is a dumb cli to work with so we grep. sue me.
+	$FIND "configs/$OS" -type f -printf '%P\n' | grep -v 'gnome*' | sed 's/ /FUCKSPACE/g'
+}
 
 link_configs() {
 	for RAW_F in "${@:2}" ; do
@@ -81,6 +85,9 @@ link_bins() {
 	done
 }
 
+COMMON_CONFIGS="$(find_configs)"
+BINS=$($FIND bin/ -type f)
+
 link_configs common $COMMON_CONFIGS
 
 if [[ "$@" =~ "linux" ]] ; then
@@ -88,6 +95,10 @@ if [[ "$@" =~ "linux" ]] ; then
 fi
 if [[ "$@" =~ "macos" ]] ; then
 	link_configs macos "$(find_configs macos)"
+
+	# Manually link sublime text into the special macOS folder
+	rm -rf "$HOME/Library/Application Support/Sublime Text 3"
+	ln -s "$HOME/.config/sublime-text-3" "$HOME/Library/Application Support/Sublime Text 3"
 fi
 
 link_bins
