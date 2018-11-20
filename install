@@ -73,20 +73,7 @@ link_configs() {
 	done
 }
 
-link_bins() {
-	if [ ! -d $HOME/bin ] ; then
-		$MKDIR $HOME/bin
-	fi
-	for F in $BINS ; do
-		target="$HOME/$F"
-		if [ ! -f $target ] ; then
-			$LN -s $PWD/$F $target
-		fi
-	done
-}
-
 COMMON_CONFIGS="$(find_configs)"
-BINS=$($FIND bin/ -type f)
 
 link_configs common $COMMON_CONFIGS
 
@@ -100,5 +87,3 @@ if [[ "$@" =~ "macos" ]] ; then
 	rm -rf "$HOME/Library/Application Support/Sublime Text 3"
 	ln -s "$HOME/.config/sublime-text-3" "$HOME/Library/Application Support/Sublime Text 3"
 fi
-
-link_bins
