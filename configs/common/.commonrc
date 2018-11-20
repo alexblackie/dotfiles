@@ -7,10 +7,6 @@ alias yolo="git push -f origin"
 
 alias be="bundle exec"
 
-chex() {
-	source $HOME/bin/change-elixir $@
-}
-
 startdb() {
 	DIR="$HOME/.postgresql_data/$1"
 	PORT=${2:-5432}
