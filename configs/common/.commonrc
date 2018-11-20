@@ -7,11 +7,6 @@ alias yolo="git push -f origin"
 
 alias be="bundle exec"
 
-fpass() {
-	filename=$(cd $HOME/.password-store && ag . -l -g "" | fzy)
-	pass -c ${filename/.gpg/}
-}
-
 serve() {
 	ruby -run -e httpd . -p ${1:-3000}
 }
