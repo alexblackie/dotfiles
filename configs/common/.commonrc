@@ -7,17 +7,6 @@ alias yolo="git push -f origin"
 
 alias be="bundle exec"
 
-startdb() {
-	DIR="$HOME/.postgresql_data/$1"
-	PORT=${2:-5432}
-	mkdir -p "$DIR"
-	if hash chcon >/dev/null 2>&1 ; then
-		# only try to set SELinux type if we have SELinux
-		sudo chcon -Rt svirt_sandbox_file_t "$DIR"
-	fi
-	docker run -v "$DIR:/var/lib/postgresql/data" -p $PORT:5432 -e POSTGRES_PASSWORD=password123 postgres
-}
-
 fpass() {
 	filename=$(cd $HOME/.password-store && ag . -l -g "" | fzy)
 	pass -c ${filename/.gpg/}
