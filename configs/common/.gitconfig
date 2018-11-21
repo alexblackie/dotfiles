@@ -1,6 +1,7 @@
 [user]
 	name = Alex Blackie
 	email = alex@alexblackie.com
+	signingKey = 62C52F68363447D971C629EDA231E0F2D35D0D47
 
 [core]
 	excludesfile = ~/.gitignore_global
@@ -65,3 +66,5 @@
 	autosetuprebase = always
 [pull]
 	rebase = true
+[commit]
+	gpgsign = true
