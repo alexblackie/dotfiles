@@ -118,7 +118,11 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>10 177 1106 690 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>386 160 1042 692 0 0 1440 877 </string>
+	<string>386 245 970 605 0 0 1440 877 </string>
+	<key>NeverWarnAboutShortLivedSessions_B882BEE6-7C64-4813-ACC4-D488B669A637</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_B882BEE6-7C64-4813-ACC4-D488B669A637_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
