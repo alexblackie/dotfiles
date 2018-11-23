@@ -111,10 +111,12 @@
 	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 382 620 392 0 0 1440 877 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>386 263 814 486 0 0 1440 877 </string>
+	<string>386 373 796 486 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>65 123 970 622 0 0 1440 877 </string>
+	<string>10 177 1106 690 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>386 160 1042 692 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -937,15 +939,17 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly.xml?shard=15</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=15</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-20T19:55:40Z</date>
+	<date>2018-11-21T20:44:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>Secure Input</key>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>TabStyleWithAutomaticOption</key>
@@ -955,6 +959,6 @@
 	<key>UseMetal</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>3.3.20181120-nightly</string>
+	<string>3.2.6beta4</string>
 </dict>
 </plist>
