@@ -45,10 +45,6 @@ highlight Search ctermbg=LightYellow ctermfg=Black cterm=NONE
 
 let &winwidth = 87 " Ensure a minimum width for active split
 
-if has('mouse')
-  set mouse=a
-endif
-
 
 " ------------------------------------------------------------------------------
 " System
