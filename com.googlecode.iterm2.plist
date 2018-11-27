@@ -16,6 +16,8 @@
 	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>B882BEE6-7C64-4813-ACC4-D488B669A637</string>
+	<key>FlashTabBarInFullscreen</key>
+	<false/>
 	<key>HideTab</key>
 	<true/>
 	<key>HideTabCloseButton</key>
@@ -114,11 +116,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>386 373 796 486 0 0 1440 877 </string>
+	<string>1440 385 796 486 1440 -180 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>10 177 1106 690 0 0 1440 877 </string>
+	<string>470 1 970 639 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>386 245 970 605 0 0 1440 877 </string>
+	<string>386 209 970 639 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_B882BEE6-7C64-4813-ACC4-D488B669A637</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_B882BEE6-7C64-4813-ACC4-D488B669A637_selection</key>
@@ -947,7 +949,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-21T20:44:27Z</date>
+	<date>2018-11-26T20:24:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
