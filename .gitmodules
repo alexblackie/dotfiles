@@ -61,3 +61,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/asciidoc"]
 	path = configs/common/.config/sublime-text-3/Packages/asciidoc
 	url = https://github.com/asciidoctor/sublimetext-asciidoc.git
+[submodule "configs/common/.config/sublime-text-3/Packages/Docker.tmbundle"]
+	path = configs/common/.config/sublime-text-3/Packages/Docker.tmbundle
+	url = https://github.com/asbjornenge/Docker.tmbundle
