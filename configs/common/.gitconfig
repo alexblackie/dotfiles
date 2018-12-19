@@ -66,5 +66,3 @@
 	autosetuprebase = always
 [pull]
 	rebase = true
-[commit]
-	gpgsign = true
