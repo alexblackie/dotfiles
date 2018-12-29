@@ -33,7 +33,7 @@ MKDIR=mkdir
 LN=ln
 RM=rm
 
-if hash gfind 2>&1 >/dev/null ; then
+if hash gfind > /dev/null 2>&1 ; then
 	FIND=gfind
 else
 	FIND="find"
