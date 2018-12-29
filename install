@@ -78,10 +78,10 @@ COMMON_CONFIGS="$(find_configs)"
 link_configs common $COMMON_CONFIGS
 
 if [[ "$@" =~ "linux" ]] ; then
-	link_configs linux "$(find_configs linux)"
+	link_configs linux $(find_configs linux)
 fi
 if [[ "$@" =~ "macos" ]] ; then
-	link_configs macos "$(find_configs macos)"
+	link_configs macos $(find_configs macos)
 
 	# Manually link sublime text into the special macOS folder
 	rm -rf "$HOME/Library/Application Support/Sublime Text 3"
