@@ -27,7 +27,7 @@
 #    - `DEBUG=1` to dry run
 #
 
-set -e
+set -ef -o pipefail
 
 MKDIR=mkdir
 LN=ln
