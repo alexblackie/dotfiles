@@ -84,6 +84,6 @@ if [[ "$@" =~ "macos" ]] ; then
 	link_configs macos $(find_configs macos)
 
 	# Manually link sublime text into the special macOS folder
-	rm -rf "$HOME/Library/Application Support/Sublime Text 3"
-	ln -s "$HOME/.config/sublime-text-3" "$HOME/Library/Application Support/Sublime Text 3"
+	$RM -rf "$HOME/Library/Application Support/Sublime Text 3"
+	$LN -s "$HOME/.config/sublime-text-3" "$HOME/Library/Application Support/Sublime Text 3"
 fi
