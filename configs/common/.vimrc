@@ -28,7 +28,7 @@ set timeoutlen=1000 ttimeoutlen=0
 "  UI Things
 " ------------------------------------------------------------------------------
 syntax on
-set background=dark
+set background=light
 colorscheme solarized
 set t_Co=256
 
