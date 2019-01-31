@@ -3,7 +3,7 @@
 # General stuff
 # ------------------------------------------------------------------------------
 # Titlebar font
-font 6x12
+font pango:B612 Mono 12px
 
 # Use meta for mod key
 set $mod Mod4
@@ -81,13 +81,13 @@ bindsym $mod+Shift+9 move container to workspace 9
 # Keybindings
 # ------------------------------------------------------------------------------
 # open terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec gnome-terminal
 
 # KILL focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "Terminus-8"
+bindsym $mod+d exec --no-startup-id dmenu_run -fn "B612 Mono-8"
 
 # lock screen
 bindsym $mod+Shift+Delete exec --no-startup-id lock
