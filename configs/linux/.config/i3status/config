@@ -8,8 +8,8 @@
 general {
 	output_format = "i3bar"
 	colors = true
-	color_good = "#87AF5F"
-	color_bad = "#D75F5F"
+	color_good = "#859900"
+	color_bad = "#839496"
 	interval = 5
 }
 

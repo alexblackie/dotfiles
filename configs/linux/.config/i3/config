@@ -147,21 +147,19 @@ for_window [window_role="pop-up"] floating enable
 # ------------------------------------------------------------------------------
 # Colours
 # ------------------------------------------------------------------------------
-set $numix-grey        #ABABAB
-set $numix-mid-grey    #303030
-set $numix-dark-grey   #444444
-set $numix-darker-grey #222222
-set $numix-light-grey  #DEDEDE
-set $numix-orange      #D64937
 
-set $jellybeans-dark-grey #121212
-set $jellybeans-white #d7d7d7
+set $sbase01 #586e75
+set $sbase02 #073642
+set $sbase03 #002b36
+set $sbase1  #93a1a1
+set $base0   #839496
+set $sred    #002b36
 
-# class                 border             background         text              indicator
-client.focused          $numix-dark-grey   $numix-dark-grey   $numix-light-grey $numix-dark-grey
-client.focused_inactive $numix-dark-grey   $numix-dark-grey   $numix-grey       $numix-dark-grey
-client.unfocused        $numix-darker-grey $numix-darker-grey $numix-grey       $numix-dark-grey
-client.urgent           #2f343a            #900000            #ffffff           #900000
+# class                 border     background  text      indicator
+client.focused          $sbase02   $sbase02    $sbase0   $sbase0
+client.focused_inactive $sbase03   $sbase03    $sbase0   $sbase0
+client.unfocused        $sbase03   $sbase03    $sbase0   $sbase0
+client.urgent           $sred      $sred       $sbase01  $sred
 
 
 # ------------------------------------------------------------------------------
@@ -173,13 +171,13 @@ bar {
 	workspace_buttons yes
 
 	colors {
-		background $jellybeans-dark-grey
-		statusline $jellybeans-white
+		background $sbase03
+		statusline $sbase0
 
-		# class            border                 background              text
-		focused_workspace  $numix-dark-grey       $numix-dark-grey        #FFFFFF
-		active_workspace   $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
-		inactive_workspace $jellybeans-dark-grey  $jellybeans-dark-grey   $numix-grey
-		urgent_workspace   #FF00FF                #FF00FF                 #FFFFFF
+		# class            border      background   text
+		focused_workspace  $sbase02    $sbase02     $sbase1
+		active_workspace   $sbase02    $sbase02     $sbase1
+		inactive_workspace $sbase03    $sbase03     $sbase01
+		urgent_workspace   $sred       $sred        $sbase1
 	}
 }
