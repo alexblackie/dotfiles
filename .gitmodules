@@ -1,6 +1,3 @@
-[submodule "configs/.vim/bundle/vim-ruby"]
-	path = configs/common/.vim/bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "configs/.vim/bundle/vim-elixir"]
 	path = configs/common/.vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
