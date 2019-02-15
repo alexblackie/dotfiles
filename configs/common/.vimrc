@@ -121,21 +121,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 map <C-n> :NERDTreeToggle<CR>
 map <C-b> :NERDTreeFind<CR>
 
-" Goyo
-" ----
-function! ActivateGoyo()
-	set noshowmode
-endfunction
-
-function! DisableGoyo()
-	set showmode
-endfunction
-
-autocmd! User GoyoEnter nested call ActivateGoyo()
-autocmd! User GoyoLeave nested call DisableGoyo()
-
-nnoremap <c-g><c-y> :Goyo<cr>
-
 " ------------------------------------------------------------------------------
 " Load local modifications
 " ------------------------------------------------------------------------------
