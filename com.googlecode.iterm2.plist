@@ -124,11 +124,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>161 327 796 486 0 0 1440 900 </string>
+	<string>1601 332 918 512 1440 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>458 153 970 673 0 0 1440 877 </string>
+	<string>1487 73 1090 673 1440 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>260 86 970 673 0 0 1440 877 </string>
+	<string>1583 58 1090 673 1440 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>197 47 970 673 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_B882BEE6-7C64-4813-ACC4-D488B669A637</key>
@@ -988,7 +988,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-01T22:20:06Z</date>
+	<date>2019-03-13T15:31:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>
@@ -1004,7 +1004,7 @@
 	<key>UseMetal</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>3.2.7beta4</string>
+	<string>3.2.8beta1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
