@@ -24,12 +24,8 @@
 	[
 		"no_italic"
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"overlay_scroll_bars": "enabled",
