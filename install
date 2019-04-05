@@ -76,6 +76,7 @@ link_configs() {
 COMMON_CONFIGS="$(find_configs)"
 
 link_configs common $COMMON_CONFIGS
+link_configs bin $(find_configs bin)
 
 if [[ "$@" =~ "linux" ]] ; then
 	link_configs linux $(find_configs linux)

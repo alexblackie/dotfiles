@@ -1,0 +1,27 @@
+#/usr/bin/env bash
+
+# @param $1 Github PR label name
+# @param $2 Git remote name (default: origin)
+#
+# EXAMPLE:
+#
+#         git mergelabel staging
+
+set -euf -o pipefail
+
+if [ "$1x" = "x" ] ; then
+	echo "Please provide label as first argument."
+	exit 1
+fi
+
+if ! hash hub 2>&1 >/dev/null ; then
+	echo 'Please install the "hub" CLI.'
+	exit 2
+fi
+
+REMOTE="${2:-origin}"
+LABEL="$1"
+
+hub pr list -f "$REMOTE/%HΩ%L%n" | \
+	awk -F"Ω" "{ if (\$2 ~ /$LABEL/) { print \$1 }}" | \
+	xargs git merge --no-ff
