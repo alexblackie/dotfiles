@@ -25,6 +25,22 @@ gitclean() {
 	git branch --merged | cut -f3 -d" " | xargs git branch -d
 }
 
+# @param $1 Github PR label name
+# @param $2 Git remote name (default: origin)
+git-mergelabel() {
+	if [ "$1x" = "x" ] ; then
+		echo "Please provide label as first argument."
+		exit 1
+	fi
+
+	REMOTE="${2:-origin}"
+	LABEL="$1"
+
+	hub pr list -f "$REMOTE/%HΩ%L%n" | \
+		awk -F"Ω" "{ if (\$2 ~ /$LABEL/) { print \$1 }}" | \
+		xargs git merge --no-ff
+}
+
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
