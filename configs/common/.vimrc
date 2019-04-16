@@ -43,7 +43,7 @@ set incsearch " Show search results 'as you type'
 set hlsearch
 highlight Search ctermbg=LightYellow ctermfg=Black cterm=NONE
 
-let &winwidth = 87 " Ensure a minimum width for active split
+set winwidth=87 " Ensure the active split can comfortably show at least 80 chars
 
 
 " ------------------------------------------------------------------------------
