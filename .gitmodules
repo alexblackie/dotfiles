@@ -34,9 +34,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/babel"]
 	path = configs/common/.config/sublime-text-3/Packages/babel
 	url = https://github.com/babel/babel-sublime.git
-[submodule "configs/.config/sublime-text-3/Packages/sublime-haproxy"]
-	path = configs/common/.config/sublime-text-3/Packages/sublime-haproxy
-	url = https://github.com/ramonfritsch/sublime-haproxy.git
 [submodule "configs/.config/sublime-text-3/Packages/Terraform.tmlanguage"]
 	path = configs/common/.config/sublime-text-3/Packages/Terraform.tmlanguage
 	url = https://github.com/alexlouden/Terraform.tmLanguage.git
@@ -46,9 +43,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/Base16"]
 	path = configs/common/.config/sublime-text-3/Packages/Base16
 	url = https://github.com/chriskempson/base16-textmate.git
-[submodule "configs/.config/sublime-text-3/Packages/asciidoc"]
-	path = configs/common/.config/sublime-text-3/Packages/asciidoc
-	url = https://github.com/asciidoctor/sublimetext-asciidoc.git
 [submodule "configs/common/.config/sublime-text-3/Packages/Docker.tmbundle"]
 	path = configs/common/.config/sublime-text-3/Packages/Docker.tmbundle
 	url = https://github.com/asbjornenge/Docker.tmbundle
