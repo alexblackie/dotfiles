@@ -37,9 +37,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/sublime-text-git"]
 	path = configs/common/.config/sublime-text-3/Packages/sublime-text-git
 	url = https://github.com/kemayo/sublime-text-git.git
-[submodule "configs/.config/sublime-text-3/Packages/Base16"]
-	path = configs/common/.config/sublime-text-3/Packages/Base16
-	url = https://github.com/chriskempson/base16-textmate.git
 [submodule "configs/common/.config/sublime-text-3/Packages/Docker.tmbundle"]
 	path = configs/common/.config/sublime-text-3/Packages/Docker.tmbundle
 	url = https://github.com/asbjornenge/Docker.tmbundle
