@@ -22,9 +22,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/st2-zonefile"]
 	path = configs/common/.config/sublime-text-3/Packages/st2-zonefile
 	url = https://github.com/sixty4k/st2-zonefile.git
-[submodule "configs/.config/sublime-text-3/Packages/Solarized"]
-	path = configs/common/.config/sublime-text-3/Packages/Solarized
-	url = https://github.com/braver/Solarized.git
 [submodule "configs/.config/sublime-text-3/Packages/sass-textmate-bundle"]
 	path = configs/common/.config/sublime-text-3/Packages/sass-textmate-bundle
 	url = https://github.com/nathos/sass-textmate-bundle.git
