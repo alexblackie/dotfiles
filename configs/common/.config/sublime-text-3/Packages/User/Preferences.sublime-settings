@@ -2,7 +2,7 @@
 	"adaptive_dividers": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_find_in_selection": true,
-	"color_scheme": "Packages/User/Solarized Light.sublime-color-scheme",
+	"color_scheme": "Packages/Dracula/Dracula.tmTheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,

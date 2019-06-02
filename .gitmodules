@@ -40,3 +40,6 @@
 [submodule "configs/common/.config/sublime-text-3/Packages/Docker.tmbundle"]
 	path = configs/common/.config/sublime-text-3/Packages/Docker.tmbundle
 	url = https://github.com/asbjornenge/Docker.tmbundle
+[submodule "configs/common/.config/sublime-text-3/Packages/Dracula"]
+	path = configs/common/.config/sublime-text-3/Packages/Dracula
+	url = https://github.com/dracula/sublime.git
