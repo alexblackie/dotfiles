@@ -3,11 +3,19 @@
 set -euf -o pipefail
 
 if [ "${1:-x}" = "x" ] ; then
-  echo "Provide container name as first argument"
-  exit 1
+	echo "Provide container name as first argument"
+	exit 1
 fi
 
-REGISTRY="cr.blackieops.com"
+if [ "${KATES_DEPLOY_REGISTRY:-x}" = "x" ] ; then
+	echo "You must configure a Docker registry URL."
+	echo "Please set KATES_DEPLOY_REGISTRY"
+	echo
+	echo "    ex. KATES_DEPLOY_REGISTRY=gcr.io/my-project-1"
+	exit 2
+fi
+
+REGISTRY="$KATES_DEPLOY_REGISTRY"
 APP_NAME="$1"
 TAG="$(date +%Y%m%d%H%M)"
 CONTAINER_NAME="$REGISTRY/$APP_NAME:$TAG"
