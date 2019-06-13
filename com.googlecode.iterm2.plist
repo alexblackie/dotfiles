@@ -4,6 +4,8 @@
 <dict>
 	<key>AllowClipboardAccess</key>
 	<true/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -125,11 +127,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 588 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>296 98 1090 688 0 0 1920 1177 </string>
+	<string>375 17 1279 859 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>246 51 1090 688 0 0 1920 1177 </string>
+	<string>486 87 1090 688 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>281 22 1090 688 0 0 1920 1177 </string>
+	<string>483 27 1090 688 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_B882BEE6-7C64-4813-ACC4-D488B669A637</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_B882BEE6-7C64-4813-ACC4-D488B669A637_selection</key>
@@ -823,17 +825,22 @@
 			<string>/Users/alexblackie</string>
 		</dict>
 	</array>
+	<key>NoSyncAllAppVersions</key>
+	<array>
+		<string>3.3.0beta11</string>
+		<string>3.3.0beta10</string>
+	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1200}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{174, 729}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>372BBB6B-F1A5-47FB-9267-07A068B09542</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>9</integer>
+	<integer>12</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>581466181.59457397</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -1514,13 +1521,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-05T18:34:39Z</date>
+	<date>2019-06-11T23:42:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
@@ -1542,7 +1549,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.0beta10</string>
+	<string>3.3.0beta11</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
