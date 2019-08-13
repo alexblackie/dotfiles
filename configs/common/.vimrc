@@ -32,7 +32,7 @@ set background=light
 colorscheme solarized
 set t_Co=256
 
-set colorcolumn=80
+set colorcolumn=100
 set noerrorbells
 set number
 set ruler
@@ -43,7 +43,7 @@ set incsearch " Show search results 'as you type'
 set hlsearch
 highlight Search ctermbg=LightYellow ctermfg=Black cterm=NONE
 
-set winwidth=87 " Ensure the active split can comfortably show at least 80 chars
+set winwidth=107 " Ensure the active split can comfortably show at least 100 chars
 
 
 " ------------------------------------------------------------------------------
