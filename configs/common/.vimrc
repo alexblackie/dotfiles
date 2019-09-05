@@ -92,8 +92,9 @@ augroup filetypedetect
 	" TOML is pretty close enough to ini
 	autocmd BufNewFile,BufReadPost *.toml set filetype=dosini
 
-	" Terraform/HCL files are kind of like java and ini. kind of...
-	autocmd BufNewFile,BufReadPost *.tf set filetype=java
+	" Terraform/HCL files are pretty similar to groovy, and tfvars are
+	" basically just ini files.
+	autocmd BufNewFile,BufReadPost *.tf set filetype=groovy
 	autocmd BufNewFile,BufReadPost *.tfvars set filetype=dosini
 
 	" vim's default indenting of erlang is fucking annoying and mixes
