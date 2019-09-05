@@ -70,20 +70,35 @@ noremap K <NOP>
 
 " Custom filetype style/syntax overrides
 augroup filetypedetect
+	" Hard-wrap plain text documents at 80
 	autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown set textwidth=80
+
+	" Set git commit line length to kernel standard
 	autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG set textwidth=72
-	autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
+
+	" Stylus is just a worse Sass
 	autocmd BufNewFile,BufReadPost *.styl set filetype=sass
-	autocmd BufNewFile,BufReadPost *.info set filetype=dosini
+
+	" Rebar and OTP are erlang
 	autocmd BufNewFile,BufReadPost rebar.config set filetype=erlang
 	autocmd BufNewFile,BufReadPost *.app.src set filetype=erlang
+
+	" ES6 is javascript.
 	autocmd BufNewFile,BufReadPost *.es6 set filetype=javascript
+
+	" Jenkins declarative config is Groovy-based
 	autocmd BufNewFile,BufReadPost Jenkinsfile* set filetype=groovy
+
+	" TOML is pretty close enough to ini
 	autocmd BufNewFile,BufReadPost *.toml set filetype=dosini
+
+	" Terraform/HCL files are kind of like java and ini. kind of...
+	autocmd BufNewFile,BufReadPost *.tf set filetype=java
+	autocmd BufNewFile,BufReadPost *.tfvars set filetype=dosini
+
 	" vim's default indenting of erlang is fucking annoying and mixes
 	" tabs/spaces. Just turn it off, I'll deal with just autoindent thanks
 	autocmd BufNewFile,BufReadPost *.erl filetype plugin indent off
-	autocmd FileType yaml setl indentkeys-=<:>
 augroup END
 
 " Whitespace highlighting/deleting
