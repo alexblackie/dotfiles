@@ -12,3 +12,4 @@ Vagrantfile
 .pip_cache
 .crundefault
 .tool-versions
+.idea
