@@ -77,6 +77,8 @@ bindkey "\e[A" history-substring-search-up
 bindkey "^[[A" history-substring-search-up
 bindkey "^[0A" history-substring-search-up
 
+# Make forward delete work
+bindkey "\e[3~" delete-char
 
 # ------------------------------------------------------------------------------
 # Source common shell config
