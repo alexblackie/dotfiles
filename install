@@ -78,6 +78,15 @@ COMMON_CONFIGS="$(find_configs)"
 link_configs common $COMMON_CONFIGS
 link_configs bin $(find_configs bin)
 
+if [[ -e ".vscode-extensions" ]] ; then
+	# VSCode has no native way to sync extensions... Luckily it has a CLI
+	# way to do it. Kind of gross though.
+	source .vscode-extensions
+	for ext in ${VSCODE_EXTENSIONS[@]} ; do
+		code --install-extension "$ext"
+	done
+fi
+
 if [[ "$@" =~ "linux" ]] ; then
 	link_configs linux $(find_configs linux)
 fi
