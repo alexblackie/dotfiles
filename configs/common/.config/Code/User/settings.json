@@ -32,7 +32,6 @@
     },
     "editor.fontSize": 15,
     "csharp.referencesCodeLens.enabled": false,
-    "omnisharp.autoStart": false,
     "window.zoomLevel": 0,
     "telemetry.enableTelemetry": false,
     "extensions.showRecommendationsOnlyOnDemand": true
