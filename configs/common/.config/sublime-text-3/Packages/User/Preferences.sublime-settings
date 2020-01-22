@@ -2,7 +2,7 @@
 	"adaptive_dividers": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_find_in_selection": true,
-	"color_scheme": "Packages/User/Visual Studio.tmTheme",
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
@@ -24,7 +24,7 @@
 	[
 		"no_italic"
 	],
-	"font_size": 12,
+	"font_size": 11,
 	"highlight_line": true,
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,

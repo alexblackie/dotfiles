@@ -24,7 +24,7 @@ set timeoutlen=1000 ttimeoutlen=0
 " ------------------------------------------------------------------------------
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 set t_Co=256
 
 set colorcolumn=100

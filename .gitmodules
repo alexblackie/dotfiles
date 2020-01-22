@@ -43,3 +43,9 @@
 [submodule "configs/common/.config/sublime-text-3/Packages/Dracula"]
 	path = configs/common/.config/sublime-text-3/Packages/Dracula
 	url = https://github.com/dracula/sublime.git
+[submodule "configs/common/.config/sublime-text-3/Packages/gruvbox"]
+	path = configs/common/.config/sublime-text-3/Packages/gruvbox
+	url = https://github.com/Briles/gruvbox.git
+[submodule "configs/common/.vim/pack/ext/start/gruvbox"]
+	path = configs/common/.vim/pack/ext/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
