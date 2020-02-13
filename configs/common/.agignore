@@ -13,3 +13,4 @@ rel
 tmp
 ebin
 vendor/bundle
+*.rbi
