@@ -6,6 +6,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	fileMode = false
+	commitGraph = true
 
 [alias]
 	aa = add --all
