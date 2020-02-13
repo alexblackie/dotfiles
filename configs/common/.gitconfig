@@ -49,6 +49,7 @@
 [diff]
 	tool = vimdiff
 	prompt = false
+	algorithm = patience
 
 [merge]
 	log = true
