@@ -12,7 +12,6 @@
 	aa = add --all
 	br = branch
 	ci = commit
-	co = checkout
 	dc = diff --cached
 	df = diff
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative

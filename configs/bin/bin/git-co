@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+checkoutOrFuzzyBranch() {
+	if ! [ "${1:-}" = "" ]
+	then
+		git checkout "$@"
+	else
+		local branch
+		branch="$(git branch --format='%(refname)' | cut -f3 -d'/' | fzy)"
+		git checkout "$branch"
+	fi
+}
+
+checkoutOrFuzzyBranch $@
