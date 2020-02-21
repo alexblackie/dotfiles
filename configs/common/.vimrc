@@ -81,6 +81,9 @@ augroup filetypedetect
 	" ES6 is javascript.
 	autocmd BufNewFile,BufReadPost *.es6 set filetype=javascript
 
+	" Typescript, and Typescript JSX is JavaScript
+	autocmd BufNewFile,BufReadPost *.ts,*.tsx set filetype=javascript
+
 	" Jenkins declarative config is Groovy-based
 	autocmd BufNewFile,BufReadPost Jenkinsfile* set filetype=groovy
 
