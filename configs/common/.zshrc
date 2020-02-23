@@ -80,6 +80,16 @@ bindkey "^[0A" history-substring-search-up
 # Make forward delete work
 bindkey "\e[3~" delete-char
 
+# Quickly fuzzy-find and cd to a different project directory. See 'cdp'
+# function in '.commonrc'
+#
+# This wrapper widget allows it to be bound to a key, and also handles
+# re-drawing the prompt and re-running the precmd so the prompt is fully
+# updated as one would expect. It even restores the commandline contents.
+zle_cdp() { cdp ; precmd ; zle reset-prompt }
+zle -N zle_cdp
+bindkey "^P" zle_cdp
+
 # ------------------------------------------------------------------------------
 # Source common shell config
 # ------------------------------------------------------------------------------

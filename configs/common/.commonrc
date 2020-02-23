@@ -20,6 +20,20 @@ refactor() {
 	ag -l $1 | xargs sed -i "s/$1/$2/g"
 }
 
+cdp() {
+	# "cd to project"
+	#
+	# Finds source code project directories and allows fuzzy-finding one, then
+	# cd's to whichever you choose.
+	#
+	# I use two different directories, depending on the project, computer, or
+	# whatever. "code" is github-style "username/repo" and so maxdepth is just 2.
+	# "src" is a GOPATH-style full URL, so it needs a maxdepth of 3.
+	targets="$(find $HOME/src -maxdepth 3 -type d)"
+	targets+="$(find $HOME/code -maxdepth 2 -type d)"
+	cd "$HOME/$(echo $targets | sed -e "s%$HOME/%%" | fzy)"
+}
+
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
