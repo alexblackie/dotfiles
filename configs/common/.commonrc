@@ -31,7 +31,13 @@ cdp() {
 	# "src" is a GOPATH-style full URL, so it needs a maxdepth of 3.
 	targets="$(find $HOME/src -maxdepth 3 -type d)"
 	targets+="$(find $HOME/code -maxdepth 2 -type d)"
-	cd "$HOME/$(echo $targets | sed -e "s%$HOME/%%" | fzy)"
+
+	target="$(echo $targets | sed -e "s%$HOME/%%" | fzy)"
+
+	if ! [ "$target" = "" ] ; then
+		# only cd if we actually chose something
+		cd "$HOME/$target"
+	fi
 }
 
 # ------------------------------------------------------------------------------
