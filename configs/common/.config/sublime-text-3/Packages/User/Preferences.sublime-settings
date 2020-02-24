@@ -26,6 +26,7 @@
 	],
 	"font_size": 11,
 	"highlight_line": true,
+	"ignore_vcs_packages": true,
 	"line_padding_bottom": 3,
 	"line_padding_top": 3,
 	"overlay_scroll_bars": "enabled",
