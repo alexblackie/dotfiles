@@ -3,6 +3,5 @@ export VSCODE_EXTENSIONS=(
 	mjmcloug.vscode-elixir
 	ms-vscode-remote.remote-ssh
 	fkrull.gtk-dark-titlebar
-	ms-vscode.csharp
 	ms-vscode-remote.remote-ssh-edit
 )
