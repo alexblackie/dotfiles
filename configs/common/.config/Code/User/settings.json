@@ -2,6 +2,7 @@
     "workbench.startupEditor": "newUntitledFile",
     "editor.suggestSelection": "first",
     "files.exclude": {
+        ".elixir_ls": true,
         "**/.classpath": true,
         "**/.factorypath": true,
         "**/.project": true,
@@ -24,6 +25,7 @@
     "editor.tabSize": 2,
     "breadcrumbs.enabled": false,
     "search.exclude": {
+        "**/.elixir_ls": true,
         "**/vendor/bundle": true
     },
     "files.watcherExclude": {

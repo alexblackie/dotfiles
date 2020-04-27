@@ -13,3 +13,4 @@ Vagrantfile
 .crundefault
 .tool-versions
 .idea
+.elixir_ls
