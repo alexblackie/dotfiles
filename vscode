@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+# Installs Visual Studio Code extensions automatically. There's no good way to
+# sync these as far as I can tell, so this is the best we can do. Pretty gross,
+# but it works.
+
+source .vscode-extensions
+for ext in ${VSCODE_EXTENSIONS[@]} ; do
+	code --install-extension "$ext"
+done

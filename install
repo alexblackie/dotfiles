@@ -1,25 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # install
 #
 #    This is a script to install my dotfiles on a machine by symlinking
 #    everything into the right place in the home directory.
-#
-#    The dotfiles themselves are split into multiple categories, which
-#    translates to folders under `configs`. These categories are:
-#
-#        - `linux` for GNU/Linux-specific applications or settings
-#          + eg., `.Xresources`, `.config/konsolerc`
-#        - `macos` for macOS-specific applications or settings
-#          + eg., `com.googlecode.iterm2.plist`
-#        - `common` for any tools that are cross-OS.
-#          + eg., `.gitconfig`, `.vimrc`
-#
-#    By default, only `common` dotfiles will be installed, to avoid littering
-#    a bunch of stuff you don't need.
-#
-#    To install platform-specific dotfiles, pass the platform as the argument
-#    to the script. i.e., `./install linux`.
 #
 # OPTIONS
 #
@@ -27,73 +11,43 @@
 #    - `DEBUG=1` to dry run
 #
 
-set -ef -o pipefail
+set -uef -o pipefail
 
 MKDIR=mkdir
 LN=ln
 RM=rm
 
-if hash gfind > /dev/null 2>&1 ; then
-	FIND=gfind
-else
-	FIND="find"
-fi
-
-if [[ "$DEBUG" -ne "" ]] ; then
+if [[ "${DEBUG:-}" -ne "" ]] ; then
 	# If we pass 'DEBUG=1' (value is irrelevant), we should prefix commands
 	# with 'echo' to do a dry run.
-	MKDIR="echo mkdir"
-	LN="echo ln"
-	RM="echo rm"
+	#
+	# These must respect the custom IFS set in `link_config`
+	MKDIR="echo		mkdir"
+	LN="echo		ln"
+	RM="echo		rm"
 fi
 
-find_configs() {
-	OS="${1:-common}"
-	# find is a dumb cli to work with so we grep. sue me.
-	$FIND "configs/$OS" -type f -printf '%P\n' | grep -v 'gnome*' | sed 's/ /FUCKSPACE/g'
+export MKDIR
+export LN
+export RM
+
+link_config() {
+	OLDIFS="$IFS"
+	IFS="		"
+	target="$2/${1#"$3/"}"
+
+	if [ "$FORCE" != "" ] ; then
+		$RM -f "$target"
+	fi
+
+	if [ ! -e "$target" ] || [ "$FORCE" != "" ] ; then
+		[[ ! -e "$(dirname $target)" ]] && $MKDIR -p "$(dirname $target)"
+		$LN -s "$PWD/$1" "$target"
+	fi
+	IFS="$OLDIFS"
 }
+export -f link_config
 
-link_configs() {
-	for RAW_F in "${@:2}" ; do
-		F="$(echo $RAW_F | sed 's/FUCKSPACE/ /g')"
-		target="$HOME/$F"
+[[ ! -e "$HOME/bin" ]] && $MKDIR -p "$HOME/bin"
 
-		if [ "$FORCE" != "" ] ; then
-			$RM -f "$target"
-		fi
-
-		if [ ! -e "$target" ] ; then
-			parent="$(dirname "$target")"
-			if [ ! -e "$parent" ] ; then
-				$MKDIR -p "$parent"
-			fi
-
-			$LN -s "$PWD/configs/$1/$F" "$target"
-		fi
-	done
-}
-
-COMMON_CONFIGS="$(find_configs)"
-
-link_configs common $COMMON_CONFIGS
-link_configs bin $(find_configs bin)
-
-if hash code >/dev/null 2>&1 && [[ -e ".vscode-extensions" ]] ; then
-	# VSCode has no native way to sync extensions... Luckily it has a CLI
-	# way to do it. Kind of gross though.
-	source .vscode-extensions
-	for ext in ${VSCODE_EXTENSIONS[@]} ; do
-		code --install-extension "$ext"
-	done
-fi
-
-if [[ "$@" =~ "linux" ]] ; then
-	link_configs linux $(find_configs linux)
-fi
-if [[ "$@" =~ "macos" ]] ; then
-	link_configs macos $(find_configs macos)
-
-	# Manually link sublime text into the special macOS folder
-	$RM -rf "$HOME/Library/Application Support/Sublime Text 3"
-	$LN -s "$HOME/.config/sublime-text-3" "$HOME/Library/Application Support/Sublime Text 3"
-fi
+find configs -mindepth 1 -type f -exec bash -c 'link_config "$1" ~ configs' _ {} \;

@@ -27,22 +27,11 @@ anything, you can set `DEBUG` to any value before running:
 $ DEBUG=1 ./install
 ```
 
-## Platform-specific configuration
-
-By default, only platform-agnostic configuration is installed (such as vim, git,
-etc). However, Linux and macOS have specific software that also needs to be
-configured, but I didn't want those to be spewed all over each other
-unnecessarily.
-
-So, dotfiles are split into three groups: `macOS`, `linux`, and `common`.
-`common` is always installed, and `linux` and `macos` can be passed as arguments
-to the script to install those respective platform-specific configs.
-
-For example:
-
-```
-$ ./install linux
-```
+**Note!** The scripts and configuration files herein exclusively target
+GNU/Linux systems. While most of the things will probably work on macOS, many of
+the GNU tools used in the scripts will not be available, at least not with the
+expected executable names. You can probably make it work but I don't want to
+have to support that.
 
 ## dconf
 
@@ -57,4 +46,13 @@ And to regenerate them from the current dconf settings:
 
 ```
 $ ./dconf dump
+```
+
+## Visual Studio Code
+
+VSCode has no great way to sync extensions between installations, so there is
+yet another script to reinstall a list of them using the `code` CLI.
+
+```
+$ ./vscode
 ```
