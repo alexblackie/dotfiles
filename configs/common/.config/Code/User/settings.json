@@ -14,7 +14,7 @@
     "window.menuBarVisibility": "toggle",
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
     "editor.fontFamily": "'Source Code Pro', monospace",
     "editor.rulers": [
