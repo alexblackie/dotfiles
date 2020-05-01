@@ -9,9 +9,9 @@
 #
 
 if [ "$1" = "dump" ] ; then
-	dconf dump /org/gnome/terminal/legacy/ > ./configs/linux/gnome-terminal.ini
-	dconf dump /org/gnome/shell/extensions/ > ./configs/linux/gnome-extensions.ini
+	dconf dump /org/gnome/terminal/legacy/ > ./dumps/gnome-terminal.ini
+	dconf dump /org/gnome/shell/extensions/ > ./dumps/gnome-extensions.ini
 else
-	dconf load /org/gnome/terminal/legacy/ < ./configs/linux/gnome-terminal.ini
-	dconf load /org/gnome/shell/extensions/ < ./configs/linux/gnome-extensions.ini
+	dconf load /org/gnome/terminal/legacy/ < ./dumps/gnome-terminal.ini
+	dconf load /org/gnome/shell/extensions/ < ./dumps/gnome-extensions.ini
 fi
