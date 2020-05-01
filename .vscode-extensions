@@ -4,6 +4,5 @@ export VSCODE_EXTENSIONS=(
 	ms-vscode-remote.remote-ssh
 	fkrull.gtk-dark-titlebar
 	ms-vscode-remote.remote-ssh-edit
-	Pivotal.vscode-boot-dev-pack
 	vscodevim.vim
 )
