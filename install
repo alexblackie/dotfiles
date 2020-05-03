@@ -13,6 +13,15 @@
 
 set -uef -o pipefail
 
+# --[ Configuration ]
+
+# Set the "base" directory we should install dotfiles into. You can change this
+# value to test the script without messing with a real home directory. Rather
+# useful for debugging.
+export BASE_DIR="$HOME"
+
+# --[ END Configuration ]
+
 MKDIR=mkdir
 LN=ln
 RM=rm
@@ -48,4 +57,4 @@ link_config() {
 }
 export -f link_config
 
-find configs -mindepth 1 -type f -exec bash -c 'link_config "$1" ~ configs' _ {} \;
+find configs -mindepth 1 -type f -exec bash -c 'link_config "$1" $BASE_DIR configs' _ {} \;
