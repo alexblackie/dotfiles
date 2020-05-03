@@ -48,6 +48,4 @@ link_config() {
 }
 export -f link_config
 
-[[ ! -e "$HOME/bin" ]] && $MKDIR -p "$HOME/bin"
-
 find configs -mindepth 1 -type f -exec bash -c 'link_config "$1" ~ configs' _ {} \;
