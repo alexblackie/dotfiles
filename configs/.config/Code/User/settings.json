@@ -33,7 +33,6 @@
         "**/deps/**": true
     },
     "editor.fontSize": 16,
-    "csharp.referencesCodeLens.enabled": false,
     "window.zoomLevel": 0,
     "telemetry.enableTelemetry": false,
     "extensions.showRecommendationsOnlyOnDemand": true,
