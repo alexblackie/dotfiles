@@ -1,6 +1,6 @@
 export VSCODE_EXTENSIONS=(
 	editorconfig.editorconfig
-	elixir-lsp.elixir-ls
+	JakeBecker.elixir-ls
 	ms-vscode-remote.remote-ssh
 	fkrull.gtk-dark-titlebar
 	ms-vscode-remote.remote-ssh-edit
