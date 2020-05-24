@@ -40,5 +40,6 @@
     },
     "terminal.integrated.fontWeight": "500",
     "editor.fontWeight": "500",
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "elixirLS.suggestSpecs": false
 }
