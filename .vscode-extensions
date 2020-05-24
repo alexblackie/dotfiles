@@ -1,8 +1,0 @@
-export VSCODE_EXTENSIONS=(
-	editorconfig.editorconfig
-	JakeBecker.elixir-ls
-	ms-vscode-remote.remote-ssh
-	fkrull.gtk-dark-titlebar
-	ms-vscode-remote.remote-ssh-edit
-	vscodevim.vim
-)

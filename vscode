@@ -6,7 +6,15 @@ set -euf -o pipefail
 # sync these as far as I can tell, so this is the best we can do. Pretty gross,
 # but it works.
 
-source .vscode-extensions
+VSCODE_EXTENSIONS=(
+	editorconfig.editorconfig
+	JakeBecker.elixir-ls
+	ms-vscode-remote.remote-ssh
+	fkrull.gtk-dark-titlebar
+	ms-vscode-remote.remote-ssh-edit
+	vscodevim.vim
+)
+
 for ext in ${VSCODE_EXTENSIONS[@]} ; do
 	code --install-extension "$ext"
 done
