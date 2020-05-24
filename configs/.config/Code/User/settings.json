@@ -32,14 +32,12 @@
         "**/_build/**": true,
         "**/deps/**": true
     },
-    "editor.fontSize": 16,
     "window.zoomLevel": 0,
     "telemetry.enableTelemetry": false,
     "extensions.showRecommendationsOnlyOnDemand": true,
     "files.associations": {
         "*.tf": "groovy"
     },
-    "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeight": "500",
     "editor.fontWeight": "500",
     "keyboard.dispatch": "keyCode"
