@@ -13,6 +13,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Language support/integration
 Plug 'editorconfig/editorconfig-vim'
@@ -20,6 +21,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'noprompt/vim-yardoc'
 
 call plug#end()
+
+let g:deoplete#enable_at_startup = 1
 
 " ------------------------------------------------------------------------------
 " Editing
