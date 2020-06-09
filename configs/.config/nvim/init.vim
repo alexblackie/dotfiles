@@ -52,9 +52,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Open/Close NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
-" Highlight current buffer's file in NERDTree sidebar
-map <C-b> :NERDTreeFind<CR>
-
 " Pop open fuzzy file finder
 map <C-p> :Files<CR>
 
