@@ -87,8 +87,8 @@ augroup filetypedetect
 	" TOML is pretty close enough to ini
 	autocmd BufNewFile,BufReadPost *.toml set filetype=dosini
 
-  " Terraform files are pretty similar to groovy, and tfvars are basically
-  " just ini files.
+	" Terraform files are pretty similar to groovy, and tfvars are basically
+	" just ini files.
 	autocmd BufNewFile,BufReadPost *.tf set filetype=groovy
 	autocmd BufNewFile,BufReadPost *.tfvars set filetype=dosini
 augroup END
