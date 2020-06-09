@@ -47,12 +47,10 @@ set winwidth=107     " Set a minimum width for the active split
 " Disable hotkey manpage lookups
 noremap K <NOP>
 
-" NERDTree
-" --------
 " exit vim when if nerdtree is the only buffer left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Open/Close NERDTree
+" Toggle NERDTree visibility
 map <C-n> :NERDTreeToggle<CR>
 
 " Pop open fuzzy file finder
@@ -60,7 +58,7 @@ map <C-p> :Files<CR>
 
 " ------------------------------------------------------------------------------
 " Automation
-" -----------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
 " Highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=darkred
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkred
