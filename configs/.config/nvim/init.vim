@@ -56,6 +56,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Pop open fuzzy file finder
 map <C-p> :Files<CR>
 
+" Escape terminals more naturally with esc
+tnoremap <Esc> <C-\><C-n>
+
 " ------------------------------------------------------------------------------
 " Automation
 " ------------------------------------------------------------------------------
