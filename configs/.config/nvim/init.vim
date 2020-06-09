@@ -12,6 +12,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdcommenter'
 
 " Language support/integration
 Plug 'editorconfig/editorconfig-vim'
