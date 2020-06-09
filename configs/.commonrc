@@ -1,4 +1,12 @@
 # ------------------------------------------------------------------------------
+# Environment
+# ------------------------------------------------------------------------------
+export TERM="screen-256color"
+export EDITOR="nvim"
+export PATH="$HOME/bin:$HOME/.gem_local/bin:$PATH"
+export FZF_DEFAULT_COMMAND="ag -l"
+
+# ------------------------------------------------------------------------------
 # Aliases & custom functions
 # ------------------------------------------------------------------------------
 alias e="$EDITOR"
@@ -51,11 +59,3 @@ fi
 if [ -d "$HOME/.asdf" ] ; then
 	source "$HOME/.asdf/asdf.sh"
 fi
-
-# ------------------------------------------------------------------------------
-# Environment
-# ------------------------------------------------------------------------------
-export TERM="screen-256color"
-export EDITOR="nvim"
-export PATH="$HOME/bin:$HOME/.gem_local/bin:$PATH"
-export FZF_DEFAULT_COMMAND="ag -l"
