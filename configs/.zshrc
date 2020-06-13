@@ -46,7 +46,7 @@ autoload colors && colors
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:*' formats '@%b'
+zstyle ':vcs_info:*' formats '(%b)'
 
 precmd () {
        psvar=()
@@ -55,7 +55,7 @@ precmd () {
        [[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
-PROMPT="%{$fg_bold[green]%}(%m)%{$reset_color%} %{$fg[blue]%}%~%{$reset_color%}%{$fg[yellow]%}%1v%{$reset_color%} %% "
+PROMPT="%{$fg[blue]%}%~%{$reset_color%}%{$fg[yellow]%}%1v%{$reset_color%} → "
 
 # ------------------------------------------------------------------------------
 # Key Bindings
