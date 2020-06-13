@@ -1,14 +1,11 @@
 # ------------------------------------------------------------------------------
 # Paths
 # ------------------------------------------------------------------------------
-
 ZSH="$HOME/.zsh"
-
 
 # ------------------------------------------------------------------------------
 # History
 # ------------------------------------------------------------------------------
-
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -26,11 +23,9 @@ zle -N history-substring-search-up
 # ------------------------------------------------------------------------------
 # Configure fancier autocompletion
 # ------------------------------------------------------------------------------
-
 autoload -Uz compinit && compinit
 zstyle ':completion:*' completer _expand _complete _ignored _approximate
 setopt nocorrect # disable correction for arguments
-unsetopt menu_complete
 setopt auto_menu
 setopt complete_in_word
 setopt always_to_end
@@ -42,7 +37,6 @@ zstyle ':completion::complete:*' cache-path $ZSH/cache/
 # Disable warnings about rm-ing wildcards
 # ------------------------------------------------------------------------------
 setopt rm_star_silent
-
 
 # ------------------------------------------------------------------------------
 # Set custom prompt
