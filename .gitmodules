@@ -1,18 +1,3 @@
-[submodule "configs/.vim/bundle/vim-elixir"]
-	path = configs/.vim/pack/ext/start/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "configs/.vim/bundle/fugitive.vim"]
-	path = configs/.vim/pack/ext/start/fugitive.vim
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "configs/.vim/bundle/vim-yardoc"]
-	path = configs/.vim/pack/ext/start/vim-yardoc
-	url = https://github.com/noprompt/vim-yardoc.git
-[submodule "configs/.vim/bundle/vim-solarized"]
-	path = configs/.vim/pack/ext/start/vim-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "configs/.vim/bundle/editorconfig-vim"]
-	path = configs/.vim/pack/ext/start/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "configs/.config/sublime-text-3/Packages/EditorConfig"]
 	path = configs/.config/sublime-text-3/Packages/EditorConfig
 	url = https://github.com/sindresorhus/editorconfig-sublime.git
@@ -25,9 +10,6 @@
 [submodule "configs/.config/sublime-text-3/Packages/sass-textmate-bundle"]
 	path = configs/.config/sublime-text-3/Packages/sass-textmate-bundle
 	url = https://github.com/nathos/sass-textmate-bundle.git
-[submodule "configs/.vim/bundle/nerdtree"]
-	path = configs/.vim/pack/ext/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "configs/.config/sublime-text-3/Packages/babel"]
 	path = configs/.config/sublime-text-3/Packages/babel
 	url = https://github.com/babel/babel-sublime.git
@@ -46,6 +28,3 @@
 [submodule "configs/common/.config/sublime-text-3/Packages/gruvbox"]
 	path = configs/.config/sublime-text-3/Packages/gruvbox
 	url = https://github.com/Briles/gruvbox.git
-[submodule "configs/common/.vim/pack/ext/start/gruvbox"]
-	path = configs/.vim/pack/ext/start/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
