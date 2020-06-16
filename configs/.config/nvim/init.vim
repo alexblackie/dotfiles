@@ -30,7 +30,6 @@ let g:deoplete#enable_at_startup = 1
 set expandtab        " Spaces for tabs by default
 set tabstop=2        " 2-space indents by default
 set shiftwidth=2     " 2-space reindents by default
-set pastetoggle=<F2> " Temporarily disable autoindent with <F2>
 
 " ------------------------------------------------------------------------------
 " Interface
