@@ -19,6 +19,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'noprompt/vim-yardoc'
+Plug 'LnL7/vim-nix'
 
 call plug#end()
 
