@@ -36,7 +36,7 @@ set pastetoggle=<F2> " Temporarily disable autoindent with <F2>
 " Interface
 " ------------------------------------------------------------------------------
 colorscheme gruvbox
-set number           " Show line numbers
+set relativenumber   " Show line numbers relative to current line.
 set cursorline       " Highlight the current line
 set colorcolumn=100  " Warning gutter for long lines
 set winwidth=107     " Set a minimum width for the active split
