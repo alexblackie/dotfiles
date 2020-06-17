@@ -37,6 +37,7 @@ set shiftwidth=2     " 2-space reindents by default
 " ------------------------------------------------------------------------------
 colorscheme gruvbox
 set relativenumber   " Show line numbers relative to current line.
+set number           " Show the line number of the current line
 set cursorline       " Highlight the current line
 set colorcolumn=100  " Warning gutter for long lines
 set winwidth=107     " Set a minimum width for the active split
