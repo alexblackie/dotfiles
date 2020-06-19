@@ -84,6 +84,11 @@ zle_cdp() { cdp ; precmd ; zle reset-prompt }
 zle -N zle_cdp
 bindkey "^P" zle_cdp
 
+zle_fzyfindlocal() { fzyfindlocal ; zle reset-prompt }
+zle -N zle_fzyfindlocal
+unsetopt flowcontrol # Required to rebind ^S
+bindkey "^S" "zle_fzyfindlocal"
+
 # ------------------------------------------------------------------------------
 # Source common shell config
 # ------------------------------------------------------------------------------

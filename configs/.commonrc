@@ -49,6 +49,25 @@ cdp() {
 	fi
 }
 
+fzyfindlocal() {
+	# Use fzy to find a file or folder in/below the pwd.
+	#
+	# Useful for running commands quickly, if bound to a key. For example:
+	#
+	#	$ bin/test <c-f>
+	#	> mytest
+	#	test/myproject/lib/subcomponent/mytest
+	#
+	#	$ bin/test test/myproject/lib/subcomponent/mytest
+	#
+	# Most of this was "inspired" by jhawthorn's fzy.zsh:
+	#	https://github.com/jhawthorn/dotfiles/blob/d99d6907f890e38445124aa657ea317ad3046b13/zsh/zsh/fzy.zsh
+        local selected_path
+        echo # Run fzy underneath the current prompt
+        selected_path=$(ag . -l -g '' | fzy) || return
+        LBUFFER="$LBUFFER${(q)selected_path} " # ${(q)VAR} shell-escapes the string
+}
+
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
