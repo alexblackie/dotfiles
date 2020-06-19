@@ -8,7 +8,7 @@ checkoutOrFuzzyBranch() {
 		git checkout "$@"
 	else
 		local branch
-		branch="$(git branch --sort=-committerdate --format='%(refname)' | cut -f3 -d'/' | fzy)"
+		branch="$(git branch --sort=-committerdate --format='%(refname)' | cut -f3- -d'/' | fzy)"
 		git checkout "$branch"
 	fi
 }
