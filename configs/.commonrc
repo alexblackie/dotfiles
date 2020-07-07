@@ -38,7 +38,7 @@ cdp() {
 	# I use two different directories, depending on the project, computer, or
 	# whatever. "code" is github-style "username/repo" and so maxdepth is just 2.
 	# "src" is a GOPATH-style full URL, so it needs a maxdepth of 3.
-	targets="$(find $HOME/src -maxdepth 3 -type d)"
+	targets="$(find $HOME/src -maxdepth 3 -type d)\n"
 	targets+="$(find $HOME/code -maxdepth 2 -type d)"
 
 	target="$(echo $targets | sed -e "s%$HOME/%%" | fzy)"
