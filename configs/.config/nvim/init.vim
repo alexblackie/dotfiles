@@ -86,11 +86,9 @@ tnoremap <Esc> <C-\><C-n>
 " Automation
 " ------------------------------------------------------------------------------
 " Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=darkred
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkred
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd BufWinEnter * match ErrorMsg /\s\+$/
+autocmd InsertLeave * match ErrorMsg /\s\+$/
+autocmd InsertEnter * match ErrorMsg /\s\+\%#\@<!$/
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
