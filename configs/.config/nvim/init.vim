@@ -61,6 +61,8 @@ highlight Pmenu ctermbg=grey
 highlight PmenuSel ctermbg=white
 highlight Todo cterm=bold ctermbg=white ctermfg=blue
 highlight Comment ctermfg=grey
+highlight MatchParen ctermbg=226
+highlight ErrorMsg ctermbg=224 ctermfg=black
 
 " ------------------------------------------------------------------------------
 " Keybindings
