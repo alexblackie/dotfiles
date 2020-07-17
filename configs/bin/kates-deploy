@@ -17,6 +17,7 @@ fi
 
 REGISTRY="$KATES_DEPLOY_REGISTRY"
 APP_NAME="$1"
+NAMESPACE="${2-:default}"
 TAG="$(date +%Y%m%d%H%M)"
 CONTAINER_NAME="$REGISTRY/$APP_NAME:$TAG"
 LATEST_CONTAINER_NAME="$REGISTRY/$APP_NAME:latest"
@@ -26,4 +27,4 @@ docker tag "$CONTAINER_NAME" "$LATEST_CONTAINER_NAME"
 docker push "$CONTAINER_NAME"
 docker push "$LATEST_CONTAINER_NAME"
 
-kubectl set image "deployment/$APP_NAME" "$APP_NAME=$CONTAINER_NAME"
+kubectl --namespace "$NAMESPACE" set image "deployment/$APP_NAME" "$APP_NAME=$CONTAINER_NAME"
