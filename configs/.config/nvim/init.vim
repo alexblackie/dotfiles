@@ -3,10 +3,6 @@
 " ------------------------------------------------------------------------------
 call plug#begin(stdpath('data') . '/plugged')
 
-" Colours
-Plug 'morhetz/gruvbox'
-Plug 'altercation/vim-colors-solarized'
-
 " Behavioural/Core
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
@@ -35,12 +31,36 @@ set shiftwidth=2     " 2-space reindents by default
 " ------------------------------------------------------------------------------
 " Interface
 " ------------------------------------------------------------------------------
-colorscheme gruvbox
+colorscheme peachpuff
 set relativenumber   " Show line numbers relative to current line.
 set number           " Show the line number of the current line
 set cursorline       " Highlight the current line
 set colorcolumn=100  " Warning gutter for long lines
 set winwidth=107     " Set a minimum width for the active split
+
+" Make colorcolumn less obnoxious
+highlight ColorColumn ctermbg=white
+
+" Remove hard-coded colours from fzf.vim statusline
+highlight fzf1 ctermfg=grey ctermbg=white
+highlight fzf2 ctermfg=grey ctermbg=white
+highlight fzf3 ctermfg=grey ctermbg=white
+
+" Colourscheme overrides for a more cohesive experience™
+highlight StatusLine cterm=bold ctermbg=white ctermfg=black
+highlight StatusLineNC cterm=none ctermbg=white ctermfg=black
+highlight VertSplit cterm=none ctermbg=white ctermfg=white
+highlight LineNr cterm=none ctermfg=grey
+highlight EndOfBuffer ctermfg=grey
+highlight CursorLine cterm=none ctermbg=white
+highlight CursorLineNr cterm=none ctermbg=white ctermfg=grey
+highlight Search ctermbg=226
+highlight IncSearch ctermbg=226
+highlight WildMenu ctermbg=grey
+highlight Pmenu ctermbg=grey
+highlight PmenuSel ctermbg=white
+highlight Todo cterm=bold ctermbg=white ctermfg=blue
+highlight Comment ctermfg=grey
 
 " ------------------------------------------------------------------------------
 " Keybindings
