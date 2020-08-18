@@ -76,6 +76,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Toggle NERDTree visibility
 map <C-n> :NERDTreeToggle<CR>
 
+" Expand and select current buffer's file in NERDTree
+map <C-b> :NERDTreeFind<CR>
+
 " Pop open fuzzy file finder
 map <C-p> :Files<CR>
 
