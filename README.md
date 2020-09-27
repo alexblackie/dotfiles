@@ -47,12 +47,3 @@ And to regenerate them from the current dconf settings:
 ```
 $ ./dconf dump
 ```
-
-## Visual Studio Code
-
-VSCode has no great way to sync extensions between installations, so there is
-yet another script to reinstall a list of them using the `code` CLI.
-
-```
-$ ./vscode
-```
