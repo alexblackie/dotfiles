@@ -12,7 +12,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " Language support/integration
 Plug 'editorconfig/editorconfig-vim'
@@ -22,7 +22,11 @@ Plug 'LnL7/vim-nix'
 
 call plug#end()
 
-let g:deoplete#enable_at_startup = 1
+let g:coc_global_extensions = [
+	\ 'coc-pairs',
+	\ 'coc-json',
+	\ 'coc-elixir'
+	\]
 
 " ------------------------------------------------------------------------------
 " Editing
@@ -61,6 +65,9 @@ map <C-p> :Files<CR>
 
 " Escape terminals more naturally with esc
 tnoremap <Esc> <C-\><C-n>
+
+" ctrl-space to trigger code completion
+inoremap <silent><expr> <c-space> coc#refresh()
 
 " ------------------------------------------------------------------------------
 " Automation
