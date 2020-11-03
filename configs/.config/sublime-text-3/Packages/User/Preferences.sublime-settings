@@ -17,7 +17,8 @@
 		"deps",
 		"rel",
 		"coverage",
-		"node_modules"
+		"node_modules",
+		".elixir_ls"
 	],
 	"font_face": "Fira Mono",
 	"font_options":
