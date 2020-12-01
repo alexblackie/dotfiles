@@ -8,6 +8,11 @@ export GOPATH="$HOME"
 export FZF_DEFAULT_OPTS="--no-color"
 export FZF_DEFAULT_COMMAND="ag -l"
 
+SED_EXEC="sed"
+if hash gsed >/dev/null 2>&1 ; then
+	SED_EXEC="gsed"
+fi
+
 # ------------------------------------------------------------------------------
 # Aliases & custom functions
 # ------------------------------------------------------------------------------
@@ -28,7 +33,7 @@ refactor() {
 	#	 $2 = wanted
 	# ex, to change "user" to "account": `refactor user account`
 
-	ag -l $1 | xargs sed -i "s/$1/$2/g"
+	ag -l $1 | xargs $SED_EXEC -i "s/$1/$2/g"
 }
 
 cdp() {
@@ -45,7 +50,7 @@ cdp() {
 	targets="$(find $HOME/src -maxdepth 3 -type d)\n"
 	targets+="$(find $HOME/code -maxdepth 1 -type d)"
 
-	target="$(echo $targets | sed -e "s%$HOME/%%" | fzy)"
+	target="$(echo $targets | $SED_EXEC -e "s%$HOME/%%" | fzy)"
 
 	if ! [ "$target" = "" ] ; then
 		# only cd if we actually chose something
