@@ -6,7 +6,7 @@ export EDITOR="nvim"
 export PATH="$HOME/bin:$HOME/.gem_local/bin:$PATH"
 export GOPATH="$HOME"
 export FZF_DEFAULT_OPTS="--no-color"
-export FZF_DEFAULT_COMMAND="ag -l"
+export FZF_DEFAULT_COMMAND="fd -t f"
 
 SED_EXEC="sed"
 if hash gsed >/dev/null 2>&1 ; then
@@ -73,7 +73,7 @@ fzyfindlocal() {
 	#	https://github.com/jhawthorn/dotfiles/blob/d99d6907f890e38445124aa657ea317ad3046b13/zsh/zsh/fzy.zsh
         local selected_path
         echo # Run fzy underneath the current prompt
-        selected_path=$(ag . -l -g '' | fzy) || return
+        selected_path=$(fd -t f | fzy) || return
         LBUFFER="$LBUFFER${(q)selected_path} " # ${(q)VAR} shell-escapes the string
 }
 
