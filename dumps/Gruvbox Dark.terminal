@@ -183,10 +183,10 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwVFlUkbnVsbNQNDg8QERIT
-	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNALAAAAAAAABAQgAKAA15TRk1v
-	bm8tUmVndWxhctIXGBkaWiRjbGFzc25hbWVYJGNsYXNzZXNWTlNGb250ohkbWE5TT2Jq
-	ZWN0CBEaJCkyN0lMUVNYXmdud36FjpCSlKOos7zDxgAAAAAAAAEBAAAAAAAAABwAAAAA
-	AAAAAAAAAAAAAADP
+	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNALAAAAAAAABAQgAKAA18QFklv
+	c2V2a2EtRml4ZWQtRXh0ZW5kZWTSFxgZGlokY2xhc3NuYW1lWCRjbGFzc2VzVk5TRm9u
+	dKIZG1hOU09iamVjdAgRGiQpMjdJTFFTWF5nbnd+hY6QkpStsr3GzdAAAAAAAAABAQAA
+	AAAAAAAcAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
 	<key>FontAntialias</key>
 	<true/>
@@ -252,7 +252,7 @@
 	<key>columnCount</key>
 	<integer>136</integer>
 	<key>name</key>
-	<string>gruvbox</string>
+	<string>Gruvbox Dark</string>
 	<key>rowCount</key>
 	<integer>40</integer>
 	<key>shellExitAction</key>
