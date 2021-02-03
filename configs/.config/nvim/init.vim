@@ -18,7 +18,6 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'noprompt/vim-yardoc'
-Plug 'LnL7/vim-nix'
 
 call plug#end()
 
