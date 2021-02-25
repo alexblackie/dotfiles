@@ -71,6 +71,12 @@ tnoremap <Esc> <C-\><C-n>
 " ctrl-space to trigger code completion
 inoremap <silent><expr> <c-space> coc#refresh()
 
+" Highlight the hovered symbol and its references, if supported
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Enable code navigation
+nmap <silent> gd <Plug>(coc-definition)
+
 " ------------------------------------------------------------------------------
 " Automation
 " ------------------------------------------------------------------------------
