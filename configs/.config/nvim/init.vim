@@ -4,6 +4,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 " Colours
+Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
 
 " Behavioural/Core
@@ -41,7 +42,8 @@ set shiftwidth=2     " 2-space reindents by default
 " ------------------------------------------------------------------------------
 " Interface
 " ------------------------------------------------------------------------------
-colorscheme gruvbox
+colorscheme solarized
+set background=light " Use the light variant
 set relativenumber   " Show line numbers relative to current line.
 set number           " Show the line number of the current line
 set cursorline       " Highlight the current line
