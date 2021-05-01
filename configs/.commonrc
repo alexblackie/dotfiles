@@ -17,7 +17,7 @@ fi
 # Aliases & custom functions
 # ------------------------------------------------------------------------------
 alias e="$EDITOR"
-alias dco="docker-compose"
+alias dco="docker compose"
 alias tm="tmux"
 alias tma="tmux attach"
 alias yolo="git push --force-with-lease origin"
