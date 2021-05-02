@@ -8,6 +8,9 @@
 	fileMode = false
 	commitGraph = true
 
+[init]
+	defaultBranch = main
+
 [alias]
 	aa = add --all
 	br = branch
