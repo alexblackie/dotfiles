@@ -1,30 +1,12 @@
-[submodule "configs/.config/sublime-text-3/Packages/EditorConfig"]
-	path = configs/.config/sublime-text-3/Packages/EditorConfig
+[submodule "configs/.config/sublime-text/Packages/EditorConfig"]
+	path = configs/.config/sublime-text/Packages/EditorConfig
 	url = https://github.com/sindresorhus/editorconfig-sublime.git
-[submodule "configs/.config/sublime-text-3/Packages/elixir-tmbundle"]
-	path = configs/.config/sublime-text-3/Packages/elixir-tmbundle
+[submodule "configs/.config/sublime-text/Packages/elixir-tmbundle"]
+	path = configs/.config/sublime-text/Packages/elixir-tmbundle
 	url = https://github.com/elixir-lang/elixir-tmbundle.git
-[submodule "configs/.config/sublime-text-3/Packages/st2-zonefile"]
-	path = configs/.config/sublime-text-3/Packages/st2-zonefile
-	url = https://github.com/sixty4k/st2-zonefile.git
-[submodule "configs/.config/sublime-text-3/Packages/sass-textmate-bundle"]
-	path = configs/.config/sublime-text-3/Packages/sass-textmate-bundle
-	url = https://github.com/nathos/sass-textmate-bundle.git
-[submodule "configs/.config/sublime-text-3/Packages/babel"]
-	path = configs/.config/sublime-text-3/Packages/babel
-	url = https://github.com/babel/babel-sublime.git
-[submodule "configs/.config/sublime-text-3/Packages/Terraform.tmlanguage"]
-	path = configs/.config/sublime-text-3/Packages/Terraform.tmlanguage
+[submodule "configs/.config/sublime-text/Packages/Terraform.tmLanguage"]
+	path = configs/.config/sublime-text/Packages/Terraform.tmLanguage
 	url = https://github.com/alexlouden/Terraform.tmLanguage.git
-[submodule "configs/.config/sublime-text-3/Packages/sublime-text-git"]
-	path = configs/.config/sublime-text-3/Packages/sublime-text-git
-	url = https://github.com/kemayo/sublime-text-git.git
-[submodule "configs/common/.config/sublime-text-3/Packages/Docker.tmbundle"]
-	path = configs/.config/sublime-text-3/Packages/Docker.tmbundle
+[submodule "configs/.config/sublime-text/Packages/Docker.tmbundle"]
+	path = configs/.config/sublime-text/Packages/Docker.tmbundle
 	url = https://github.com/asbjornenge/Docker.tmbundle
-[submodule "configs/common/.config/sublime-text-3/Packages/Dracula"]
-	path = configs/.config/sublime-text-3/Packages/Dracula
-	url = https://github.com/dracula/sublime.git
-[submodule "configs/common/.config/sublime-text-3/Packages/gruvbox"]
-	path = configs/.config/sublime-text-3/Packages/gruvbox
-	url = https://github.com/Briles/gruvbox.git

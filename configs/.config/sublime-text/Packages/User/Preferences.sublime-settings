@@ -1,35 +1,27 @@
 {
-	"adaptive_dividers": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_find_in_selection": true,
-	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
-		".svn",
 		".git",
-		".hg",
-		"CVS",
 		"vendor/bundle",
 		"_build",
 		"deps",
 		"rel",
 		"coverage",
 		"node_modules",
-		".elixir_ls"
+		".elixir_ls",
+		"tmp"
 	],
-	"font_face": "Fira Mono",
-	"font_options":
-	[
-		"no_italic"
-	],
-	"font_size": 11,
+	"font_face": "Fira Code",
+	"font_size": 13,
 	"highlight_line": true,
 	"ignore_vcs_packages": true,
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -39,5 +31,9 @@
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"color_scheme": "Packages/User/Railscasts.tmTheme",
+	"dark_theme": "Default Dark.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	"drag_text": false
 }
