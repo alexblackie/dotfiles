@@ -35,5 +35,5 @@
 	"color_scheme": "Packages/User/Railscasts.tmTheme",
 	"dark_theme": "Default Dark.sublime-theme",
 	"light_theme": "Default.sublime-theme",
-	"drag_text": false
+	"drag_text": false,
 }
