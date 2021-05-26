@@ -63,5 +63,5 @@ if [ "$(uname)" = "Darwin" ] ; then
        # Some things on macOS store things in `~/Library` instead of the XDG
        # paths, so we need to symlink some things. This is maybe not the most
        # graceful solution but it is the simplest.
-       ln -sfh "$HOME/.config/sublime-text/" "$HOME/Library/Application Support/Sublime Text"
+       ln -sfh "$BASE_DIR/.config/sublime-text/" "$BASE_DIR/Library/Application Support/Sublime Text"
 fi
