@@ -43,11 +43,11 @@ set shiftwidth=2     " 2-space reindents by default
 " Interface
 " ------------------------------------------------------------------------------
 colorscheme solarized
-set background=light " Use the light variant
-set number           " Show the line number of the current line
-set cursorline       " Highlight the current line
-set colorcolumn=100  " Warning gutter for long lines
-set winwidth=107     " Set a minimum width for the active split
+set background=light    " Use the light variant
+set number              " Show the line number of the current line
+set cursorline          " Highlight the current line
+set colorcolumn=80,100  " Warning gutter for long lines
+set winwidth=107        " Set a minimum width for the active split
 
 " ------------------------------------------------------------------------------
 " Keybindings
