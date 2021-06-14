@@ -23,7 +23,6 @@ Plug 'noprompt/vim-yardoc'
 call plug#end()
 
 let g:coc_global_extensions = [
-	\ 'coc-pairs',
 	\ 'coc-json',
 	\ 'coc-yaml',
 	\ 'coc-elixir',
