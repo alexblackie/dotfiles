@@ -4,14 +4,13 @@
 	signingKey = 62C52F68363447D971C629EDA231E0F2D35D0D47
 
 [core]
-	excludesfile = ~/.gitignore_global
 	fileMode = false
 	commitGraph = true
 
 [include]
 	; Support changing some gitconfig settings locally. Useful for work
 	; computers where GPG key IDs or email addresses can be different.
-	path = ~/.gitconfig.local
+	path = ./local
 
 [init]
 	defaultBranch = main
