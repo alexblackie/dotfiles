@@ -8,6 +8,11 @@
 	fileMode = false
 	commitGraph = true
 
+[include]
+	; Support changing some gitconfig settings locally. Useful for work
+	; computers where GPG key IDs or email addresses can be different.
+	path = ~/.gitconfig.local
+
 [init]
 	defaultBranch = main
 
