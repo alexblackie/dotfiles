@@ -68,9 +68,6 @@ map <C-b> :NERDTreeFind<CR>
 " Pop open fuzzy file finder
 map <C-p> :Files<CR>
 
-" Escape terminals more naturally with esc
-tnoremap <Esc> <C-\><C-n>
-
 " ctrl-space to trigger code completion
 inoremap <silent><expr> <c-space> coc#refresh()
 
