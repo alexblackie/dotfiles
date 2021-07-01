@@ -78,6 +78,10 @@ fzyfindlocal() {
         LBUFFER="$LBUFFER${(q)selected_path} " # ${(q)VAR} shell-escapes the string
 }
 
+eg() {
+	$EDITOR $(git status --porcelain | awk '{print $2}' | fzy)
+}
+
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
