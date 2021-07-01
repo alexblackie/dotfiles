@@ -15,9 +15,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " Language support/integration
+Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'elixir-lang/vim-elixir'
-Plug 'noprompt/vim-yardoc'
 
 call plug#end()
 
