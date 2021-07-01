@@ -4,8 +4,7 @@
 call plug#begin(stdpath('data') . '/plugged')
 
 " Colours
-Plug 'altercation/vim-colors-solarized'
-Plug 'morhetz/gruvbox'
+Plug 'romgrk/github-light.vim'
 
 " Behavioural/Core
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -41,12 +40,16 @@ set shiftwidth=2     " 2-space reindents by default
 " ------------------------------------------------------------------------------
 " Interface
 " ------------------------------------------------------------------------------
-colorscheme solarized
+set termguicolors       " Use 'true' GUI colours, even in a terminal
 set background=light    " Use the light variant
 set number              " Show the line number of the current line
 set cursorline          " Highlight the current line
 set colorcolumn=80,100  " Warning gutter for long lines
 set winwidth=107        " Set a minimum width for the active split
+
+colorscheme github-light
+
+highlight ColorColumn guibg=#f2f2f2
 
 " ------------------------------------------------------------------------------
 " Keybindings
