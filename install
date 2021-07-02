@@ -58,11 +58,3 @@ link_config() {
 export -f link_config
 
 find configs -mindepth 1 -type f -exec bash -c 'link_config "$1" $BASE_DIR configs' _ {} \;
-
-if [ "$(uname)" = "Darwin" ] ; then
-	mkdir -p "$BASE_DIR/Library/Application Support"
-	# Some things on macOS store things in `~/Library` instead of the XDG
-	# paths, so we need to symlink some things. This is maybe not the most
-	# graceful solution but it is the simplest.
-	ln -sfh "$BASE_DIR/.config/sublime-text/" "$BASE_DIR/Library/Application Support/Sublime Text"
-fi
