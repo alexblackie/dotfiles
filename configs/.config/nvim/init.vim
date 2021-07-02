@@ -87,26 +87,3 @@ autocmd InsertEnter * match ErrorMsg /\s\+\%#\@<!$/
 
 " Trim trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
-
-" Custom filetype style/syntax overrides
-augroup filetypedetect
-	" Hard-wrap plain text documents at 80
-	autocmd BufNew,BufNewFile,BufRead *.txt,*.text,*.md,*.markdown set textwidth=80
-
-	" Set git commit line length to kernel standard
-	autocmd BufNew,BufNewFile,BufRead COMMIT_EDITMSG set textwidth=72
-
-	" Typescript, and Typescript JSX is basically JavaScript
-	autocmd BufNewFile,BufReadPost *.ts,*.tsx set filetype=javascript
-
-	" Jenkins declarative config is Groovy-based
-	autocmd BufNewFile,BufReadPost Jenkinsfile* set filetype=groovy
-
-	" TOML is pretty close enough to ini
-	autocmd BufNewFile,BufReadPost *.toml set filetype=dosini
-
-	" Terraform files are pretty similar to groovy, and tfvars are basically
-	" just ini files.
-	autocmd BufNewFile,BufReadPost *.tf set filetype=groovy
-	autocmd BufNewFile,BufReadPost *.tfvars set filetype=dosini
-augroup END
