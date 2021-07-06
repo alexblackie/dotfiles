@@ -66,7 +66,6 @@ bindkey -e
 
 # Fuzzy history search: type a command + up arrow
 # (cover basically every different keycode)
-bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "\e[A" history-substring-search-up
 bindkey "^[[A" history-substring-search-up
 bindkey "^[0A" history-substring-search-up

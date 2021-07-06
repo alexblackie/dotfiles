@@ -48,8 +48,6 @@ set colorcolumn=80,100  " Warning gutter for long lines
 set winwidth=107        " Set a minimum width for the active split
 
 let g:tokyonight_style = 'night'
-let g:tokyonight_enable_italic = 0
-let g:tokyonight_disable_italic_comment = 1
 
 colorscheme tokyonight
 
