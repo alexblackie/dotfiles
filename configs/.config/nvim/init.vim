@@ -61,13 +61,13 @@ noremap K <NOP>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Toggle NERDTree visibility
-map <C-n> :NERDTreeToggle<CR>
+map <Leader>t :NERDTreeToggle<CR>
 
 " Expand and select current buffer's file in NERDTree
-map <C-b> :NERDTreeFind<CR>
+map <Leader>b :NERDTreeFind<CR>
 
 " Pop open fuzzy file finder
-map <C-p> :Files<CR>
+map <Leader>f :Files<CR>
 
 " ctrl-space to trigger code completion
 inoremap <silent><expr> <c-space> coc#refresh()
