@@ -32,18 +32,3 @@ GNU/Linux systems. While most of the things will probably work on macOS, many of
 the GNU tools used in the scripts will not be available, at least not with the
 expected executable names. You can probably make it work but I don't want to
 have to support that.
-
-## dconf
-
-There are also `dconf` schema dumps for some Gnome settings. Another script is
-included to manage these dumps. Just run it to restore the dump:
-
-```
-$ ./dconf
-```
-
-And to regenerate them from the current dconf settings:
-
-```
-$ ./dconf dump
-```
