@@ -51,6 +51,9 @@
 	changed = green
 	untracked = cyan
 
+[commit]
+	verbose = true
+
 [diff]
 	tool = vimdiff
 	prompt = false
