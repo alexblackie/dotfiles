@@ -16,21 +16,11 @@
 	defaultBranch = main
 
 [alias]
-	aa = add --all
-	br = branch
-	ci = commit
-	dc = diff --cached
-	df = diff
-	ff = "!sh -c 'git commit --fixup=`git lg -l 10 | fzy | cut -f2 -d\\ `'"
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-	pu = push -u
-	p = push
 	st = status
-	sta = stash
-	sl = stash list
-	sa = stash pop
-	tlog = "!sh -c 'git log master...`git rev-parse --abbrev-ref HEAD` --pretty=oneline --abbrev-commit' -"
-	tdf = diff master...HEAD
+	co = checkout
+	dc = diff --cached
+	fixup = "!sh -c 'git commit --fixup=`git log --pretty=oneline --abbrev-commit -l 10 | fzy | cut -f1 -d\\ `'"
+	slog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 [color "diff"]
 	meta = yellow
