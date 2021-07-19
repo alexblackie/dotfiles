@@ -18,7 +18,7 @@
 [alias]
 	st = status
 	co = checkout
-	dc = diff --cached
+	ciff = diff --cached
 	fixup = "!sh -c 'git commit --fixup=`git log --pretty=oneline --abbrev-commit -l 10 | fzy | cut -f1 -d\\ `'"
 	slog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
