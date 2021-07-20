@@ -19,6 +19,7 @@
 	st = status
 	co = checkout
 	ciff = diff --cached
+	yolo = push --force-with-lease
 	fixup = "!sh -c 'git commit --fixup=`git log --pretty=oneline --abbrev-commit -l 10 | fzy | cut -f1 -d\\ `'"
 	slog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 

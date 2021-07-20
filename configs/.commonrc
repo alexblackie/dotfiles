@@ -3,8 +3,7 @@
 # ------------------------------------------------------------------------------
 export TERM="xterm-256color"
 export EDITOR="nvim"
-export PATH="$HOME/bin:$HOME/.gem_local/bin:$PATH"
-export GOPATH="$HOME"
+export PATH="$HOME/bin:$PATH"
 export FZF_DEFAULT_OPTS="--no-color"
 export FZF_DEFAULT_COMMAND="fd -t f"
 
@@ -14,16 +13,8 @@ if hash gsed >/dev/null 2>&1 ; then
 fi
 
 # ------------------------------------------------------------------------------
-# Aliases & custom functions
+# Custom functions
 # ------------------------------------------------------------------------------
-alias e="$EDITOR"
-alias dco="docker compose"
-alias tm="tmux"
-alias tma="tmux attach"
-alias yolo="git push --force-with-lease origin"
-
-alias be="bundle exec"
-
 serve() {
 	ruby -run -e httpd . -p ${1:-3000}
 }
@@ -78,7 +69,7 @@ fzyfindlocal() {
         LBUFFER="$LBUFFER${(q)selected_path} " # ${(q)VAR} shell-escapes the string
 }
 
-eg() {
+edgit() {
 	$EDITOR $(git status --porcelain | awk '{print $2}' | fzy)
 }
 
@@ -91,8 +82,4 @@ fi
 
 if [ -d "$HOME/.asdf" ] ; then
 	source "$HOME/.asdf/asdf.sh"
-fi
-
-if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ] ; then
-	source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
