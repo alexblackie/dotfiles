@@ -30,7 +30,7 @@ refactor() {
 	#	 $2 = wanted
 	# ex, to change "user" to "account": `refactor user account`
 
-	ag -l $1 | xargs $SED_EXEC -i "s/$1/$2/g"
+	rg -l $1 | xargs $SED_EXEC -i "s/$1/$2/g"
 }
 
 cdp() {
