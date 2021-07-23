@@ -16,12 +16,16 @@
 	defaultBranch = main
 
 [alias]
-	st = status
+	aa = add --all
+	br = branch
 	co = checkout
-	ciff = diff --cached
+	ci = commit
+	df = diff
+	dc = diff --cached
+	ff = "!sh -c 'git commit --fixup=`git log --pretty=oneline --abbrev-commit -l 10 | fzy | cut -f1 -d\\ `'"
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	st = status
 	yolo = push --force-with-lease
-	fixup = "!sh -c 'git commit --fixup=`git log --pretty=oneline --abbrev-commit -l 10 | fzy | cut -f1 -d\\ `'"
-	slog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 [color "diff"]
 	meta = yellow
