@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euf -o pipefail
+set -uf -o pipefail
 
 TEMPLATE_PATH="$HOME/.config/git/template"
 
