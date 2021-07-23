@@ -36,6 +36,7 @@
 
 [commit]
 	verbose = true
+	template = ~/.config/git/template
 
 [diff]
 	algorithm = patience

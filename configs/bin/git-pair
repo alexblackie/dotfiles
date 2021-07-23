@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+TEMPLATE_PATH="$HOME/.config/git/template"
+
+if [[ -e "$HOME/.colleagues.txt" ]] ; then
+	COLLEAGUES="$(cat $HOME/.colleagues.txt)"
+else
+	COLLEAGUES=""
+fi
+
+TRAILERS=""
+
+while true ; do
+	pick="$(echo -e "$COLLEAGUES\n$(git shortlog -e -s | cut -f2)" | uniq | fzy)"
+
+	if [[ "$pick" != "" ]]; then
+		TRAILERS+="Co-authored-by: $pick\n"
+		echo "Added co-author: $pick"
+	else
+		break
+	fi
+done
+
+if [[ "$TRAILERS" != "" ]] ; then
+	echo -e "\n" > $TEMPLATE_PATH
+	echo -e "$TRAILERS" >> $TEMPLATE_PATH
+
+	echo "🧑‍💻Pairing mode enabled. Run 'git unpair' to end session."
+fi

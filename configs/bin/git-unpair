@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+rm "$HOME/.config/git/template"
+echo "👋 Disabled pairing mode."
