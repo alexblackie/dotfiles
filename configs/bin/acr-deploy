@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+if [ "${1:-x}" = "x" ] ; then
+	echo "Provide container name as first argument"
+	exit 1
+fi
+
+if [ "${ACR_DEPLOY_REGISTRY:-x}" = "x" ] ; then
+	echo "You must configure an Azure Container Registry name."
+	echo "Please set ACR_DEPLOY_REGISTRY to the name of an ACR instance."
+	echo
+	echo "    ex. ACR_DEPLOY_REGISTRY=myazureregistryname"
+	exit 2
+fi
+
+REGISTRY="$ACR_DEPLOY_REGISTRY"
+APP_NAME="$1"
+NAMESPACE="${2:-default}"
+TAG="$(date +%Y%m%d%H%M)"
+IMAGE_NAME="$APP_NAME:$TAG"
+CONTAINER_NAME="$REGISTRY.azurecr.io/$IMAGE_NAME"
+
+az acr build -t "$IMAGE_NAME" -r "$REGISTRY" .
+kubectl --namespace "$NAMESPACE" set image "deployment/$APP_NAME" "$APP_NAME=$CONTAINER_NAME"
