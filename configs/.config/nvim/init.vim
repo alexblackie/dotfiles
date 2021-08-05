@@ -76,6 +76,30 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Enable code navigation
 nmap <silent> gd <Plug>(coc-definition)
 
+" Open a split with a Terminal pre-populated with the current buffer's file
+" path trailing your cursor.
+"
+" e for execute
+function ExecuteOnCurrentFile(path)
+	let width = 128
+	let height = 30
+	let buf = nvim_create_buf(v:false, v:true)
+	let ui = nvim_list_uis()[0]
+	let opts = {
+		\ 'relative': 'editor',
+		\ 'width': width,
+		\ 'height': height,
+		\ 'col': (ui.width/2) - (width/2),
+		\ 'row': (ui.height/2) - (height/2),
+		\ 'border': 'shadow'
+		\ }
+	let win = nvim_open_win(buf, 1, opts)
+	terminal
+	put =' ' . a:path . ''
+	execute 'normal! I'
+endfunction
+nmap <Leader>e :call ExecuteOnCurrentFile(expand('%'))<CR>
+
 " ------------------------------------------------------------------------------
 " Automation
 " ------------------------------------------------------------------------------
