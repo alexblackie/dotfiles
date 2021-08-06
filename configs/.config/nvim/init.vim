@@ -95,7 +95,7 @@ function ExecuteOnCurrentFile(path)
 		\ }
 	let win = nvim_open_win(buf, 1, opts)
 	terminal
-	put =' ' . a:path . ''
+	put =' ' . a:path . \"\<c-l>\<c-a>\"
 	execute 'normal! I'
 endfunction
 nmap <Leader>e :call ExecuteOnCurrentFile(expand('%'))<CR>
