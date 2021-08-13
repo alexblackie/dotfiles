@@ -3,9 +3,10 @@
 " ------------------------------------------------------------------------------
 call plug#begin(stdpath('data') . '/plugged')
 
-" Colours
+" Colours and UI
 Plug 'morhetz/gruvbox'
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'hoob3rt/lualine.nvim'
 
 " Behavioural/Core
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -16,10 +17,44 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " Language support/integration
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
+
+" ------------------------------------------------------------------------------
+" Plugin and system-level setup
+" ------------------------------------------------------------------------------
+
+lua << EOF
+vim.g.tokyonight_style = "night"
+
+require("lualine").setup({
+	options = {
+		theme = "tokyonight",
+		lower = true,
+		padding = 1,
+		section_separators = {"", ""},
+		component_separators = {"", ""},
+	},
+	sections = {
+		lualine_a = { "mode" },
+		lualine_b = { "filename" },
+		lualine_c = { },
+		lualine_x = { },
+		lualine_y = { "filetype" },
+		lualine_z = { "location" },
+	},
+	extensions = { },
+})
+
+require("nvim-treesitter.configs").setup({
+	ensure_installed = "maintained",
+	ignore_install = { },
+	highlight = { enable = true },
+})
+EOF
 
 let g:coc_global_extensions = [
 	\ 'coc-elixir',
@@ -44,8 +79,6 @@ set number              " Show the line number of the current line
 set cursorline          " Highlight the current line
 set colorcolumn=80,100  " Warning gutter for long lines
 set winwidth=107        " Set a minimum width for the active split
-
-let g:tokyonight_style = 'night'
 
 colorscheme tokyonight
 
