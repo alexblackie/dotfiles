@@ -1,4 +1,4 @@
-# ~/.dotfiles/
+# `~/.dotfiles/`
 
 This is what I use every day for work, play, and everything else.
 
@@ -13,11 +13,12 @@ $ ./install
 
 The script will symlink all the configs into the right place in the home folder.
 
-If you want it to remove existing files to ensure they're fresh and overwritten,
-you can run:
+All files that are symlinked are recorded in a receipt so they can be
+rolled-back easily. Simply pass `rollback` to the install script to delete all
+symlinks:
 
 ```
-$ FORCE=1 ./install
+$ ./install rollback
 ```
 
 If you want it to echo every command it will run without actually changing
@@ -26,9 +27,3 @@ anything, you can set `DEBUG` to any value before running:
 ```
 $ DEBUG=1 ./install
 ```
-
-**Note!** The scripts and configuration files herein exclusively target
-GNU/Linux systems. While most of the things will probably work on macOS, many of
-the GNU tools used in the scripts will not be available, at least not with the
-expected executable names. You can probably make it work but I don't want to
-have to support that.

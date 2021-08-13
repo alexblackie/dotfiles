@@ -20,13 +20,16 @@ set -uef -o pipefail
 # useful for debugging.
 export BASE_DIR="$HOME"
 
+# Set DEBUG=1 to echo all commands instead of running.
+export DEBUG="${DEBUG:-}"
+
 # --[ END Configuration ]
 
 MKDIR=mkdir
 LN=ln
 RM=rm
 
-if [[ "${DEBUG:-}" -ne "" ]] ; then
+if [[ "${DEBUG:-}" != "" ]] ; then
 	# If we pass 'DEBUG=1' (value is irrelevant), we should prefix commands
 	# with 'echo' to do a dry run.
 	#
@@ -40,21 +43,35 @@ export MKDIR
 export LN
 export RM
 
+export RECEIPT="./.receipt"
+
+rollback() {
+	for target in $(cat "$RECEIPT") ; do
+		$RM -f "$target"
+	done
+
+	[[ "$DEBUG" = "" ]] && echo > "$RECEIPT"
+}
+
 link_config() {
 	OLDIFS="$IFS"
 	IFS="		"
 	target="$2/${1#"$3/"}"
 
-	if [ "$FORCE" != "" ] ; then
-		$RM -f "$target"
-	fi
-
-	if [ ! -e "$target" ] || [ "$FORCE" != "" ] ; then
+	if [ ! -e "$target" ] ; then
 		[[ ! -e "$(dirname $target)" ]] && $MKDIR -p "$(dirname $target)"
 		$LN -s "$PWD/$1" "$target"
+		echo "$target" >> "$RECEIPT"
 	fi
+
 	IFS="$OLDIFS"
+
 }
 export -f link_config
+
+if [ "${1:-}" = "rollback" ] ; then
+	rollback
+	exit 0
+fi
 
 find configs -mindepth 1 -type f -exec bash -c 'link_config "$1" $BASE_DIR configs' _ {} \;
