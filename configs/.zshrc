@@ -55,7 +55,7 @@ precmd () {
        [[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
-PROMPT="%{$fg[blue]%}%~%{$reset_color%}%{$fg[yellow]%}%1v%{$reset_color%} → "
+PROMPT="%{$fg[blue]%}%~%{$reset_color%}%{$fg[green]%}%1v%{$reset_color%} → "
 
 # ------------------------------------------------------------------------------
 # Key Bindings
