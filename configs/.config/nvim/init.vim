@@ -33,14 +33,13 @@ vim.g.tokyonight_style = "night"
 require("lualine").setup({
 	options = {
 		theme = "tokyonight",
-		lower = true,
 		padding = 1,
 		section_separators = {"", ""},
 		component_separators = {"", ""},
 	},
 	sections = {
-		lualine_a = { "mode" },
-		lualine_b = { "filename" },
+		lualine_a = { { "mode", lower = true } },
+		lualine_b = { { "filename", path = 1 } },
 		lualine_c = { },
 		lualine_x = { },
 		lualine_y = { "filetype" },
