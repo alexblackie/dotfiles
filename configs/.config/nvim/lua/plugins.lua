@@ -15,6 +15,7 @@ packer = require('packer').startup(function()
 	use 'preservim/nerdtree'
 	use 'preservim/nerdcommenter'
 	use 'tpope/vim-fugitive'
+	use 'tpope/vim-rhubarb'
 
 	-- Language support and integration
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
