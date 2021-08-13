@@ -52,7 +52,9 @@ vim.g.coc_global_extensions = {
 	'coc-elixir',
 	'coc-java',
 	'coc-go',
-	'coc-solargraph'
+	'coc-solargraph',
+	'coc-html',
+	'coc-sh',
 }
 
 return packer
