@@ -5,11 +5,30 @@
 #	This is a script to install my dotfiles on a machine by symlinking
 #	everything into the right place in the home directory.
 #
-# OPTIONS
+# ARGUMENTS
 #
-#	- `FORCE=1` to force overwrite
+#	- "rollback" - if passed as the first argument, we will remove all
+#	symlinks that have been created, uninstalling the dotfiles.
+#
+# ENVIRONMENT OPTIONS
+#
 #	- `DEBUG=1` to dry run
 #
+# EXAMPLES
+#
+#	Install all dotfiles into the home directory:
+#
+#		./install
+#
+#
+#	Uninstall everything that was previously symlinked:
+#
+#		./install rollback
+#
+#
+#	Do a dry run to see what commands the script would have run:
+#
+#		DEBUG=1 ./install
 
 set -uef -o pipefail
 
