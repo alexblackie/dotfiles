@@ -2,6 +2,9 @@
 -- Plugins and Plugin Setup
 --
 packer = require('packer').startup(function()
+	-- Packer can manage itself
+	use 'wbthomason/packer.nvim'
+
 	-- Themes and UI plugins
 	use 'folke/tokyonight.nvim'
 	use 'hoob3rt/lualine.nvim'
