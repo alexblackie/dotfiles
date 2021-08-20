@@ -54,12 +54,12 @@ vim.api.nvim_set_keymap('n', '<leader>e', ':call v:lua.ExecuteOnCurrentFile(expa
 --
 
 -- Highlight trailing whitespace
-vim.cmd 'autocmd BufWinEnter * match ErrorMsg /\\s\\+$/'
-vim.cmd 'autocmd InsertLeave * match ErrorMsg /\\s\\+$/'
-vim.cmd 'autocmd InsertEnter * match ErrorMsg /\\s\\+\\%#\\@<!$/'
+vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
+vim.cmd[[autocmd InsertLeave * match TSWarning /\s\+$/]]
+vim.cmd[[autocmd InsertEnter * match TSWarning /\s\+\%#\@<!$/]]
 
 -- Trim trailing whitespace on save
-vim.cmd 'autocmd BufWritePre * :%s/\\s\\+$//e'
+vim.cmd[[autocmd BufWritePre * :%s/\s\+$//e]]
 
 -- exit if nerdtree is the only buffer left
 vim.cmd 'autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif'
