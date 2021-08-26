@@ -28,7 +28,7 @@ vim.cmd 'colorscheme tokyonight'
 --
 
 -- Disable hotkey manpage lookups
-vim.api.nvim_set_keymap('n', 'K', '<NOP>', { noremap = true })
+vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
 
 -- Open file browser sidebar
 vim.api.nvim_set_keymap('n', '<leader>t', ':NERDTreeToggle<CR>', {})
