@@ -1,7 +1,7 @@
 --
 -- Plugins and Plugin Setup
 --
-packer = require('packer').startup(function()
+require('packer').startup(function()
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
@@ -58,5 +58,3 @@ vim.g.coc_global_extensions = {
 	'coc-html',
 	'coc-sh',
 }
-
-return packer
