@@ -6,7 +6,7 @@ packer = require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 
 	-- Themes and UI plugins
-	use 'folke/tokyonight.nvim'
+	use 'alexblackie/lunarised'
 	use 'hoob3rt/lualine.nvim'
 
 	-- Behavioural and "Core" stuff
@@ -27,7 +27,7 @@ require('execute_upon')
 
 require('lualine').setup({
 	options = {
-		theme = 'tokyonight',
+		theme = 'lunarised',
 		padding = 1,
 		section_separators = {'', ''},
 		component_separators = {'', ''},
