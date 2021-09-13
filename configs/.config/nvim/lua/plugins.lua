@@ -20,7 +20,6 @@ require('packer').startup(function()
 
 	-- Language support and integration
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-	use 'sheerun/vim-polyglot'
 	use 'editorconfig/editorconfig-vim'
 end)
 
