@@ -49,10 +49,10 @@ zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' formats '(%b)'
 
 precmd () {
-       psvar=()
+	psvar=()
 
-       vcs_info
-       [[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
+	vcs_info
+	[[ -n $vcs_info_msg_0_ ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
 PROMPT="%{$fg[blue]%}%~%{$reset_color%}%{$fg[green]%}%1v%{$reset_color%} → "
