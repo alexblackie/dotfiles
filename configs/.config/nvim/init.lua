@@ -16,6 +16,8 @@ vim.opt.cursorline = true
 vim.opt.colorcolumn = { 80, 100 }
 vim.opt.winwidth = 107
 
+vim.g.lunarised_italic_comments = true
+
 require('lunarised').load()
 
 --
