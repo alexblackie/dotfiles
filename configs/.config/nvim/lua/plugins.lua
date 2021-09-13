@@ -8,6 +8,7 @@ packer = require('packer').startup(function()
 	-- Themes and UI plugins
 	use 'alexblackie/lunarised'
 	use 'hoob3rt/lualine.nvim'
+	use 'airblade/vim-gitgutter'
 
 	-- Behavioural and "Core" stuff
 	use { 'neoclide/coc.nvim', branch = 'release' }
