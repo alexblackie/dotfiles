@@ -17,6 +17,7 @@ vim.opt.colorcolumn = { 80, 100 }
 vim.opt.winwidth = 107
 
 vim.g.lunarised_italic_comments = true
+--vim.g.lunarised_dark = true
 
 require('lunarised').load()
 
