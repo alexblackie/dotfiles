@@ -37,17 +37,10 @@ refactor() {
 cdp() {
 	# "cd to project"
 	#
-	# Finds source code project directories and allows fuzzy-finding one, then
-	# cd's to whichever you choose.
-	#
-	# I use two different directories structures, depending on the project,
-	# computer, or whatever.
-	#	- "code" is "flat" reverse-domain format repos, like
-	#	"com.whatever.reponame" and so maxdepth is just 1.
-	#	- "src" is a GOPATH-style full URL, so it needs a maxdepth of 3.
-	targets="$(find $HOME/src -maxdepth 3 -type d)\n"
-	targets+="$(find $HOME/code -maxdepth 1 -type d)"
-
+	# Finds source code project directories and allows fuzzy-finding one,
+	# then cd's to whichever you choose. "code" is flat reverse-domain
+	# format repos, like "com.whatever.reponame" and so maxdepth is just 1.
+	targets="$(find $HOME/code -maxdepth 1 -type d)"
 	target="$(echo $targets | $SED_EXEC -e "s%$HOME/%%" | fzy)"
 
 	if ! [ "$target" = "" ] ; then
