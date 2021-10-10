@@ -69,7 +69,25 @@ fzyfindlocal() {
 }
 
 eg() {
-	$EDITOR $(git status --porcelain | awk '{print $2}' | fzy)
+	# Edit a modified or untracked file in the current Git repository.
+	# Useful for quickly reopening things you've modified or added since
+	# the last commit.
+	#
+	#	$ git st
+	#	...
+	#	    modified:   test/myproject/lib/subcomponent/mytest
+	#
+	#	$ eg
+	#	> mytest
+	#	test/myproject/lib/subcomponent/mytest
+	#
+	local choice
+	choice="$(git status --porcelain | awk '{print $2}' | fzy)"
+
+	if [[ "$choice" != "" ]] ; then
+		# Only open the editor if we chose something.
+		$EDITOR "$choice"
+	fi
 }
 
 # ------------------------------------------------------------------------------
