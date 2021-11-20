@@ -29,13 +29,13 @@ require('lunarised').load()
 vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
 
 -- Open file browser sidebar
-vim.api.nvim_set_keymap('n', '<leader>t', ':NERDTreeToggle<CR>', {})
+vim.api.nvim_set_keymap('n', '<leader>f', ':NERDTreeToggle<CR>', {})
 
 -- Find current file in file tree sidebar
-vim.api.nvim_set_keymap('n', '<leader>b', ':NERDTreeFind<CR>', {})
+vim.api.nvim_set_keymap('n', '<leader>F', ':NERDTreeFind<CR>', {})
 
 -- Open fuzzy file finder
-vim.api.nvim_set_keymap('n', '<leader>f', ':Files<CR>', {})
+vim.api.nvim_set_keymap('n', '<leader><leader>', ':Files<CR>', {})
 
 -- Trigger code completion
 vim.api.nvim_set_keymap('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true })
