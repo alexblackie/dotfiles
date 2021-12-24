@@ -14,7 +14,7 @@ require('packer').startup(function()
 	use { 'neoclide/coc.nvim', branch = 'release' }
 	use { 'junegunn/fzf.vim', requires = { { 'junegunn/fzf', run = function() vim.fn['fzf#install']() end } } }
 	use 'preservim/nerdtree'
-	use 'preservim/nerdcommenter'
+	use 'tpope/vim-commentary'
 	use 'tpope/vim-fugitive'
 	use 'tpope/vim-rhubarb'
 
