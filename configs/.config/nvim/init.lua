@@ -11,7 +11,6 @@ vim.opt.shiftwidth = 2
 --
 -- Interface and theming
 --
-vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.colorcolumn = { 80, 100 }
 vim.opt.winwidth = 107
