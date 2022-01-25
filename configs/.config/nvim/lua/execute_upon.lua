@@ -19,7 +19,7 @@ function _G.ExecuteOnCurrentFile(path)
 		height = win_height,
 		col = col,
 		row = row,
-		border = 'shadow',
+		border = 'rounded',
 	}
 
 	local win = vim.api.nvim_open_win(buf, true, opts)
