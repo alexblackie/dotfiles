@@ -12,7 +12,6 @@ require('packer').startup(function()
 
 	-- Behavioural and "Core" stuff
 	use { 'neoclide/coc.nvim', branch = 'release' }
-	use { 'junegunn/fzf.vim', requires = { { 'junegunn/fzf', run = function() vim.fn['fzf#install']() end } } }
 	use 'preservim/nerdtree'
 	use 'tpope/vim-commentary'
 	use 'tpope/vim-fugitive'
@@ -25,6 +24,7 @@ require('packer').startup(function()
 end)
 
 require('execute_upon')
+require('fzy')
 
 require('lualine').setup({
 	options = {
