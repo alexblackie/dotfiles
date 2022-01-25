@@ -4,8 +4,6 @@
 export TERM="xterm-256color"
 export EDITOR="nvim"
 export PATH="$HOME/bin:$PATH"
-export FZF_DEFAULT_OPTS="--no-color"
-export FZF_DEFAULT_COMMAND="fd -t f -H"
 
 SED_EXEC="sed"
 if hash gsed >/dev/null 2>&1 ; then
