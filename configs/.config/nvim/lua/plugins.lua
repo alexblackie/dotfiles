@@ -23,6 +23,7 @@ require('packer').startup(function()
 	use 'editorconfig/editorconfig-vim'
 end)
 
+require('floater')
 require('execute_upon')
 require('fzy')
 
