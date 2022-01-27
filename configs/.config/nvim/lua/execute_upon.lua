@@ -4,7 +4,7 @@
 --
 -- Useful for quickly running tests or linters on a specific file.
 function _G.ExecuteOnCurrentFile(path)
-	CreateFloatingWindow()
+	CreateFloatingWindow({})
 	vim.cmd('terminal')
 	vim.cmd('put =\' ' .. path  .. '\' . \\"\\<c-l>\\<c-a>\\"')
 	vim.cmd('execute \'normal! I\'')
