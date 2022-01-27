@@ -1,32 +1,15 @@
--- In large part thanks to @benjaminwil ->
---   https://github.com/benjaminwil/dotfiles/blob/e70a14886e8095d74296a3c4540e3ca3b7a24202/.vim/pack/benjaminwil/start/frgzy/plugin/rg%2Bfzy-files.vim
+function _G.FzyFiles(vim_command)
+	local terminal_command = 'fd -t f -H | fzy'
 
-vim.cmd[[
-function! FzyFiles(vim_command) abort
-	let l:files_command = "fd -t f -H"
-	let l:callback = {
-		\ 'window_id': win_getid(),
-		\ 'filename': tempname(),
-		\ 'vim_command': a:vim_command
-	\ }
+	CreateFloatingWindow({ height = 10 })
 
-	function! l:callback.on_exit(job_id, data, event) abort
-		bdelete!
-		call win_gotoid(self.window_id)
-		if filereadable(self.filename)
-			try
-				let l:selected_filename = readfile(self.filename)[0]
-				exec self.vim_command . ' ' . l:selected_filename
-			catch /E684/
-			endtry
-		endif
-		call delete(self.filename)
-	endfunction
-
-	botright 10 new
-	let l:terminal_command = l:files_command . ' | fzy > ' .  l:callback.filename
-	silent call termopen(l:terminal_command, l:callback)
-	setlocal nonumber norelativenumber
-	startinsert
-endfunction
-]]
+	local opts = {
+		on_exit = function()
+			local filename = table.concat(vim.api.nvim_buf_get_lines(0, 0, -1, false), " ")
+			vim.cmd('bdelete!')
+			vim.fn.execute(vim_command .. ' ' .. filename)
+		end
+	}
+	vim.fn.termopen(terminal_command, opts)
+	vim.cmd('startinsert')
+end
