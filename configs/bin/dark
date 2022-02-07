@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+set -euf -o pipefail
+
+SED="sed"
+if hash gsed >/dev/null 2>&1 ; then
+	SED="gsed"
+fi
+
+KITTY_CONF="$HOME/.config/kitty/kitty.conf"
+NVIM_CONF="$HOME/.config/nvim/init.lua"
+TMUX_CONF="$HOME/.tmux.conf"
+
+setDark() {
+	$SED -i 's/#include colours-dark/include colours-dark/' "$KITTY_CONF"
+	$SED -i 's/--vim\.g\.lunarised_dark/vim.g.lunarised_dark/' "$NVIM_CONF"
+	$SED -i 's/#source-file ~\/\.tmux\.dark\.conf/source-file ~\/.tmux.dark.conf/' "$TMUX_CONF"
+	if [[ "$(uname -s)" = "Darwin" ]] ; then
+		osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to true'
+	fi
+}
+
+setLight() {
+	$SED -i 's/include colours-dark/#include colours-dark/' "$KITTY_CONF"
+	$SED -i 's/vim\.g\.lunarised_dark/--vim.g.lunarised_dark/' "$NVIM_CONF"
+	$SED -i 's/source-file ~\/\.tmux\.dark\.conf/#source-file ~\/.tmux.dark.conf/' "$TMUX_CONF"
+	if [[ "$(uname -s)" = "Darwin" ]] ; then
+		osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to false'
+	fi
+}
+
+if [[ "${1:-}" = "off" ]] ; then
+	setLight
+else
+	setDark
+fi
