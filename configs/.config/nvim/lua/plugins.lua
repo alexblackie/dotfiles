@@ -56,6 +56,5 @@ vim.g.coc_global_extensions = {
 	'coc-java',
 	'coc-go',
 	'coc-solargraph',
-	'coc-html',
 	'coc-sh',
 }
