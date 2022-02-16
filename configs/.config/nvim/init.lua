@@ -7,6 +7,7 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 
+vim.opt.foldmethod = 'indent'
 
 --
 -- Interface and theming
@@ -49,6 +50,9 @@ vim.api.nvim_set_keymap('n', '<leader>e', ':call v:lua.ExecuteOnCurrentFile(expa
 --
 -- Automation
 --
+
+-- Start with all folds expanded
+vim.cmd[[autocmd BufRead * normal zR]]
 
 -- Highlight trailing whitespace
 vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
