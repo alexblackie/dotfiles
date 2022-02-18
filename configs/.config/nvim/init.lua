@@ -36,6 +36,7 @@ vim.api.nvim_set_keymap('n', '<leader>F', ':NERDTreeFind<CR>', {})
 
 -- Open fuzzy file finder
 vim.api.nvim_set_keymap('n', '<leader><leader>', ':call v:lua.FzyFiles(\':e\')<cr>', {})
+vim.api.nvim_set_keymap('n', '<leader>G', ':call v:lua.FzyGems()<cr>', {})
 
 -- Trigger code completion
 vim.api.nvim_set_keymap('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true })
