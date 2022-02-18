@@ -7,5 +7,5 @@ function _G.ExecuteOnCurrentFile(path)
 	CreateFloatingWindow({})
 	vim.cmd('terminal')
 	vim.cmd('put =\' ' .. path  .. '\' . \\"\\<c-l>\\<c-a>\\"')
-	vim.cmd('execute \'normal! I\'')
+	vim.fn.feedkeys('I')
 end
