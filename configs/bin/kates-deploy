@@ -22,7 +22,7 @@ TAG="$(date +%Y%m%d%H%M)"
 CONTAINER_NAME="$REGISTRY/$APP_NAME:$TAG"
 LATEST_CONTAINER_NAME="$REGISTRY/$APP_NAME:latest"
 
-docker build -t "$CONTAINER_NAME" .
+docker build --platform linux/amd64 -t "$CONTAINER_NAME" .
 docker tag "$CONTAINER_NAME" "$LATEST_CONTAINER_NAME"
 docker push "$CONTAINER_NAME"
 docker push "$LATEST_CONTAINER_NAME"
