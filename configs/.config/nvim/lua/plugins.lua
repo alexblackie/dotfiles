@@ -45,7 +45,27 @@ require('lualine').setup({
 })
 
 require('nvim-treesitter.configs').setup({
-	ensure_installed = 'maintained',
+	ensure_installed = {
+		'bash',
+		'c',
+		'css',
+		'dockerfile',
+		'elixir',
+		'erlang',
+		'go',
+		'gomod',
+		'graphql',
+		'hcl',
+		'heex',
+		'java',
+		'javascript',
+		'json',
+		'lua',
+		'python',
+		'ruby',
+		'rust',
+		'yaml',
+	},
 	ignore_install = { },
 	highlight = { enable = true },
 })
