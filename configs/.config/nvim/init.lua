@@ -25,12 +25,6 @@ require('lunarised').load()
 -- Disable hotkey manpage lookups
 vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
 
--- Open file browser sidebar
-vim.api.nvim_set_keymap('n', '<leader>f', ':NERDTreeToggle<CR>', {})
-
--- Find current file in file tree sidebar
-vim.api.nvim_set_keymap('n', '<leader>F', ':NERDTreeFind<CR>', {})
-
 -- Open fuzzy file finder
 vim.api.nvim_set_keymap('n', '<leader><leader>', ':call v:lua.FzyFiles(\':e\')<cr>', {})
 

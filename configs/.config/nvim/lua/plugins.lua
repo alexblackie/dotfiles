@@ -11,7 +11,6 @@ require('packer').startup(function()
 
 	-- Behavioural and "Core" stuff
 	use { 'neoclide/coc.nvim', branch = 'release' }
-	use 'preservim/nerdtree'
 	use 'tpope/vim-commentary'
 	use 'tpope/vim-fugitive'
 	use 'tpope/vim-rhubarb'
