@@ -25,6 +25,10 @@ require('lunarised').load()
 -- Disable hotkey manpage lookups
 vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
 
+-- Open file explorer
+vim.api.nvim_set_keymap('n', '<leader>f', ':Explore<cr>', {})
+vim.api.nvim_set_keymap('n', '<leader>F', ':vsplit<cr>:Explore<cr>', {})
+
 -- Open fuzzy file finder
 vim.api.nvim_set_keymap('n', '<leader><leader>', ':call v:lua.FzyFiles(\':e\')<cr>', {})
 
