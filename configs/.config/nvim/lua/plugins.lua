@@ -1,26 +1,6 @@
 --
 -- Plugins and Plugin Setup
 --
-require('packer').startup(function()
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
-
-	-- Themes and UI plugins
-	use 'alexblackie/lunarised'
-	use 'hoob3rt/lualine.nvim'
-
-	-- Behavioural and "Core" stuff
-	use { 'neoclide/coc.nvim', branch = 'release' }
-	use 'tpope/vim-commentary'
-	use 'tpope/vim-fugitive'
-	use 'tpope/vim-rhubarb'
-
-	-- Language support and integration
-	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-	use 'sheerun/vim-polyglot'
-	use 'editorconfig/editorconfig-vim'
-end)
-
 require('floater')
 require('execute_upon')
 require('fzy')

@@ -1,3 +1,28 @@
-[submodule "configs/.local/share/nvim/site/pack/packer/start/packer.nvim"]
-	path = configs/.local/share/nvim/site/pack/packer/start/packer.nvim
-	url = https://github.com/wbthomason/packer.nvim
+[submodule "configs/.local/share/nvim/site/pack/git/start/lunarised"]
+	path = configs/.local/share/nvim/site/pack/git/start/lunarised
+	url = https://github.com/alexblackie/lunarised.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/lualine"]
+	path = configs/.local/share/nvim/site/pack/git/start/lualine
+	url = https://github.com/hoob3rt/lualine.nvim.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/coc.vim"]
+	path = configs/.local/share/nvim/site/pack/git/start/coc.vim
+	url = https://github.com/neoclide/coc.nvim.git
+	branch = release
+[submodule "configs/.local/share/nvim/site/pack/git/start/commentary"]
+	path = configs/.local/share/nvim/site/pack/git/start/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/fugitive"]
+	path = configs/.local/share/nvim/site/pack/git/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/fugitive-rhubarb"]
+	path = configs/.local/share/nvim/site/pack/git/start/fugitive-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/treesitter"]
+	path = configs/.local/share/nvim/site/pack/git/start/treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/polyglot"]
+	path = configs/.local/share/nvim/site/pack/git/start/polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/editorconfig"]
+	path = configs/.local/share/nvim/site/pack/git/start/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
