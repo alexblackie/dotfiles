@@ -75,4 +75,5 @@ vim.g.coc_global_extensions = {
 	'coc-go',
 	'coc-solargraph',
 	'coc-sh',
+	'coc-tsserver',
 }
