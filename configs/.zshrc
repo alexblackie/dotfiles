@@ -12,8 +12,6 @@ SAVEHIST=10000
 
 setopt hist_ignore_dups
 setopt hist_verify
-setopt inc_append_history
-setopt share_history
 
 source "$ZSH/history-substring-search.zsh"
 autoload -U history-substring-search-up
