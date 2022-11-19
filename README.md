@@ -1,8 +1,8 @@
-# `~/.dotfiles/`
+# `~/.dotfiles`
 
 This is what I use every day for work, play, and everything else.
 
-You may also like [bootstart](https://github.com/alexblackie/bootstart):
+You may also like [alexblackie/setup](https://github.com/alexblackie/setup):
 the Ansible playbooks I use to provision my workstations/laptops.
 
 Setup is very easy:
