@@ -56,6 +56,7 @@ require('nvim-treesitter.configs').setup({
 })
 
 vim.g.coc_global_extensions = {
+	'coc-clangd',
 	'coc-elixir',
 	'coc-java',
 	'coc-go',
