@@ -1,13 +1,6 @@
 require('plugins')
 
 --
--- Editing
---
-vim.opt.expandtab = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-
---
 -- Interface and theming
 --
 vim.opt.cursorline = true
