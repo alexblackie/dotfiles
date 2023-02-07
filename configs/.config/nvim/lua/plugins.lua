@@ -63,4 +63,5 @@ vim.g.coc_global_extensions = {
 	'coc-solargraph',
 	'coc-sh',
 	'coc-tsserver',
+	'coc-rust-analyzer',
 }
