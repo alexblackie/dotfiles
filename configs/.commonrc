@@ -34,15 +34,6 @@ serve() {
 	"${PYTHON_EXEC}" -m http.server "${1:-3000}"
 }
 
-refactor() {
-	# Takes two args:
-	#	 $1 = current
-	#	 $2 = wanted
-	# ex, to change "user" to "account": `refactor user account`
-
-	rg -l $1 | xargs $SED_EXEC -i "s/$1/$2/g"
-}
-
 cdp() {
 	# "cd to project"
 	#
