@@ -39,9 +39,6 @@ vim.api.nvim_set_keymap('n', '<leader>e', ':call v:lua.ExecuteOnCurrentFile(expa
 -- Automation
 --
 
--- Start with all folds expanded
-vim.cmd[[autocmd BufRead * normal zR]]
-
 -- Highlight trailing whitespace
 vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
 vim.cmd[[autocmd InsertLeave * match TSWarning /\s\+$/]]
