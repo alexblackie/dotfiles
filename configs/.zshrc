@@ -71,15 +71,6 @@ bindkey "^[OA" history-substring-search-up
 # Make forward delete work
 bindkey "\e[3~" delete-char
 
-# Quickly fuzzy-find and cd to a different project directory. See 'cdp'
-# function in '.commonrc'
-#
-# This wrapper widget allows it to be bound to a key, and also handles
-# re-drawing the prompt and re-running the precmd so the prompt is fully
-# updated as one would expect. It even restores the commandline contents.
-zle_cdp() { cdp ; precmd ; zle reset-prompt }
-zle -N zle_cdp
-
 zle_fzyfindlocal() { fzyfindlocal ; zle reset-prompt }
 zle -N zle_fzyfindlocal
 unsetopt flowcontrol # Required to rebind ^S
