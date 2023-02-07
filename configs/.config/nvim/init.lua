@@ -1,19 +1,14 @@
 require('plugins')
 
---
--- Interface and theming
---
-vim.opt.cursorline = true
+-- Set common end-of-line gutters
 vim.opt.colorcolumn = { 80, 100 }
+
+-- Set a minimum width for the active split
 vim.opt.winwidth = 107
 
+-- Colourscheme
 vim.g.lunarised_italic_comments = true
-
 require('lunarised').load()
-
---
--- Keybindings
---
 
 -- Disable hotkey manpage lookups
 vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
@@ -33,11 +28,6 @@ vim.api.nvim_set_keymap('n', 'gd', '<Plug>(coc-definition)', { silent = true })
 
 -- Open popup terminal prefilled with the current filename
 vim.api.nvim_set_keymap('n', '<leader>e', ':call v:lua.ExecuteOnCurrentFile(expand(\'%\'))<CR>', {})
-
-
---
--- Automation
---
 
 -- Highlight trailing whitespace
 vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
