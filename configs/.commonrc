@@ -12,6 +12,11 @@ if hash gsed >/dev/null 2>&1 ; then
 	SED_EXEC="gsed"
 fi
 
+PYTHON_EXEC="python"
+if hash python3 >/dev/null 2>&1 ; then
+	PYTHON_EXEC="python3"
+fi
+
 # ------------------------------------------------------------------------------
 # Aliases
 # ------------------------------------------------------------------------------
@@ -26,7 +31,7 @@ fi
 # Custom functions
 # ------------------------------------------------------------------------------
 serve() {
-	ruby -run -e httpd . -p ${1:-3000}
+	"${PYTHON_EXEC}" -m http.server "${1:-3000}"
 }
 
 refactor() {
