@@ -5,24 +5,6 @@ require('floater')
 require('execute_upon')
 require('fzy')
 
-require('lualine').setup({
-	options = {
-		theme = 'lunarised',
-		padding = 1,
-		section_separators = {'', ''},
-		component_separators = {'', ''},
-	},
-	sections = {
-		lualine_a = { { 'mode', lower = true } },
-		lualine_b = { 'branch' },
-		lualine_c = { { 'filename', path = 1 } },
-		lualine_x = { },
-		lualine_y = { 'filetype' },
-		lualine_z = { 'location' },
-	},
-	extensions = { },
-})
-
 local treesitter_langs = {
 	'bash',
 	'c',

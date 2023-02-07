@@ -1,9 +1,6 @@
 [submodule "configs/.local/share/nvim/site/pack/git/start/lunarised"]
 	path = configs/.local/share/nvim/site/pack/git/start/lunarised
 	url = https://github.com/alexblackie/lunarised.git
-[submodule "configs/.local/share/nvim/site/pack/git/start/lualine"]
-	path = configs/.local/share/nvim/site/pack/git/start/lualine
-	url = https://github.com/hoob3rt/lualine.nvim.git
 [submodule "configs/.local/share/nvim/site/pack/git/start/coc.vim"]
 	path = configs/.local/share/nvim/site/pack/git/start/coc.vim
 	url = https://github.com/neoclide/coc.nvim.git
