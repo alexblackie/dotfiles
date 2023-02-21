@@ -3,19 +3,15 @@ require('plugins')
 -- Set common end-of-line gutters
 vim.opt.colorcolumn = { 80, 100 }
 
--- Set a minimum width for the active split
-vim.opt.winwidth = 107
-
 -- Colourscheme
-vim.g.lunarised_italic_comments = true
-require('lunarised').load()
+vim.cmd('colorscheme dayfox')
 
 -- Disable hotkey manpage lookups
 vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
 
 -- Open file explorer
-vim.api.nvim_set_keymap('n', '<leader>f', ':Explore<cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>F', ':vsplit<cr>:Explore<cr>', {})
+vim.api.nvim_set_keymap('n', '<leader>f', ':NvimTreeToggle<cr>', {})
+vim.api.nvim_set_keymap('n', '<leader>F', ':NvimTreeFindFile<cr>', {})
 
 -- Open fuzzy file finder
 vim.api.nvim_set_keymap('n', '<leader><leader>', ':call v:lua.FzyFiles(\':e\')<cr>', {})

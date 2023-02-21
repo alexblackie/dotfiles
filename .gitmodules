@@ -1,6 +1,3 @@
-[submodule "configs/.local/share/nvim/site/pack/git/start/lunarised"]
-	path = configs/.local/share/nvim/site/pack/git/start/lunarised
-	url = https://github.com/alexblackie/lunarised.git
 [submodule "configs/.local/share/nvim/site/pack/git/start/coc.vim"]
 	path = configs/.local/share/nvim/site/pack/git/start/coc.vim
 	url = https://github.com/neoclide/coc.nvim.git
@@ -29,3 +26,9 @@
 [submodule "configs/.local/share/nvim/site/pack/git/start/copilot"]
 	path = configs/.local/share/nvim/site/pack/git/start/copilot
 	url = https://github.com/github/copilot.vim.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/nvim-tree"]
+	path = configs/.local/share/nvim/site/pack/git/start/nvim-tree
+	url = https://github.com/nvim-tree/nvim-tree.lua.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/nightfox"]
+	path = configs/.local/share/nvim/site/pack/git/start/nightfox
+	url = https://github.com/EdenEast/nightfox.nvim.git

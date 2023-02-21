@@ -5,6 +5,37 @@ require('floater')
 require('execute_upon')
 require('fzy')
 
+require("nvim-tree").setup({
+	view = {
+		width = 30,
+		mappings = {
+			list = {
+				{ key = "s", action = "vsplit" },
+			},
+		},
+	},
+	renderer = {
+		add_trailing = true,
+		highlight_git = false,
+		highlight_opened_files = "none",
+		highlight_modified = "none",
+		indent_markers = {
+			enable = true,
+		},
+		icons = {
+			webdev_colors = false,
+			padding = "",
+			show = {
+				file = false,
+				folder_arrow = false,
+				folder = false,
+			},
+		},
+	},
+	git = { enable = false },
+	modified = { enable = false },
+})
+
 local treesitter_langs = {
 	'bash',
 	'c',
