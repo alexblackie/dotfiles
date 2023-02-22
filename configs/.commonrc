@@ -89,6 +89,19 @@ eg() {
 	fi
 }
 
+kfs() {
+	# "kubeconfig fzy select"
+	#
+	# Finds all the config files under `~/.config/kubes` and sets the one
+	# you select as the `KUBECONFIG`. This is an alternative to "contexts"
+	# meant to be a bit safer/more explicit.
+	local target
+	target="$(fd --type f --max-depth=1 '' --base-directory "${HOME}/.config/kubes" | fzy)"
+	if ! [ "$target" = "" ] ; then
+		export KUBECONFIG="$HOME/.config/kubes/$target"
+	fi
+}
+
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
