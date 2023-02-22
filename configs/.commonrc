@@ -39,12 +39,12 @@ cdp() {
 	# Finds source code project directories and allows fuzzy-finding one,
 	# then cd's to whichever you choose. "Code" is flat reverse-domain
 	# format repos, like "com.whatever.reponame" and so maxdepth is just 1.
-	targets="$(fd --type d --max-depth=1 '' "${HOME}/Code")"
-	target="$(echo $targets | $SED_EXEC -e "s%$HOME/%%" | fzy)"
+	local target
+	target="$(fd --type d --max-depth=1 '' --base-directory "${HOME}/Code" | fzy)"
 
 	if ! [ "$target" = "" ] ; then
 		# only cd if we actually chose something
-		cd "$HOME/$target"
+		cd "$HOME/Code/$target"
 	fi
 }
 
