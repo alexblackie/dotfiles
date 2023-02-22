@@ -20,6 +20,9 @@ vim.api.nvim_set_keymap('n', '<leader>F', ':vsplit<cr>:Explore<cr>', {})
 -- Open fuzzy file finder
 vim.api.nvim_set_keymap('n', '<leader><leader>', ':call v:lua.FzyFiles(\':e\')<cr>', {})
 
+-- Enable  z e n   m o d e
+vim.api.nvim_set_keymap('n', '<leader>z', ':ZenMode<cr>', {})
+
 -- Trigger code completion
 vim.api.nvim_set_keymap('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true })
 

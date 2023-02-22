@@ -47,3 +47,7 @@ vim.g.coc_global_extensions = {
 	'coc-tsserver',
 	'coc-rust-analyzer',
 }
+
+require("zen-mode").setup({
+	window = { backdrop = 1 },
+});
