@@ -119,8 +119,12 @@ azp() {
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
-if [ -f ~/.env ]; then
+if [ -f ~/.env ] ; then
 	source ~/.env
+fi
+
+if hash rtx >/dev/null 2>&1 ; then
+	eval "$(rtx activate ${SHELL##*/})"
 fi
 
 if [ -d "$HOME/.asdf" ] ; then
