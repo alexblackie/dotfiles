@@ -44,9 +44,9 @@ export DEBUG="${DEBUG:-}"
 
 # --[ END Configuration ]
 
-MKDIR=mkdir
-LN=ln
-RM=rm
+MKDIR="mkdir"
+LN="ln"
+RM="rm"
 
 if [[ "${DEBUG:-}" != "" ]] ; then
 	# If we pass 'DEBUG=1' (value is irrelevant), we should prefix commands
@@ -65,7 +65,7 @@ export RM
 export RECEIPT="./.receipt"
 
 rollback() {
-	for target in $(cat "$RECEIPT") ; do
+	while read -r target < "$RECEIPT" ; do
 		$RM -f "$target"
 	done
 
@@ -76,9 +76,10 @@ link_config() {
 	OLDIFS="$IFS"
 	IFS="		"
 	target="$2/${1#"$3/"}"
+	dirname="$(dirname "$target")"
 
 	if [ ! -e "$target" ] ; then
-		[[ ! -e "$(dirname $target)" ]] && $MKDIR -p "$(dirname $target)"
+		[[ ! -e "$dirname" ]] && $MKDIR -p "$dirname"
 		$LN -s "$PWD/$1" "$target"
 		echo "$target" >> "$RECEIPT"
 	fi
