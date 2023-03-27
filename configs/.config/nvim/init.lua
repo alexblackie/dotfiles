@@ -23,12 +23,11 @@ vim.api.nvim_set_keymap('n', '<leader><leader>', ':call v:lua.FzyFiles(\':e\')<c
 -- Enable  z e n   m o d e
 vim.api.nvim_set_keymap('n', '<leader>z', ':ZenMode<cr>', {})
 
--- Trigger code completion
+-- Language Server stuff
 vim.api.nvim_set_keymap('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true })
 vim.api.nvim_set_keymap('n', 'K', ':call CocAction("doHover")<CR>', {})
-
--- Code navigation: Go to definition
 vim.api.nvim_set_keymap('n', 'gd', '<Plug>(coc-definition)', { silent = true })
+vim.api.nvim_set_keymap('n', '<leader>c', ':CocCommand<CR>', {})
 
 -- Open popup terminal prefilled with the current filename
 vim.api.nvim_set_keymap('n', '<leader>e', ':call v:lua.ExecuteOnCurrentFile(expand(\'%\'))<CR>', {})
