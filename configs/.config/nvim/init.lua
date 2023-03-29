@@ -4,7 +4,7 @@ require('plugins')
 vim.opt.colorcolumn = { 80, 100 }
 
 -- Colourscheme
-vim.cmd('colorscheme dayfox')
+vim.cmd[[colorscheme dayfox]]
 
 -- Open file explorer
 vim.api.nvim_set_keymap('n', '<leader>f', ':NvimTreeToggle<cr>', {})
@@ -28,4 +28,4 @@ vim.cmd[[autocmd InsertLeave * match TSWarning /\s\+$/]]
 vim.cmd[[autocmd InsertEnter * match TSWarning /\s\+\%#\@<!$/]]
 
 -- Highlight the hovered symbol and its references, if supported by the LS
-vim.cmd 'autocmd CursorHold * silent call CocActionAsync("highlight")'
+vim.cmd[[autocmd CursorHold * silent call CocActionAsync("highlight")]]
