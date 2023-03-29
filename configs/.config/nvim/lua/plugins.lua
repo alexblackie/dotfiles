@@ -2,7 +2,6 @@
 -- Plugins and Plugin Setup
 --
 require('floater')
-require('execute_upon')
 require('fzy')
 
 require("nvim-tree").setup({

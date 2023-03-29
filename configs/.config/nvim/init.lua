@@ -22,9 +22,6 @@ vim.api.nvim_set_keymap('n', 'K', ':call CocAction("doHover")<CR>', {})
 vim.api.nvim_set_keymap('n', 'gd', '<Plug>(coc-definition)', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>c', ':CocCommand<CR>', {})
 
--- Open popup terminal prefilled with the current filename
-vim.api.nvim_set_keymap('n', '<leader>e', ':call v:lua.ExecuteOnCurrentFile(expand(\'%\'))<CR>', {})
-
 -- Highlight trailing whitespace
 vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
 vim.cmd[[autocmd InsertLeave * match TSWarning /\s\+$/]]
