@@ -6,9 +6,6 @@ vim.opt.colorcolumn = { 80, 100 }
 -- Colourscheme
 vim.cmd('colorscheme dayfox')
 
--- Disable hotkey manpage lookups
-vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
-
 -- Open file explorer
 vim.api.nvim_set_keymap('n', '<leader>f', ':NvimTreeToggle<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>F', ':NvimTreeFindFile<cr>', {})
