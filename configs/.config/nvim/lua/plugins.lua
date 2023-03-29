@@ -54,6 +54,7 @@ local treesitter_langs = {
 	'python',
 	'ruby',
 	'rust',
+	'vim',
 	'yaml',
 }
 
