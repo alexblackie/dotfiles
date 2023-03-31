@@ -4,6 +4,9 @@
 require('floater')
 require('fzy')
 
+-- We already map '\\' so we need to override the leader for 'vim-visual-multi'
+vim.g.VM_leader = '<space>'
+
 require("nvim-tree").setup({
 	view = {
 		width = 30,
