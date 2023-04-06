@@ -1,3 +1,18 @@
 {
-	"elixir.pathToElixirLS": "~/vendor/elixir-ls/release/language_server.sh"
+  "elixir.pathToElixirLS": "~/vendor/elixir-ls/release/language_server.sh",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "elixir",
+    "go",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "python",
+    "ruby",
+    "rust",
+    "typescript",
+    "typescriptreact",
+    "yaml"
+  ]
 }
