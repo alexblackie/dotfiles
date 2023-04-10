@@ -7,20 +7,20 @@ vim.opt.colorcolumn = { 80, 100 }
 vim.cmd[[colorscheme dayfox]]
 
 -- Open file explorer
-vim.api.nvim_set_keymap('n', '<leader>f', ':NvimTreeToggle<cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>F', ':NvimTreeFindFile<cr>', {})
+vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>F', ':NvimTreeFindFile<cr>')
 
 -- Open fuzzy file finder
-vim.api.nvim_set_keymap('n', '<leader><leader>', ':call v:lua.FzyFiles(\':e\')<cr>', {})
+vim.keymap.set('n', '<leader><leader>', function() FzyFiles(':e') end)
 
 -- Enable  z e n   m o d e
-vim.api.nvim_set_keymap('n', '<leader>z', ':ZenMode<cr>', {})
+vim.keymap.set('n', '<leader>z', ':ZenMode<cr>')
 
 -- Language Server stuff
-vim.api.nvim_set_keymap('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true })
-vim.api.nvim_set_keymap('n', 'K', ':call CocAction("doHover")<CR>', {})
-vim.api.nvim_set_keymap('n', 'gd', '<Plug>(coc-definition)', { silent = true })
-vim.api.nvim_set_keymap('n', '<leader>c', ':CocCommand<CR>', {})
+vim.keymap.set('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true })
+vim.keymap.set('n', 'K', ':call CocAction("doHover")<CR>')
+vim.keymap.set('n', 'gd', '<Plug>(coc-definition)', { silent = true })
+vim.keymap.set('n', '<leader>c', ':CocCommand<CR>')
 
 -- Highlight trailing whitespace
 vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
