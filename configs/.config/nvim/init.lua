@@ -18,7 +18,7 @@ vim.keymap.set('n', '<leader>z', ':ZenMode<cr>')
 
 -- Language Server stuff
 vim.keymap.set('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true })
-vim.keymap.set('n', 'K', ':call CocAction("doHover")<CR>')
+vim.keymap.set({'n', 'v'}, 'K', ':call CocAction("doHover")<CR>', { silent = true })
 vim.keymap.set('n', 'gd', '<Plug>(coc-definition)', { silent = true })
 vim.keymap.set('n', '<leader>c', ':CocCommand<CR>')
 
