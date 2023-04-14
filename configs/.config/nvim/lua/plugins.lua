@@ -72,6 +72,7 @@ require('nvim-treesitter.configs').setup({
 })
 
 vim.g.coc_global_extensions = {
+	'@yaegassy/coc-tailwindcss3',
 	'coc-clangd',
 	'coc-elixir',
 	'coc-java',
