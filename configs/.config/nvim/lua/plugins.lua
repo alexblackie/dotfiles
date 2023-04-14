@@ -75,12 +75,15 @@ vim.g.coc_global_extensions = {
 	'@yaegassy/coc-tailwindcss3',
 	'coc-clangd',
 	'coc-elixir',
-	'coc-java',
+	'coc-eslint',
 	'coc-go',
-	'coc-solargraph',
-	'coc-sh',
-	'coc-tsserver',
+	'coc-java',
+	'coc-prettier',
 	'coc-rust-analyzer',
+	'coc-sh',
+	'coc-solargraph',
+	'coc-sql',
+	'coc-tsserver',
 }
 
 require("zen-mode").setup({
