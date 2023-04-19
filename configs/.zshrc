@@ -76,6 +76,11 @@ zle -N zle_fzyfindlocal
 unsetopt flowcontrol # Required to rebind ^S
 bindkey "^S" "zle_fzyfindlocal"
 
+# Edit the current command in $EDITOR
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
 # ------------------------------------------------------------------------------
 # Source common shell config
 # ------------------------------------------------------------------------------
