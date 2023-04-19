@@ -29,3 +29,6 @@ vim.cmd[[autocmd InsertEnter * match TSWarning /\s\+\%#\@<!$/]]
 
 -- Highlight the hovered symbol and its references, if supported by the LS
 vim.cmd[[autocmd CursorHold * silent call CocActionAsync("highlight")]]
+
+-- Yank to the system clipboard(s)
+vim.opt.clipboard = "unnamed,unnamedplus"
