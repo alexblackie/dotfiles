@@ -23,9 +23,6 @@
 [submodule "configs/.local/share/nvim/site/pack/git/start/zen-mode"]
 	path = configs/.local/share/nvim/site/pack/git/start/zen-mode
 	url = https://github.com/folke/zen-mode.nvim.git
-[submodule "configs/.local/share/nvim/site/pack/git/start/copilot"]
-	path = configs/.local/share/nvim/site/pack/git/start/copilot
-	url = https://github.com/github/copilot.vim.git
 [submodule "configs/.local/share/nvim/site/pack/git/start/nvim-tree"]
 	path = configs/.local/share/nvim/site/pack/git/start/nvim-tree
 	url = https://github.com/nvim-tree/nvim-tree.lua.git
