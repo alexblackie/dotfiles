@@ -21,6 +21,8 @@ vim.keymap.set('i', '<c-space>', 'coc#refresh()', { expr = true, silent = true }
 vim.keymap.set({'n', 'v'}, 'K', ':call CocAction("doHover")<CR>', { silent = true })
 vim.keymap.set('n', 'gd', '<Plug>(coc-definition)', { silent = true })
 vim.keymap.set('n', '<leader>c', ':CocCommand<CR>')
+vim.keymap.set('n', '[g', '<Plug>(coc-diagnostic-prev)', { silent = true });
+vim.keymap.set('n', ']g', '<Plug>(coc-diagnostic-next)', { silent = true });
 
 -- Highlight trailing whitespace
 vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
