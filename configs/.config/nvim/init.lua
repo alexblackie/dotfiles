@@ -4,7 +4,7 @@ require('plugins')
 vim.opt.colorcolumn = { 80, 100 }
 
 -- Colourscheme
-vim.cmd [[colorscheme dayfox]]
+vim.cmd [[colorscheme nightfox]]
 
 -- Open file explorer
 vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<cr>')
