@@ -7,18 +7,9 @@
 [submodule "configs/.local/share/nvim/site/pack/git/start/fugitive-rhubarb"]
 	path = configs/.local/share/nvim/site/pack/git/start/fugitive-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
-[submodule "configs/.local/share/nvim/site/pack/git/start/treesitter"]
-	path = configs/.local/share/nvim/site/pack/git/start/treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter.git
-[submodule "configs/.local/share/nvim/site/pack/git/start/polyglot"]
-	path = configs/.local/share/nvim/site/pack/git/start/polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "configs/.local/share/nvim/site/pack/git/start/editorconfig"]
 	path = configs/.local/share/nvim/site/pack/git/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "configs/.local/share/nvim/site/pack/git/start/nvim-tree"]
-	path = configs/.local/share/nvim/site/pack/git/start/nvim-tree
-	url = https://github.com/nvim-tree/nvim-tree.lua.git
 [submodule "configs/.local/share/nvim/site/pack/git/start/nightfox"]
 	path = configs/.local/share/nvim/site/pack/git/start/nightfox
 	url = https://github.com/EdenEast/nightfox.nvim.git

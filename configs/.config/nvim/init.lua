@@ -1,14 +1,7 @@
 require('plugins')
 
--- Set common end-of-line gutters
-vim.opt.colorcolumn = { 80, 100 }
-
--- Colourscheme
-vim.cmd [[colorscheme dayfox]]
-
--- Open file explorer
-vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<cr>')
-vim.keymap.set('n', '<leader>F', ':NvimTreeFindFile<cr>')
+-- Anti-Colourscheme
+vim.cmd("syntax off")
 
 -- Open fuzzy file finder
 vim.keymap.set('n', '<leader><leader>', function() FzyFiles(':e') end)
@@ -32,10 +25,19 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	end,
 })
 
--- Highlight trailing whitespace
-vim.cmd [[autocmd BufWinEnter * match TSWarning /\s\+$/]]
-vim.cmd [[autocmd InsertLeave * match TSWarning /\s\+$/]]
-vim.cmd [[autocmd InsertEnter * match TSWarning /\s\+\%#\@<!$/]]
-
 -- Yank to the system clipboard(s)
 vim.opt.clipboard = "unnamed,unnamedplus"
+
+-- Override built-in colours for popups/modal windows (which are pink by
+-- default which is awful), and the LSP inline text because it is otherwise
+-- indistinguishable from everything else.
+vim.cmd [[
+	set termguicolors
+	hi DiagnosticError guifg=red
+	hi DiagnosticWarn  guifg=lightgrey
+	hi DiagnosticInfo  guifg=lightgrey
+	hi DiagnosticHint  guifg=lightgrey
+	hi PMenu           guibg=lightgrey guifg=black
+	hi SignColumn      guibg=white guifg=lightgrey
+	hi EndOfBuffer     guibg=white guifg=white
+]]

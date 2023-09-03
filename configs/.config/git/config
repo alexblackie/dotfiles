@@ -26,17 +26,6 @@
 	st = status
 	yolo = push --force-with-lease
 
-[color "diff"]
-	meta = yellow
-	frag = magenta
-	old = red
-	new = green
-
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
-
 [commit]
 	verbose = true
 	template = ~/.config/git/template
