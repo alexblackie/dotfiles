@@ -8,37 +8,51 @@ require('fzy')
 vim.g.VM_leader = '<space>'
 
 -- LSP Setup
+local lsps = {
+	"ansiblels",
+	"bicep",
+	"cssls",
+	"elixirls",
+	"gopls",
+	"html",
+	"jsonls",
+	"lua_ls",
+	"rust_analyzer",
+	"solargraph",
+	"tailwindcss",
+	"tsserver",
+}
+
 local lspconfig = require("lspconfig")
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = {
-		"ansiblels",
-		"bicep",
-		"cssls",
-		"elixirls",
-		"gopls",
-		"html",
-		"jsonls",
-		"lua_ls",
-		"rust_analyzer",
-		"solargraph",
-		"tailwindcss",
-		"tsserver",
-	}
+	ensure_installed = lsps
 })
 
-lspconfig.ansiblels.setup({})
-lspconfig.bicep.setup({})
-lspconfig.cssls.setup({})
-lspconfig.elixirls.setup({})
-lspconfig.gopls.setup({})
-lspconfig.html.setup({})
-lspconfig.jsonls.setup({})
-lspconfig.lua_ls.setup({})
-lspconfig.rust_analyzer.setup({})
-lspconfig.solargraph.setup({})
-lspconfig.tailwindcss.setup({})
-lspconfig.tsserver.setup({})
+local cmp = require("cmp")
+
+cmp.setup({
+	snippet = {
+		expand = function(args)
+			vim.fn["vsnip#anonymous"](args.body)
+		end
+	},
+	mapping = cmp.mapping.preset.insert({
+		['<C-b>'] = cmp.mapping.scroll_docs(-4),
+		['<C-f>'] = cmp.mapping.scroll_docs(4),
+		['<C-Space>'] = cmp.mapping.complete(),
+		['<C-e>'] = cmp.mapping.abort(),
+		['<C-y>'] = cmp.mapping.confirm({ select = true }),
+	}),
+	sources = cmp.config.sources({
+		{ name = "nvim_lsp" },
+		{ name = "vsnip" },
+	}),
+})
+
+for _, name in pairs(lsps) do
+	lspconfig[name].setup({})
+end
 
 -- nvim-tree
 require("nvim-tree").setup({
