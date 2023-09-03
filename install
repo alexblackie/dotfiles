@@ -65,7 +65,7 @@ export RM
 export RECEIPT="./.receipt"
 
 rollback() {
-	while read -r target < "$RECEIPT" ; do
+	cat "$RECEIPT" | while read -r target ; do
 		$RM -f "$target"
 	done
 
