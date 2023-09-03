@@ -70,18 +70,3 @@ require('nvim-treesitter.configs').setup({
 	ignore_install = { },
 	highlight = { enable = true },
 })
-
-vim.g.coc_global_extensions = {
-	'@yaegassy/coc-tailwindcss3',
-	'coc-clangd',
-	'coc-elixir',
-	'coc-eslint',
-	'coc-go',
-	'coc-java',
-	'coc-prettier',
-	'coc-rust-analyzer',
-	'coc-sh',
-	'coc-solargraph',
-	'coc-sql',
-	'coc-tsserver',
-}
