@@ -85,7 +85,3 @@ vim.g.coc_global_extensions = {
 	'coc-sql',
 	'coc-tsserver',
 }
-
-require("zen-mode").setup({
-	window = { backdrop = 1 },
-});
