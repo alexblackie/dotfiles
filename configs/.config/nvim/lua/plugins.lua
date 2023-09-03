@@ -7,6 +7,40 @@ require('fzy')
 -- We already map '\\' so we need to override the leader for 'vim-visual-multi'
 vim.g.VM_leader = '<space>'
 
+-- LSP Setup
+local lspconfig = require("lspconfig")
+require("mason").setup()
+require("mason-lspconfig").setup({
+	ensure_installed = {
+		"ansiblels",
+		"bicep",
+		"cssls",
+		"elixirls",
+		"gopls",
+		"html",
+		"jsonls",
+		"lua_ls",
+		"rust_analyzer",
+		"solargraph",
+		"tailwindcss",
+		"tsserver",
+	}
+})
+
+lspconfig.ansiblels.setup({})
+lspconfig.bicep.setup({})
+lspconfig.cssls.setup({})
+lspconfig.elixirls.setup({})
+lspconfig.gopls.setup({})
+lspconfig.html.setup({})
+lspconfig.jsonls.setup({})
+lspconfig.lua_ls.setup({})
+lspconfig.rust_analyzer.setup({})
+lspconfig.solargraph.setup({})
+lspconfig.tailwindcss.setup({})
+lspconfig.tsserver.setup({})
+
+-- nvim-tree
 require("nvim-tree").setup({
 	view = {
 		width = 30,
@@ -38,6 +72,7 @@ require("nvim-tree").setup({
 	modified = { enable = false },
 })
 
+-- Treesitter
 local treesitter_langs = {
 	'bash',
 	'c',
