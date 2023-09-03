@@ -102,6 +102,6 @@ vim.g.polyglot_disabled = treesitter_langs
 
 require('nvim-treesitter.configs').setup({
 	ensure_installed = treesitter_langs,
-	ignore_install = { },
+	ignore_install = {},
 	highlight = { enable = true },
 })

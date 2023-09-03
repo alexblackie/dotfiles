@@ -4,7 +4,7 @@ require('plugins')
 vim.opt.colorcolumn = { 80, 100 }
 
 -- Colourscheme
-vim.cmd[[colorscheme dayfox]]
+vim.cmd [[colorscheme dayfox]]
 
 -- Open file explorer
 vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<cr>')
@@ -33,9 +33,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 -- Highlight trailing whitespace
-vim.cmd[[autocmd BufWinEnter * match TSWarning /\s\+$/]]
-vim.cmd[[autocmd InsertLeave * match TSWarning /\s\+$/]]
-vim.cmd[[autocmd InsertEnter * match TSWarning /\s\+\%#\@<!$/]]
+vim.cmd [[autocmd BufWinEnter * match TSWarning /\s\+$/]]
+vim.cmd [[autocmd InsertLeave * match TSWarning /\s\+$/]]
+vim.cmd [[autocmd InsertEnter * match TSWarning /\s\+\%#\@<!$/]]
 
 -- Yank to the system clipboard(s)
 vim.opt.clipboard = "unnamed,unnamedplus"
