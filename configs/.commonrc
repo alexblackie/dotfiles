@@ -112,6 +112,18 @@ azp() {
 	fi
 }
 
+flp() {
+	# "fly profile"
+	#
+	# Facilitates full switching between entirely different configurations of the
+	# Fly.io CLI, to ensure complete isolation between accounts or configs.
+	local target
+	target="$(fd --type d --max-depth=1 '' --base-directory "${HOME}/.config/flyprofiles" | fzy)"
+	if ! [ "$target" = "" ] ; then
+		export FLY_CONFIG_DIR="$HOME/.config/flyprofiles/$target"
+	fi
+}
+
 # ------------------------------------------------------------------------------
 # Libraries/Imports
 # ------------------------------------------------------------------------------
