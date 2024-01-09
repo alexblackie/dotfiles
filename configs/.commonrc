@@ -131,8 +131,8 @@ if [ -f ~/.env ] ; then
 	source ~/.env
 fi
 
-if hash rtx >/dev/null 2>&1 ; then
-	eval "$(rtx activate ${SHELL##*/})"
+if hash mise >/dev/null 2>&1 ; then
+	eval "$(mise activate ${SHELL##*/})"
 fi
 
 if [ -d "$HOME/.asdf" ] ; then
