@@ -15,4 +15,5 @@
 	"line_padding_bottom": 2,
 	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", ".Trash", ".Trash-*", "_build", "deps", ".elixir_ls", "node_modules", ".next"],
 	"highlight_line": true,
+	"index_files": false,
 }
