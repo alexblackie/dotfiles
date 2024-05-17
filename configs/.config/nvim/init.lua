@@ -6,9 +6,6 @@ vim.opt.colorcolumn = { 80, 100 }
 -- Colourscheme
 vim.cmd [[colorscheme dayfox]]
 
--- Disable hotkey manpage lookups
-vim.api.nvim_set_keymap('', 'K', '<NOP>', { noremap = true })
-
 -- Open file explorer
 vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<cr>')
 vim.keymap.set('n', '<leader>F', ':NvimTreeFindFile<cr>')
@@ -27,7 +24,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		local opts = { buffer = ev.buf }
 		vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
 		vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-		vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
 		vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
 		vim.keymap.set('n', '<leader><space>', function()
 			vim.lsp.buf.format { async = true }
