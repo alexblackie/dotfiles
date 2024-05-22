@@ -81,9 +81,12 @@ eg() {
 	local choice
 	choice="$(git status --porcelain | awk '{print $2}' | fzy)"
 
+	local relative_pwd
+	relative_pwd="${PWD/#$(git rev-parse --show-toplevel)\/}"
+
 	if [[ "$choice" != "" ]] ; then
 		# Only open the editor if we chose something.
-		$EDITOR "$choice"
+		$EDITOR "${choice/#$relative_pwd\/}"
 	fi
 }
 
