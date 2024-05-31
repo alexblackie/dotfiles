@@ -4,7 +4,12 @@ require('plugins')
 vim.opt.colorcolumn = { 80, 100 }
 
 -- Colourscheme
-vim.cmd [[colorscheme dayfox]]
+vim.api.nvim_create_autocmd("OptionSet", {
+	pattern = "background",
+	callback = function()
+		vim.cmd.colorscheme(vim.o.background == 'dark' and 'duskfox' or 'dayfox')
+	end,
+})
 
 -- Open file explorer
 vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<cr>')
