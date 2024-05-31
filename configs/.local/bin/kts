@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -eufo pipefail
+
+DARK_THEME="duskfox"
+LIGHT_THEME="dayfox"
+
+if [ "${1:-undefined}" = "d" ] ; then
+	kitten theme --config-file-name "colours.conf" "$DARK_THEME"
+else
+	kitten theme --config-file-name "colours.conf" "$LIGHT_THEME"
+fi
