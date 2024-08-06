@@ -95,8 +95,3 @@ if [ "${1:-}" = "rollback" ] ; then
 fi
 
 find configs -mindepth 1 -type f -exec bash -c 'link_config "$1" $BASE_DIR configs' _ {} \;
-
-if [ "$(uname)" = "Darwin" ] ; then
-	rm -fr "$HOME/Library/Application Support/Sublime Text/Packages/User"
-	ln -s "$HOME/.config/sublime-text/Packages/User" "$HOME/Library/Application Support/Sublime Text/Packages/User"
-fi
