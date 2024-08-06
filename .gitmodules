@@ -13,9 +13,6 @@
 [submodule "configs/.local/share/nvim/site/pack/git/start/editorconfig"]
 	path = configs/.local/share/nvim/site/pack/git/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "configs/.local/share/nvim/site/pack/git/start/nvim-tree"]
-	path = configs/.local/share/nvim/site/pack/git/start/nvim-tree
-	url = https://github.com/nvim-tree/nvim-tree.lua.git
 [submodule "configs/.local/share/nvim/site/pack/git/start/nightfox"]
 	path = configs/.local/share/nvim/site/pack/git/start/nightfox
 	url = https://github.com/EdenEast/nightfox.nvim.git

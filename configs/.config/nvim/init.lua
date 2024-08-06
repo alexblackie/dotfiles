@@ -11,10 +11,6 @@ vim.api.nvim_create_autocmd("OptionSet", {
 	end,
 })
 
--- Open file explorer
-vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<cr>')
-vim.keymap.set('n', '<leader>F', ':NvimTreeFindFile<cr>')
-
 -- Open fuzzy file finder
 vim.keymap.set('n', '<leader><leader>', function() FzyFiles(':e') end)
 

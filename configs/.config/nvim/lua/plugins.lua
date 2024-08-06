@@ -59,48 +59,6 @@ for _, name in pairs(lsps) do
 	})
 end
 
--- nvim-tree
-local function nvim_tree_onattach(bufnr)
-	local api = require "nvim-tree.api"
-
-	local function opts(desc)
-		return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
-	end
-
-	-- default mappings
-	api.config.mappings.default_on_attach(bufnr)
-
-	-- custom mappings
-	vim.keymap.set('n', 's',   api.node.open.vertical,              opts('Open: Vertical Split'))
-end
-
-require("nvim-tree").setup({
-	on_attach = nvim_tree_onattach,
-	view = {
-		width = 30,
-	},
-	renderer = {
-		add_trailing = true,
-		highlight_git = false,
-		highlight_opened_files = "none",
-		highlight_modified = "none",
-		indent_markers = {
-			enable = true,
-		},
-		icons = {
-			webdev_colors = false,
-			padding = "",
-			show = {
-				file = false,
-				folder_arrow = false,
-				folder = false,
-			},
-		},
-	},
-	git = { enable = false },
-	modified = { enable = false },
-})
-
 -- Treesitter
 local treesitter_langs = {
 	'bash',
