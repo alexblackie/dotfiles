@@ -52,8 +52,11 @@ cmp.setup({
 	}),
 })
 
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 for _, name in pairs(lsps) do
-	lspconfig[name].setup({})
+	lspconfig[name].setup({
+		capabilities = capabilities
+	})
 end
 
 -- nvim-tree
