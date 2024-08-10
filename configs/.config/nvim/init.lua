@@ -11,6 +11,9 @@ vim.api.nvim_create_autocmd("OptionSet", {
 	end,
 })
 
+-- Open file tree
+vim.keymap.set('n', '<leader>f', ':ToggleSidebarCarbon<cr>')
+
 -- Open fuzzy file finder
 vim.keymap.set('n', '<leader><leader>', function() FzyFiles(':e') end)
 

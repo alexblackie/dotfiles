@@ -46,3 +46,6 @@
 [submodule "configs/.local/share/nvim/site/pack/git/start/cmp-vsnip"]
 	path = configs/.local/share/nvim/site/pack/git/start/cmp-vsnip
 	url = https://github.com/hrsh7th/cmp-vsnip.git
+[submodule "configs/.local/share/nvim/site/pack/git/start/carbon.nvim"]
+	path = configs/.local/share/nvim/site/pack/git/start/carbon.nvim
+	url = https://github.com/SidOfc/carbon.nvim.git
