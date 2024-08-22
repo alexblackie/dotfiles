@@ -94,4 +94,6 @@ require('nvim-treesitter.configs').setup({
 })
 
 -- carbon.nvim
-require('carbon').setup()
+require('carbon').setup({
+	auto_open = false,
+})
