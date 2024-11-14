@@ -7,7 +7,7 @@ vim.opt.colorcolumn = { 80, 100 }
 vim.api.nvim_create_autocmd("OptionSet", {
 	pattern = "background",
 	callback = function()
-		vim.cmd.colorscheme(vim.o.background == 'dark' and 'duskfox' or 'dayfox')
+		vim.cmd.colorscheme(vim.o.background == 'dark' and 'nightfox' or 'dayfox')
 	end,
 })
 

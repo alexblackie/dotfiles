@@ -2,7 +2,7 @@
 
 set -eufo pipefail
 
-DARK_THEME="duskfox"
+DARK_THEME="nightfox"
 LIGHT_THEME="dayfox"
 
 if [ "${1:-undefined}" = "d" ] ; then
