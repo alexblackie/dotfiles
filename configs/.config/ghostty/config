@@ -1,4 +1,4 @@
 font-family = "Iosevka Fixed"
-font-size = 18
+font-size = 16
 theme = "light:dayfox,dark:nightfox"
 window-inherit-working-directory = false
